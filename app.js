@@ -5,6 +5,7 @@
   var READING = (typeof READING_DATA !== 'undefined') ? READING_DATA : [];
   var LISTENING = (typeof LISTENING_DATA !== 'undefined') ? LISTENING_DATA : [];
   var WRITING = (typeof WRITING_DATA !== 'undefined') ? WRITING_DATA : { essays: [], templates: [], connectives: [], topics: [] };
+  var TRANSLATION = (typeof TRANSLATION_DATA !== 'undefined') ? TRANSLATION_DATA : [];
 
   var LS_KEY = 'cet4_progress';
   var $ = function (sel) { return document.querySelector(sel); };
@@ -51,6 +52,7 @@
     else if (view === 'reading') renderReadingList();
     else if (view === 'listening') renderListeningList();
     else if (view === 'writing') renderWriting();
+    else if (view === 'translation') renderTranslationList();
     updateStatsMini();
     window.scrollTo({ top: 0 });
   }
@@ -65,7 +67,7 @@
     Object.keys(p).forEach(function (k) {
       if (p[k] && p[k].done) { done++; sumScore += p[k].score || 0; sumTotal += p[k].total || 0; }
     });
-    total = READING.length + LISTENING.length + (WRITING.essays ? WRITING.essays.length : 0);
+    total = READING.length + LISTENING.length + (WRITING.essays ? WRITING.essays.length : 0) + TRANSLATION.length;
     var acc = sumTotal > 0 ? Math.round(sumScore / sumTotal * 100) : 0;
     return { done: done, total: total, acc: acc };
   }
@@ -98,6 +100,7 @@
           card('📖', '阅读', '仔细阅读 / 选词填空 / 长篇匹配，做完有详细解析', readDone, READING.length, 'reading') +
           card('🎧', '听力', '新闻 / 长对话 / 短文，听完看原文和解析', listenDone, LISTENING.length, 'listening') +
           card('✍️', '作文', '范文 + 模板 + 连接词 + 话题词汇积累', writeDone, (WRITING.essays || []).length, 'writing') +
+          card('🈶', '翻译', '汉译英练习，输入译文对照参考 + 重点词汇句型', TRANSLATION.filter(function (x) { return getProgress(x.id); }).length, TRANSLATION.length, 'translation') +
         '</div>' +
       '</div>' +
       '<div class="progress-grid">' +
@@ -622,6 +625,70 @@
       }).join('');
       return '<div class="topic-group"><h4>' + esc(t.topic) + '</h4><div class="phrase-chips">' + chips + '</div></div>';
     }).join('');
+  }
+
+  // ---------------- 翻译 ----------------
+  function renderTranslationList() {
+    var list = TRANSLATION.map(function (x) {
+      var p = getProgress(x.id);
+      var badge = p ? '<span class="done-badge">✓ 已练习</span>' : '';
+      return '<div class="item" data-id="' + x.id + '">' +
+        '<span class="tag">汉译英</span>' +
+        '<div class="body"><div class="title">' + esc(x.title) + '</div>' +
+        '<div class="meta">' + (x.chinese ? x.chinese.length : 0) + ' 字 · ' + esc(x.source || '') + '</div></div>' +
+        badge + '<span class="arrow">›</span></div>';
+    }).join('');
+    app.innerHTML = '<div class="view">' +
+      '<div class="section-head"><h2>翻译练习</h2><span style="color:var(--ink-faint);font-size:13px">汉译英 · 先自己译，再对照参考</span></div>' +
+      (list ? '<div class="item-list">' + list + '</div>' : '<div class="empty"><div class="big">🈶</div>暂无内容</div>') +
+      '</div>';
+    document.querySelectorAll('.item').forEach(function (it) {
+      it.addEventListener('click', function () { renderTranslationQuiz(it.getAttribute('data-id')); });
+    });
+  }
+
+  function renderTranslationQuiz(id) {
+    var item = TRANSLATION.find(function (x) { return x.id === id; });
+    if (!item) { renderTranslationList(); return; }
+    var kw = (item.keyWords || []).map(function (k) {
+      return '<div class="hl-item"><b>' + esc(k.cn) + '</b> → ' + esc(k.en) + (k.note ? ' <span style="color:var(--ink-faint)">（' + esc(k.note) + '）</span>' : '') + '</div>';
+    }).join('');
+    var sp = (item.sentencePatterns || []).map(function (s) {
+      return '<div class="hl-item">✦ ' + esc(s) + '</div>';
+    }).join('');
+
+    app.innerHTML = '<div class="view">' +
+      '<button class="back-btn" data-back>← 返回列表</button>' +
+      '<div class="quiz-title">' + esc(item.title) + '</div>' +
+      '<div class="quiz-meta"><span class="tag">汉译英</span><span>' + esc(item.source || '') + '</span></div>' +
+      '<div class="passage"><h3>请把下面这段中文翻译成英文</h3>' +
+      '<div class="text" style="font-family:var(--sans);font-size:18px;line-height:2">' + esc(item.chinese) + '</div></div>' +
+      '<div class="passage"><h3>你的译文</h3>' +
+      '<textarea data-input style="width:100%;min-height:160px;border:1px solid var(--line);border-radius:10px;padding:14px;font-family:var(--serif);font-size:16px;line-height:1.8;resize:vertical" placeholder="在这里输入你的英文翻译…"></textarea>' +
+      '<div style="margin-top:12px;display:flex;gap:10px">' +
+      '<button class="btn btn-primary" data-show>查看参考译文</button>' +
+      '<button class="btn btn-ghost" data-clear>清空</button></div></div>' +
+      '<div data-ref style="display:none">' +
+      '<div class="passage" style="border-color:var(--green)"><h3>参考译文（点词可查）</h3>' +
+      '<div class="text">' + wordify(item.reference || '') + '</div></div>' +
+      '<div class="passage"><h3>重点词汇</h3><div class="hl-list">' + kw + '</div></div>' +
+      '<div class="passage"><h3>重点句型</h3><div class="hl-list">' + sp + '</div></div>' +
+      '<div class="passage"><h3>翻译技巧</h3><div class="text" style="font-family:var(--sans);font-size:15px;line-height:1.9">' + esc(item.tips || '') + '</div></div>' +
+      '</div>' +
+      '</div>';
+
+    document.querySelector('[data-back]').addEventListener('click', function () { renderTranslationList(); });
+    document.querySelector('[data-show]').addEventListener('click', function () {
+      var ref = document.querySelector('[data-ref]');
+      ref.style.display = 'block';
+      markDone(item.id, 0, 0);
+      updateStatsMini();
+      if (ref.scrollIntoView) ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    document.querySelector('[data-clear]').addEventListener('click', function () {
+      document.querySelector('[data-input]').value = '';
+    });
+    bindVocab(item.vocab);
   }
 
   // ---------------- 词典 ----------------
