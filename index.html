@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四级自习室 · CET-4 阅读 / 听力 / 作文</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <span class="brand-mark">CET·4</span>
+      <span class="brand-name">四级自习室</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="home">首页</button>
+      <button class="tab" data-view="reading">阅读</button>
+      <button class="tab" data-view="listening">听力</button>
+      <button class="tab" data-view="writing">作文</button>
+    </nav>
+    <div class="stats-mini" id="statsMini" title="学习进度"></div>
+  </div>
+
+  <main id="app" class="app"></main>
+
+  <!-- 词典弹窗 -->
+  <div id="dictPop" class="dict-pop hidden">
+    <div class="dict-card">
+      <button class="dict-close" id="dictClose" aria-label="关闭">×</button>
+      <div class="dict-word" id="dictWord"></div>
+      <div class="dict-phon" id="dictPhon"></div>
+      <div class="dict-meaning" id="dictMeaning"></div>
+      <div class="dict-src" id="dictSrc"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="data/reading.js"></script>
+  <script src="data/listening.js"></script>
+  <script src="data/writing.js"></script>
+  <script src="dict.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
