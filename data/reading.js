@@ -30,6 +30,7 @@ const READING_DATA = [
       },
       {
         q: 'What does the word “phubbing” refer to?',
+        targetWord: 'phubbing',
         options: [
           'A. Ignoring the person you are with to look at your phone.',
           'B. Taking photos of food before eating.',
@@ -86,6 +87,7 @@ const READING_DATA = [
     questions: [
       {
         q: 'What is a “gap year” according to the passage?',
+        targetWord: 'gap year',
         options: [
           'A. A year of rest after graduating from college.',
           'B. A structured period between school and university.',
@@ -197,6 +199,7 @@ const READING_DATA = [
       },
       {
         q: 'What is the difference between “best before” and “use by” dates?',
+        targetWord: 'best before use by',
         options: [
           'A. “Best before” means the food is unsafe after that date.',
           'B. “Use by” dates indicate safety, not just quality.',
