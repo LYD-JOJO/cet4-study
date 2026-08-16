@@ -29,10 +29,17 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
-  // 英文文本 -> 可点击单词
-  function wordify(text) {
+  // 英文文本 -> 可点击单词；highlights 为需高亮的词/短语数组（短语按空格拆词匹配）
+  function wordify(text, highlights) {
+    var hlMap = {};
+    (highlights || []).forEach(function (h) {
+      String(h).toLowerCase().split(/\s+/).forEach(function (w) {
+        if (w) hlMap[w] = true;
+      });
+    });
     return esc(text).replace(/[A-Za-z]+(?:'[A-Za-z]+)?/g, function (m) {
-      return '<span class="w" data-word="' + m + '">' + m + '</span>';
+      var cls = hlMap[m.toLowerCase()] ? 'w target' : 'w';
+      return '<span class="' + cls + '" data-word="' + m + '">' + m + '</span>';
     });
   }
   function toast(msg) {
@@ -182,7 +189,8 @@
         }).join('') + '</div>' +
         '<div class="expl" data-expl="' + qi + '"></div></div>';
     }).join('');
-    var body = '<div class="passage"><h3>Reading Passage</h3><div class="text">' + wordify(item.passage) + '</div></div>' +
+    var targets = item.questions.map(function (q) { return q.targetWord; }).filter(Boolean);
+    var body = '<div class="passage"><h3>Reading Passage</h3><div class="text">' + wordify(item.passage, targets) + '</div></div>' +
       '<div class="questions">' + qhtml + '</div>';
     app.innerHTML = renderQuizShell(item, body);
     bindCommon(item);
