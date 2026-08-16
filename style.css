@@ -140,6 +140,7 @@ body{
 /* 点词翻译 */
 .w{cursor:pointer;border-bottom:1px dotted rgba(58,74,140,.35);transition:background .12s}
 .w:hover{background:var(--amber-soft);border-radius:3px}
+.w.target{background:var(--amber-soft);border-bottom:2px solid var(--amber);border-radius:3px;font-weight:700}
 .w.hit{background:var(--green-soft);border-radius:3px}
 .w.good{background:var(--green-soft)}
 .w.bad{background:var(--coral-soft)}
