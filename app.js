@@ -7,6 +7,17 @@
   var WRITING = (typeof WRITING_DATA !== 'undefined') ? WRITING_DATA : { essays: [], templates: [], connectives: [], topics: [] };
   var TRANSLATION = (typeof TRANSLATION_DATA !== 'undefined') ? TRANSLATION_DATA : [];
 
+  // ---------------- Supabase 云同步 ----------------
+  var SUPABASE_URL = 'https://eipjslbvwsrcbzcraxpw.supabase.co';
+  var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpcGpzbGJ2d3NyY2J6Y3JheHB3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxMjA5MzIsImV4cCI6MjEwMjY5NjkzMn0.HqcPwhZZE6lX3vBFve1Q-EjsrrIkJo_7PmHJzIFa--I';
+  var sb = null;
+  var currentUserId = null;
+  var currentUserEmail = '';
+  var currentView = 'home';
+  if (typeof supabase !== 'undefined' && supabase.createClient) {
+    sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+  }
+
   var LS_KEY = 'cet4_progress';
   var $ = function (sel) { return document.querySelector(sel); };
   var app = $('#app');
@@ -20,6 +31,7 @@
     var p = loadProgress();
     p[id] = { done: true, score: score, total: total };
     saveProgress(p);
+    syncToCloud(p);
   }
   function getProgress(id) { return loadProgress()[id]; }
 
@@ -52,6 +64,7 @@
 
   // ---------------- 路由 ----------------
   function route(view) {
+    currentView = view;
     document.querySelectorAll('.tab').forEach(function (t) {
       t.classList.toggle('active', t.getAttribute('data-view') === view);
     });
@@ -743,7 +756,142 @@
   $('#dictPop').addEventListener('click', function (e) { if (e.target === $('#dictPop')) $('#dictPop').classList.add('hidden'); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') $('#dictPop').classList.add('hidden'); });
 
+  // ---------------- 登录 / 云同步 ----------------
+  var authMode = 'login';
+
+  function renderAuthArea() {
+    var area = $('#authArea');
+    if (!area) return;
+    if (!sb) { area.innerHTML = ''; return; }
+    if (currentUserId) {
+      area.innerHTML = '<span class="auth-user" title="' + esc(currentUserEmail) + '">' + esc(currentUserEmail) + '</span>' +
+        '<button class="auth-btn" id="logoutBtn">登出</button>';
+      var lo = document.querySelector('#logoutBtn');
+      if (lo) lo.addEventListener('click', doLogout);
+    } else {
+      area.innerHTML = '<button class="auth-btn" id="authBtn">登录 / 注册</button>';
+      var lb = document.querySelector('#authBtn');
+      if (lb) lb.addEventListener('click', openAuthModal);
+    }
+  }
+
+  function openAuthModal() {
+    if (!sb) { toast('云端服务未加载'); return; }
+    authMode = 'login';
+    $('#authTitle').textContent = '登录';
+    $('#authSubmit').textContent = '登录';
+    $('#authToggle').textContent = '没有账号？去注册';
+    $('#authEmail').value = '';
+    $('#authPassword').value = '';
+    var msg = $('#authMsg'); msg.textContent = ''; msg.className = 'auth-msg';
+    $('#authSubmit').disabled = false;
+    $('#authModal').classList.remove('hidden');
+    $('#authEmail').focus();
+  }
+
+  function doAuth() {
+    if (!sb) return;
+    var email = $('#authEmail').value.trim();
+    var password = $('#authPassword').value;
+    var msg = $('#authMsg');
+    msg.className = 'auth-msg';
+    if (!email || !password) { msg.textContent = '请填写邮箱和密码'; return; }
+    if (password.length < 6) { msg.textContent = '密码至少 6 位'; return; }
+    var btn = $('#authSubmit'); btn.disabled = true;
+    msg.textContent = authMode === 'login' ? '登录中…' : '注册中…';
+    var p = authMode === 'login'
+      ? sb.auth.signInWithPassword({ email: email, password: password })
+      : sb.auth.signUp({ email: email, password: password });
+    p.then(function (res) {
+      if (res.error) { msg.textContent = res.error.message || '操作失败'; btn.disabled = false; return; }
+      if (authMode === 'signup' && !res.data.session) {
+        msg.className = 'auth-msg ok';
+        msg.textContent = '注册成功！请去邮箱查收确认邮件，点链接后回来登录。';
+        btn.disabled = false;
+        return;
+      }
+      afterAuthSuccess(res.data.session);
+    }).catch(function () { msg.textContent = '网络错误，请重试'; btn.disabled = false; });
+  }
+
+  function afterAuthSuccess(session) {
+    currentUserId = session.user.id;
+    currentUserEmail = session.user.email || '';
+    $('#authModal').classList.add('hidden');
+    renderAuthArea();
+    toast('登录成功');
+    pullFromCloud();
+  }
+
+  function doLogout() {
+    if (!sb) return;
+    sb.auth.signOut().then(function () {
+      currentUserId = null;
+      currentUserEmail = '';
+      renderAuthArea();
+      toast('已退出登录（本机记录仍保留）');
+    }).catch(function () {});
+  }
+
+  function mergeProgress(local, cloud) {
+    var merged = {};
+    Object.keys(cloud || {}).forEach(function (k) { merged[k] = cloud[k]; });
+    Object.keys(local || {}).forEach(function (k) { merged[k] = local[k]; });
+    return merged;
+  }
+
+  function syncToCloud(progress) {
+    if (!sb || !currentUserId) return;
+    sb.from('user_progress').upsert({
+      user_id: currentUserId,
+      progress: progress,
+      updated_at: new Date().toISOString()
+    }).then(function () {}).catch(function () {});
+  }
+
+  function pullFromCloud() {
+    if (!sb || !currentUserId) return;
+    sb.from('user_progress').select('progress').eq('user_id', currentUserId).maybeSingle().then(function (res) {
+      if (res.error) return;
+      var merged;
+      if (!res.data) {
+        merged = loadProgress();
+      } else {
+        merged = mergeProgress(loadProgress(), res.data.progress);
+      }
+      saveProgress(merged);
+      syncToCloud(merged);
+      updateStatsMini();
+      if (currentView) route(currentView);
+    }).catch(function () {});
+  }
+
+  function initAuth() {
+    renderAuthArea();
+    $('#authClose').addEventListener('click', function () { $('#authModal').classList.add('hidden'); });
+    $('#authSubmit').addEventListener('click', doAuth);
+    $('#authToggle').addEventListener('click', function () {
+      authMode = authMode === 'login' ? 'signup' : 'login';
+      $('#authTitle').textContent = authMode === 'login' ? '登录' : '注册';
+      $('#authSubmit').textContent = authMode === 'login' ? '登录' : '注册';
+      $('#authToggle').textContent = authMode === 'login' ? '没有账号？去注册' : '已有账号？去登录';
+    });
+    $('#authPassword').addEventListener('keydown', function (e) { if (e.key === 'Enter') doAuth(); });
+    if (sb) {
+      sb.auth.getSession().then(function (res) {
+        var session = res.data && res.data.session;
+        if (session) {
+          currentUserId = session.user.id;
+          currentUserEmail = session.user.email || '';
+          renderAuthArea();
+          pullFromCloud();
+        }
+      }).catch(function () {});
+    }
+  }
+
   // ---------------- 启动 ----------------
+  initAuth();
   updateStatsMini();
   renderHome();
 })();
