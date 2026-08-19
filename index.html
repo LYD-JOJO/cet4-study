@@ -20,6 +20,7 @@
       <button class="tab" data-view="translation">翻译</button>
     </nav>
     <div class="stats-mini" id="statsMini" title="学习进度"></div>
+    <div class="auth-area" id="authArea"></div>
   </div>
 
   <main id="app" class="app"></main>
@@ -35,12 +36,28 @@
     </div>
   </div>
 
+  <!-- 登录/注册弹窗 -->
+  <div id="authModal" class="auth-modal hidden">
+    <div class="auth-card">
+      <button class="dict-close" id="authClose" aria-label="关闭">×</button>
+      <h3 class="auth-title" id="authTitle">登录</h3>
+      <div class="auth-form">
+        <input type="email" id="authEmail" placeholder="邮箱" autocomplete="email">
+        <input type="password" id="authPassword" placeholder="密码（至少 6 位）" autocomplete="current-password">
+        <button class="btn btn-primary" id="authSubmit">登录</button>
+        <button class="btn btn-ghost" id="authToggle">没有账号？去注册</button>
+      </div>
+      <div class="auth-msg" id="authMsg"></div>
+    </div>
+  </div>
+
   <div id="toast" class="toast"></div>
 
   <script src="data/reading.js"></script>
   <script src="data/listening.js"></script>
   <script src="data/writing.js"></script>
   <script src="data/translation.js"></script>
+  <script src="supabase.js"></script>
   <script src="dict.js"></script>
   <script src="app.js"></script>
 </body>
