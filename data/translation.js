@@ -257,5 +257,83 @@ const TRANSLATION_DATA = [
       { word: 'symbolize', phonetic: '/ˈsɪmbəlaɪz/', meaning: '象征' },
       { word: 'charm', phonetic: '/tʃɑːm/', meaning: '魅力' }
     ]
+  },
+{
+    id: 'trans-8',
+    title: '移动支付',
+    source: '真题改编',
+    chinese: '近年来，移动支付在中国发展迅速，已成为人们日常生活中不可或缺的一部分。无论是大型商场还是街头小摊，人们只需用手机扫一下二维码，就可以完成付款，无需携带现金或银行卡。移动支付不仅方便快捷，还改变了人们的消费习惯，越来越多的人开始在网上购物、订外卖、缴纳水电费。然而，移动支付也带来了一些问题，比如个人信息泄露的风险。专家提醒人们在使用移动支付时要注意保护自己的账户安全，不要随意连接公共无线网络。',
+    reference: 'In recent years, mobile payment has developed rapidly in China and has become an indispensable part of people\'s daily life. Whether in large shopping malls or at street stalls, people can complete a payment by simply scanning a QR code with their phones, without carrying cash or bank cards. Mobile payment is not only convenient and fast but also changes people\'s consumption habits; more and more people have begun to shop online, order takeout, and pay their water and electricity bills. However, mobile payment has also brought about some problems, such as the risk of personal information leakage. Experts remind people to protect their account security when using mobile payment and not to connect to public wireless networks at will.',
+    keyWords: [
+      { cn: '移动支付', en: 'mobile payment', note: '科技类热词，注意 mobile 不可漏译' },
+      { cn: '不可或缺', en: 'indispensable', note: '形容词，作定语或表语' },
+      { cn: '二维码', en: 'QR code', note: '扫码支付专有名词' },
+      { cn: '扫一下', en: 'scan', note: '动词，scan a QR code' },
+      { cn: '街头小摊', en: 'street stalls', note: 'stall 表摊点' },
+      { cn: '消费习惯', en: 'consumption habits', note: 'consumption 表消费' },
+      { cn: '缴纳水电费', en: 'pay water and electricity bills', note: 'bill 表账单' },
+      { cn: '信息泄露', en: 'information leakage', note: 'leakage 表泄露' },
+      { cn: '公共无线网络', en: 'public wireless network', note: '也可说 public Wi-Fi' },
+      { cn: '随意', en: 'at will', note: '固定短语' }
+    ],
+    sentencePatterns: [
+      '「无论是……还是……」——用 whether ... or ... 引导让步状语从句，如 whether in large shopping malls or at street stalls。',
+      '「无需携带现金或银行卡」——用介词短语 without carrying cash or bank cards 处理，比补主语从句更简洁。',
+      '「不仅……还……」——not only ... but also ... 结构；分号连接两个并列分句，避免句子过长。',
+      '「越来越多的人开始……」——more and more people have begun to ...，用现在完成时强调变化已发生。',
+      '「比如……」——用 such as 引出例子，比 for example 更适合句中列举。'
+    ],
+    tips: '本篇是科技生活主题翻译，难点在于中文长句的拆分与语序调整。第一句「已成为……不可或缺的一部分」中「近年来」作时间状语置于句首，主句用现在完成时 has developed rapidly。「无需携带现金或银行卡」要处理成介词短语 without carrying ...，避免生硬地另起一句。注意「扫一下二维码」中「扫」要用 scan，不能译成 sweep。「水电费」要译成 water and electricity bills，不能逐字译。「专家提醒人们……不要随意连接公共无线网络」中「提醒……不要做某事」用 remind sb not to do sth 结构。时态上，「已改变」「开始」等表持续影响的动词用现在完成时。',
+    vocab: [
+      { word: 'mobile payment', phonetic: '/ˌməʊbaɪl ˈpeɪmənt/', meaning: '移动支付' },
+      { word: 'indispensable', phonetic: '/ˌɪndɪˈspensəbl/', meaning: '不可或缺的' },
+      { word: 'mall', phonetic: '/mɔːl/', meaning: '购物中心' },
+      { word: 'stall', phonetic: '/stɔːl/', meaning: '摊位；货摊' },
+      { word: 'scan', phonetic: '/skæn/', meaning: '扫描' },
+      { word: 'consumption', phonetic: '/kənˈsʌmpʃn/', meaning: '消费；消耗' },
+      { word: 'takeout', phonetic: '/ˈteɪkaʊt/', meaning: '外卖' },
+      { word: 'leakage', phonetic: '/ˈliːkɪdʒ/', meaning: '泄露；渗漏' },
+      { word: 'security', phonetic: '/sɪˈkjʊərəti/', meaning: '安全；保障' },
+      { word: 'wireless', phonetic: '/ˈwaɪələs/', meaning: '无线的' }
+    ]
+  },
+  {
+    id: 'trans-9',
+    title: '大熊猫',
+    source: '真题改编',
+    chinese: '大熊猫是中国独有的珍稀动物，被誉为"国宝"，深受全世界人民的喜爱。大熊猫主要生活在四川、陕西和甘肃的高山竹林中，以竹子为主要食物。成年大熊猫每天要花十多个小时进食，以获取足够的营养。由于栖息地的破坏和非法捕猎，大熊猫的数量曾一度急剧下降，一度濒临灭绝。幸运的是，中国政府采取了有效的保护措施，建立了许多自然保护区，大熊猫的数量近年来稳步回升。如今，大熊猫不仅是中国自然保护的象征，也是中外文化交流的友好使者。',
+    reference: 'The giant panda is a rare animal unique to China. Known as the "national treasure", it is deeply loved by people all over the world. Giant pandas mainly live in the mountain bamboo forests of Sichuan, Shaanxi and Gansu, feeding mainly on bamboo. An adult panda has to spend more than ten hours a day eating in order to take in enough nutrition. Due to the destruction of their habitats and illegal hunting, the number of giant pandas once declined sharply and the animal was once on the verge of extinction. Fortunately, the Chinese government has taken effective protection measures and established many nature reserves, and the panda population has been increasing steadily in recent years. Today, the giant panda is not only a symbol of China\'s nature protection but also a friendly messenger of cultural exchanges between China and foreign countries.',
+    keyWords: [
+      { cn: '国宝', en: 'national treasure', note: '专有表达，treasure 表珍宝' },
+      { cn: '独有的', en: 'unique to', note: 'be unique to 表"为……所特有"' },
+      { cn: '竹林', en: 'bamboo forest', note: 'bamboo 表竹子' },
+      { cn: '以……为食', en: 'feed on', note: '动词短语，feed mainly on bamboo' },
+      { cn: '栖息地', en: 'habitat', note: '动物栖息地专用词' },
+      { cn: '非法捕猎', en: 'illegal hunting', note: 'illegal 表非法的' },
+      { cn: '濒临灭绝', en: 'on the verge of extinction', note: 'verge 表边缘，extinction 表灭绝' },
+      { cn: '自然保护区', en: 'nature reserves', note: 'reserve 表保护区' },
+      { cn: '稳步回升', en: 'increase steadily', note: 'steadily 表稳定地' },
+      { cn: '友好使者', en: 'friendly messenger', note: 'messenger 表使者' }
+    ],
+    sentencePatterns: [
+      '「被誉为……」，用过去分词作状语 Known as the "national treasure"，置于主句前，简洁地道。',
+      '「……深受……喜爱」——it is deeply loved by ...，被动语态，loved by 表"被喜爱"。',
+      '「为了获取足够的营养」——用 in order to take in enough nutrition 表目的，in order to 比 to 更正式。',
+      '「数量曾一度急剧下降」——the number of ... once declined sharply，once 表"曾经"。',
+      '「不仅……也是……」——not only ... but also ... 连接两个表语，注意 not only 后接 a symbol of，but also 后接 a friendly messenger，结构平行。'
+    ],
+    tips: '本篇是文化动物主题翻译，难点在于中文专有表达的转换和被动语态的运用。「国宝」不能直译成 national baby，要译成 national treasure；「独有的」用 be unique to 而非 only have。「被誉为」用过去分词 Known as 作伴随状语，这是地道写法。「以竹子为主要食物」用 feed mainly on bamboo 处理，「以……为食」对应 feed on。「一度急剧下降、濒临灭绝」要体现时间层次：once declined sharply, was once on the verge of extinction。「近年来稳步回升」用现在完成进行或现在完成时 has been increasing steadily 表达持续回升。全文时态注意区分：历史事实用一般过去时，政府措施和现状用现在完成时或一般现在时。',
+    vocab: [
+      { word: 'rare', phonetic: '/reə(r)/', meaning: '稀有的；珍贵的' },
+      { word: 'treasure', phonetic: '/ˈtreʒə(r)/', meaning: '珍宝；财富' },
+      { word: 'bamboo', phonetic: '/bæmˈbuː/', meaning: '竹子' },
+      { word: 'nutrition', phonetic: '/njuˈtrɪʃn/', meaning: '营养' },
+      { word: 'habitat', phonetic: '/ˈhæbɪtæt/', meaning: '栖息地' },
+      { word: 'illegal', phonetic: '/ɪˈliːɡl/', meaning: '非法的' },
+      { word: 'decline', phonetic: '/dɪˈklaɪn/', meaning: '下降；减少' },
+      { word: 'extinction', phonetic: '/ɪkˈstɪŋkʃn/', meaning: '灭绝；绝种' },
+      { word: 'reserve', phonetic: '/rɪˈzɜːv/', meaning: '保护区；储备' },
+      { word: 'messenger', phonetic: '/ˈmesɪndʒə(r)/', meaning: '信使；使者' }
+    ]
   }
 ];

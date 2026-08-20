@@ -468,5 +468,191 @@ const READING_DATA = [
       { word: 'insurance', phonetic: '/ɪnˈʃʊərəns/', meaning: '保险；保险费' },
       { word: 'access', phonetic: '/ˈækses/', meaning: '使用权；通道；获取' }
     ]
+  },
+{
+    id: 'read-careful-4',
+    type: 'careful',
+    title: 'The Rise of Online Food Delivery',
+    source: '真题改编',
+    passage: 'Ten years ago, ordering a meal to your door usually meant a phone call to a local pizza place. Today, a few taps on a smartphone can bring hot food from dozens of restaurants within half an hour, and online food delivery has become a routine part of urban life. In China alone, the number of food delivery users has passed five hundred million, and the industry now employs millions of riders. Yet behind this convenience lie questions that consumers rarely stop to consider. For the restaurants, delivery platforms are a double-edged sword. On the one hand, joining a platform exposes a small eatery to a huge number of potential customers it could never reach on its own. On the other hand, the platforms charge commissions that can reach twenty percent or more, leaving restaurants with much thinner profit margins. Some owners say they make more money per order from walk-in customers than from delivery orders, even though the delivery price is higher. The riders who bring the food are under even greater pressure. Most are paid per delivery rather than by the hour, so they race against the clock to finish as many orders as possible. To meet tight deadlines, some ride dangerously in heavy traffic, and accidents involving delivery riders have risen sharply in recent years. Surveys show that many riders work more than ten hours a day, and most receive no social insurance. The convenience we enjoy, in other words, is partly built on the fatigue and risk of others. Environmental costs add a further layer of concern. Each delivery involves packaging, often plastic boxes, bags, and disposable chopsticks, and the mountain of waste this creates has become a serious problem for many cities. Some platforms now offer a "no tableware" option and encourage riders to use shared containers, but such efforts remain limited. None of this means we should stop ordering food online. Delivery is a genuine convenience, especially for busy workers and students, and the industry provides valuable jobs. But as consumers, we can make more thoughtful choices: tipping riders fairly, choosing restaurants that use eco-friendly packaging, and avoiding the habit of ordering more than we need. Small actions, repeated by millions of people, can push the whole industry toward a more responsible future.',
+    questions: [
+      {
+        q: 'What is the passage mainly about?',
+        options: [
+          'A. The history of the fast food industry.',
+          'B. The hidden costs behind online food delivery.',
+          'C. How to become a delivery rider.',
+          'D. The best restaurants on delivery platforms.'
+        ],
+        answer: 1,
+        explanation: '主旨题。全文围绕外卖繁荣背后的三大隐忧展开：餐厅利润被压缩（第二段）、骑手压力与安全（第三段）、包装浪费（第四段），最后给出消费者建议，核心是"便利背后的代价"，故选 B。A 讲快餐业历史，与全文无关；C 讲如何成为骑手，文中未涉及；D 讲平台上的最佳餐厅，偏离主旨。'
+      },
+      {
+        q: 'What problem do restaurants face on delivery platforms?',
+        options: [
+          'A. They cannot reach new customers.',
+          'B. The platforms charge high commissions.',
+          'C. Delivery orders are priced too low.',
+          'D. Walk-in customers have disappeared.'
+        ],
+        answer: 1,
+        explanation: '细节题。定位第二段"the platforms charge commissions that can reach twenty percent or more, leaving restaurants with much thinner profit margins"，平台抽成高达两成以上，压薄了餐厅利润，故选 B。A 与原文相反（平台帮小餐厅触达大量新顾客）；C 与"delivery price is higher"矛盾；D 说堂食顾客消失，文中只提堂食利润更高，未说消失。'
+      },
+      {
+        q: 'What does the word "fatigue" in Paragraph 3 most probably mean?',
+        targetWord: 'fatigue',
+        options: [
+          'A. Extreme tiredness.',
+          'B. Great wealth.',
+          'C. Deep anger.',
+          'D. Sudden danger.'
+        ],
+        answer: 0,
+        explanation: '词义题。定位第三段末句"the convenience we enjoy is partly built on the fatigue and risk of others"，前文说骑手每天工作十小时以上、没有社保，故 fatigue 指"极度疲劳"，故选 A。B（财富）、C（愤怒）、D（危险）均不符合语境，risk 已单独列出。'
+      },
+      {
+        q: 'What does the author say about delivery packaging?',
+        options: [
+          'A. It has been completely replaced by shared containers.',
+          'B. It creates a serious waste problem in many cities.',
+          'C. It costs consumers too much money.',
+          'D. It is required by law to be eco-friendly.'
+        ],
+        answer: 1,
+        explanation: '细节题。定位第四段"the mountain of waste this creates has become a serious problem for many cities"，外卖包装垃圾已成许多城市严重问题，故选 B。A 说已被共享容器完全取代，与原文"such efforts remain limited"矛盾；C 讲成本，文中未提；D 说法律要求环保包装，无中生有。'
+      },
+      {
+        q: 'What is the author\'s attitude toward online food delivery?',
+        options: [
+          'A. Totally against it.',
+          'B. Indifferent to it.',
+          'C. Positive but cautious.',
+          'D. Doubtful about its future.'
+        ],
+        answer: 2,
+        explanation: '观点态度题。末段作者说"None of this means we should stop ordering food online"，肯定外卖的便利和就业价值，同时又呼吁消费者做出更明智的选择，态度是"肯定但谨慎"，故选 C。A 完全反对与原文矛盾；B 漠不关心与作者积极建言的态度不符；D 质疑前景，文中没有表现。'
+      }
+    ],
+    vocab: [
+      { word: 'delivery', phonetic: '/dɪˈlɪvəri/', meaning: '递送；配送' },
+      { word: 'routine', phonetic: '/ruːˈtiːn/', meaning: '日常的；常规的' },
+      { word: 'consumer', phonetic: '/kənˈsjuːmə(r)/', meaning: '消费者' },
+      { word: 'commission', phonetic: '/kəˈmɪʃn/', meaning: '佣金；提成' },
+      { word: 'margin', phonetic: '/ˈmɑːdʒɪn/', meaning: '利润；差额' },
+      { word: 'deadline', phonetic: '/ˈdedlaɪn/', meaning: '截止时间；期限' },
+      { word: 'fatigue', phonetic: '/fəˈtiːɡ/', meaning: '疲劳；劳累' },
+      { word: 'insurance', phonetic: '/ɪnˈʃʊərəns/', meaning: '保险' },
+      { word: 'packaging', phonetic: '/ˈpækɪdʒɪŋ/', meaning: '包装；包装材料' },
+      { word: 'disposable', phonetic: '/dɪˈspəʊzəbl/', meaning: '一次性的；用完即弃的' },
+      { word: 'eco-friendly', phonetic: '/ˌiːkəʊ ˈfrendli/', meaning: '环保的' },
+      { word: 'thoughtful', phonetic: '/ˈθɔːtfl/', meaning: '深思熟虑的；体贴的' }
+    ]
+  },
+  {
+    id: 'read-cloze-3',
+    type: 'cloze',
+    title: 'The Value of Keeping a Diary',
+    source: '真题改编',
+    passage: 'In an age of short messages and quick updates, keeping a diary may seem old-fashioned. Yet teachers and psychologists say that writing down our thoughts by hand has benefits that no app can fully __1__. The most obvious value is that a diary gives us a private space to __2__ our feelings. When we put worries into words, they often become clearer and less frightening. Studies show that people who write about stressful events tend to feel calmer and sleep better, because the act of writing helps the brain __3__ the experience rather than repeat it. A diary also serves as a personal history. Five years from now, you will not remember what you had for lunch today, but your diary will. __4__ through old pages, you can see how much you have grown, which problems have disappeared, and which dreams still remain. This sense of __5__ can be surprisingly powerful during difficult times. Furthermore, writing regularly trains the mind to think more __6__. To describe an event clearly, you must choose the right words, arrange your thoughts in order, and decide what truly matters. These are exactly the skills needed for essays, reports, and job interviews. Many famous writers have __7__ that they kept diaries in their youth, using them as a workshop for their later work. How, then, should a beginner start? Experts __8__ against trying to write a long entry every day, which most people soon give up. Instead, they suggest writing for just five minutes, about one good thing that happened, or one thing you are grateful for. The habit matters more than the length. Some people worry that a diary is a __9__ of time. But consider this: five minutes a day is about thirty hours a year, less than the time many of us spend on social media in a single month. If those hours can make us calmer, more self-aware, and more articulate, they are surely time well __10__.',
+    wordBank: ['replace', 'express', 'process', 'browsing', 'progress', 'clearly', 'admitted', 'recommend', 'waste', 'spent', 'clear', 'contrast', 'confess', 'reject', 'comfort'],
+    answers: ['replace', 'express', 'process', 'browsing', 'progress', 'clearly', 'admitted', 'recommend', 'waste', 'spent'],
+    explanations: {
+      '1': '考查动词。句意：手写日记的好处是任何应用都无法完全取代的。replace（取代、替代）符合"app 无法替代手写"的语义，故选 replace。干扰项 reject（拒绝）语义不通，clear（清除）也不对。',
+      '2': '考查动词。句意：日记给我们一个私密空间来表达感受。express our feelings（表达感受）为固定搭配，故选 express。confess（坦白）语气过重，comfort（安慰）是及物动词接人而非 feelings。',
+      '3': '考查动词。句意：写作行为帮助大脑处理这段经历而不是反复回想。process the experience（处理这段经历）符合语境，故选 process。注意与上文 stressful events 的呼应。',
+      '4': '考查动词 -ing。句意：翻看旧页，你能看到自己成长了多少。browsing through old pages（翻阅旧页）语义通顺，故选 browsing。admitted（承认）为过去式，语法上不能作句首状语。',
+      '5': '考查名词。句意：这种进步感在困难时期会出奇地有力。a sense of progress（进步感）符合上文"看到成长"的语义，故选 progress。contrast（对比）与"成长"主题不匹配。',
+      '6': '考查副词。句意：定期写作能训练思维更加清晰。think more clearly（更清晰地思考）为固定搭配，副词 clearly 修饰动词 think，故选 clearly。注意不要误选 clear（形容词）。',
+      '7': '考查动词。句意：许多著名作家承认他们年轻时写过日记。admitted（承认）与"using them as a workshop"的语境吻合，故选 admitted。confess 语义上"忏悔"意味过强，且词形不匹配上下文时态。',
+      '8': '考查动词。句意：专家不建议每天写一篇长日记。recommend against（不建议）为固定搭配，故选 recommend。注意 recommend 后接 against doing，与"建议做"的 recommend doing 用法不同。',
+      '9': '考查名词。句意：有些人担心写日记是浪费时间。a waste of time（浪费时间）为固定搭配，故选 waste。contrast、comfort 均不通。',
+      '10': '考查动词过去分词。句意：这些时间无疑是值得花的。time well spent（花得值的时间）为固定表达，故选 spent。注意干扰项 clear、contrast 与"时间"的搭配均不通。',
+    },
+    vocab: [
+      { word: 'old-fashioned', phonetic: '/ˌəʊld ˈfæʃnd/', meaning: '过时的；老式的' },
+      { word: 'psychologist', phonetic: '/saɪˈkɒlədʒɪst/', meaning: '心理学家' },
+      { word: 'stressful', phonetic: '/ˈstresfl/', meaning: '压力大的' },
+      { word: 'process', phonetic: '/ˈprəʊses/', meaning: '处理；加工' },
+      { word: 'grateful', phonetic: '/ˈɡreɪtfl/', meaning: '感激的' },
+      { word: 'self-aware', phonetic: '/ˌself əˈweə(r)/', meaning: '有自我意识的' },
+      { word: 'articulate', phonetic: '/ɑːˈtɪkjələt/', meaning: '善于表达的' },
+      { word: 'workshop', phonetic: '/ˈwɜːkʃɒp/', meaning: '工坊；工作场所' },
+      { word: 'entry', phonetic: '/ˈentri/', meaning: '条目；记录' },
+      { word: 'progress', phonetic: '/ˈprəʊɡres/', meaning: '进步；进展' }
+    ]
+  },
+  {
+    id: 'read-match-3',
+    type: 'match',
+    title: 'The Surprising Power of Walking',
+    source: '真题改编',
+    paragraphs: [
+      'When was the last time you went for a walk with no purpose other than walking itself? For many of us, walking has been reduced to a way of getting from one place to another, or to a number tracked on a smart watch. Yet doctors and researchers are increasingly convinced that this simplest of activities may be one of the most powerful tools we have for improving both body and mind. Unlike expensive gym memberships or complicated training plans, walking asks for almost nothing: a pair of comfortable shoes and a little time.',
+      'The physical benefits of walking are well documented. A daily walk of just thirty minutes can lower blood pressure, strengthen the heart, and improve blood sugar control. Studies following large groups of people over many years have found that those who walk regularly live longer and suffer fewer heart attacks and strokes. The body does not need extreme exercise to stay healthy; it simply needs to move, and walking is the most natural form of movement there is.',
+      'What surprises many people is that walking is also one of the best exercises for the brain. Research at several universities has shown that regular walking increases the size of the hippocampus, the brain region responsible for memory and learning. In one study, older adults who walked for forty minutes three times a week improved their performance on memory tests after just one year. Walking even appears to slow the changes in the brain that come with aging.',
+      'Walking has a well-known effect on mood as well. A walk in a park or along a river can noticeably reduce feelings of stress, anxiety, and sadness. Scientists believe part of the reason is the release of endorphins, the body\'s natural mood lifters, but the effect goes deeper. The rhythm of walking, the changing scenery, and the absence of screens give the mind a chance to settle, much like a light form of meditation. Many people report that their best ideas arrive not at their desks but during a walk.',
+      'Perhaps the most valuable form of walking is the one we rarely plan: walking with others. A conversation held side by side feels different from one held face to face. The shared pace and the lack of direct eye contact make people more open and relaxed, which is why walking meetings and "walk and talk" therapy sessions have become popular. Couples, friends, and even parents with teenage children often find that difficult topics become easier to discuss while walking together.',
+      'There is also a special pleasure in walking through nature. Walking in a forest, by the sea, or in the mountains does more than exercise the body; it restores attention. Psychologists have shown that natural scenes, unlike city streets, require little effort from our attention and allow it to recover. People who take regular walks in green spaces report better concentration, a brighter mood, and even a stronger sense of meaning in life. The Japanese practice of "forest bathing", which simply means spending time walking slowly in the woods, has become popular worldwide for exactly this reason.',
+      'Cities are beginning to take walking seriously. Some cities have closed streets to cars at certain hours, turning them into open-air living rooms where people walk, ride bicycles, and chat. Others have built green corridors connecting parks, so that a walk across town does not have to pass through noisy traffic. Urban planners argue that walkable cities are not only healthier but also happier: when people walk, they meet neighbors, support local shops, and develop a stronger sense of belonging.',
+      'If you are not in the habit of walking, start gently. Experts suggest beginning with ten minutes a day, at whatever pace feels comfortable, and gradually increasing. Choose a fixed time, such as after lunch or dinner, so that walking becomes part of your routine rather than something you remember only occasionally. Most importantly, leave your phone in your pocket or at home; the point is to be present, not to be reachable.',
+      'In a world that constantly asks us to go faster and do more, walking is a quiet act of resistance. It slows us down, connects us to our surroundings, and reminds us that some of the best things in life cost nothing at all. The next time you feel stuck, tired, or overwhelmed, try the simplest remedy there is: put on your shoes and take a walk.'
+    ],
+    questions: [
+      {
+        q: 'Walking in natural surroundings helps our attention recover because natural scenes demand little mental effort.',
+        answer: 'F',
+        explanation: '定位 F 段"natural scenes, unlike city streets, require little effort from our attention and allow it to recover"，自然景观几乎不消耗注意力，能使其恢复，与题干对应，故选 F。'
+      },
+      {
+        q: 'Some older adults improved their memory by walking regularly for a year.',
+        answer: 'C',
+        explanation: '定位 C 段"older adults who walked for forty minutes three times a week improved their performance on memory tests after just one year"，坚持步行一年的老年人记忆力测试成绩提高，与题干对应，故选 C。'
+      },
+      {
+        q: 'People are more open and relaxed when they talk while walking side by side.',
+        answer: 'E',
+        explanation: '定位 E 段"The shared pace and the lack of direct eye contact make people more open and relaxed"，并肩行走时目光不直接相对，让人更开放放松，与题干对应，故选 E。'
+      },
+      {
+        q: 'A daily walk of thirty minutes can reduce the risk of heart attacks and strokes.',
+        answer: 'B',
+        explanation: '定位 B 段"A daily walk of just thirty minutes can lower blood pressure... those who walk regularly live longer and suffer fewer heart attacks and strokes"，每天步行三十分钟可降低血压、减少心脏病和中风风险，与题干对应，故选 B。'
+      },
+      {
+        q: 'Some cities have turned streets into car-free areas where people can walk and chat.',
+        answer: 'G',
+        explanation: '定位 G 段"Some cities have closed streets to cars at certain hours, turning them into open-air living rooms where people walk, ride bicycles, and chat"，部分城市定时封路供行人步行聊天，与题干对应，故选 G。'
+      },
+      {
+        q: 'Walking releases natural chemicals that lift our mood and calm our mind.',
+        answer: 'D',
+        explanation: '定位 D 段"part of the reason is the release of endorphins, the body\'s natural mood lifters... give the mind a chance to settle"，步行释放内啡肽并让思绪沉淀，与题干对应，故选 D。'
+      },
+      {
+        q: 'Beginners should start with short walks and leave their phones behind.',
+        answer: 'H',
+        explanation: '定位 H 段"start gently... beginning with ten minutes a day... leave your phone in your pocket or at home"，建议从每天十分钟开始并放下手机，与题干对应，故选 H。'
+      },
+      {
+        q: 'Walking is the most natural way to keep the body moving and healthy.',
+        answer: 'B',
+        explanation: '定位 B 段末句"The body does not need extreme exercise to stay healthy; it simply needs to move, and walking is the most natural form of movement there is"，身体只需活动，步行是最自然的运动方式，与题干对应，故选 B。'
+      }
+    ],
+    vocab: [
+      { word: 'convince', phonetic: '/kənˈvɪns/', meaning: '使信服；说服' },
+      { word: 'blood pressure', phonetic: '/ˌblʌd ˈpreʃə(r)/', meaning: '血压' },
+      { word: 'stroke', phonetic: '/strəʊk/', meaning: '中风' },
+      { word: 'hippocampus', phonetic: '/ˌhɪpəˈkæmpəs/', meaning: '海马体（记忆相关脑区）' },
+      { word: 'endorphin', phonetic: '/enˈdɔːfɪn/', meaning: '内啡肽' },
+      { word: 'meditation', phonetic: '/ˌmedɪˈteɪʃn/', meaning: '冥想；沉思' },
+      { word: 'therapy', phonetic: '/ˈθerəpi/', meaning: '治疗；疗法' },
+      { word: 'restore', phonetic: '/rɪˈstɔː(r)/', meaning: '恢复；修复' },
+      { word: 'corridor', phonetic: '/ˈkɒrɪdɔː(r)/', meaning: '走廊；通道' },
+      { word: 'belonging', phonetic: '/bɪˈlɒŋɪŋ/', meaning: '归属感' },
+      { word: 'resistance', phonetic: '/rɪˈzɪstəns/', meaning: '抵抗；反抗' },
+      { word: 'overwhelmed', phonetic: '/ˌəʊvəˈwelmd/', meaning: '不知所措的；压垮的' },
+      { word: 'remedy', phonetic: '/ˈremədi/', meaning: '补救办法；疗法' }
+    ]
   }
 ];
