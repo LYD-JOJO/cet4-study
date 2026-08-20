@@ -85,9 +85,10 @@
     var p = loadProgress();
     var done = 0, total = 0, sumScore = 0, sumTotal = 0;
     Object.keys(p).forEach(function (k) {
+      if (k.indexOf('essay-') === 0) return; // 作文是资料板块，不计入练习统计
       if (p[k] && p[k].done) { done++; sumScore += p[k].score || 0; sumTotal += p[k].total || 0; }
     });
-    total = READING.length + LISTENING.length + (WRITING.essays ? WRITING.essays.length : 0) + TRANSLATION.length;
+    total = READING.length + LISTENING.length + TRANSLATION.length;
     var acc = sumTotal > 0 ? Math.round(sumScore / sumTotal * 100) : 0;
     return { done: done, total: total, acc: acc };
   }
@@ -101,25 +102,26 @@
     var s = calcStats();
     var readDone = READING.filter(function (x) { return getProgress(x.id); }).length;
     var listenDone = LISTENING.filter(function (x) { return getProgress(x.id); }).length;
-    var writeDone = (WRITING.essays || []).filter(function (x) { return getProgress('essay-' + x.id); }).length;
-    function card(icon, title, desc, done, total, view) {
+    function card(icon, title, desc, done, total, view, noProgress) {
       var pct = total ? Math.round(done / total * 100) : 0;
+      var bar = noProgress ? '' : '<div class="bar"><i style="width:' + pct + '%"></i></div>';
+      var stat = noProgress ? '<div class="d">📚 资料板块 · 不占练习统计</div>' : '<div class="d">' + done + ' / ' + total + ' 已完成</div>';
       return '<div class="mcard" data-goto="' + view + '">' +
         '<div class="icon">' + icon + '</div>' +
         '<div class="t">' + title + '</div>' +
         '<div class="d">' + desc + '</div>' +
-        '<div class="bar"><i style="width:' + pct + '%"></i></div>' +
-        '<div class="d">' + done + ' / ' + total + ' 已完成</div>' +
+        bar +
+        stat +
         '</div>';
     }
     app.innerHTML = '<div class="view">' +
       '<div class="hero">' +
         '<h1>四级<span class="accent">自习室</span></h1>' +
-        '<p>阅读 · 听力 · 作文，一站式练习。点任意英文单词即可查词，交卷立刻看解析。数据都保存在本地浏览器里喔～</p>' +
+        '<p>阅读 · 听力 · 翻译，一站式练习；作文是资料库，随时查阅。点任意英文单词即可查词，交卷立刻看解析。数据都保存在本地浏览器里喔～</p>' +
         '<div class="hero-cards">' +
           card('📖', '阅读', '仔细阅读 / 选词填空 / 长篇匹配，做完有详细解析', readDone, READING.length, 'reading') +
           card('🎧', '听力', '新闻 / 长对话 / 短文，听完看原文和解析', listenDone, LISTENING.length, 'listening') +
-          card('✍️', '作文', '范文 + 模板 + 连接词 + 话题词汇积累', writeDone, (WRITING.essays || []).length, 'writing') +
+          card('✍️', '作文', '范文 + 模板 + 连接词 + 话题词汇积累', 0, 0, 'writing', true) +
           card('🈶', '翻译', '汉译英练习，输入译文对照参考 + 重点词汇句型', TRANSLATION.filter(function (x) { return getProgress(x.id); }).length, TRANSLATION.length, 'translation') +
         '</div>' +
       '</div>' +
