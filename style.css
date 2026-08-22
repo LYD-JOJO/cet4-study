@@ -330,4 +330,85 @@ body{
   .app{padding:20px 14px 96px}
   .hero h1{font-size:30px}
   .passage,.essay-card{padding:20px 18px}
+  .vm-grid{grid-template-columns:1fr}
 }
+
+/* ---------- 词义匹配 ---------- */
+.vm-hint{color:var(--ink-soft);font-size:14px;margin:4px 0 14px}
+.vm-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.vm-col{display:flex;flex-direction:column;gap:10px}
+.vm-word{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 16px;cursor:pointer;box-shadow:var(--shadow);
+  transition:all .14s ease;display:flex;align-items:baseline;gap:10px;justify-content:space-between;
+}
+.vm-word:hover{border-color:var(--indigo);transform:translateX(2px)}
+.vm-word .vm-w{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink)}
+.vm-word .vm-p{font-size:13px;color:var(--ink-faint)}
+.vm-word.sel{border-color:var(--indigo);background:var(--indigo-soft);box-shadow:0 0 0 2px var(--indigo-soft)}
+.vm-word.paired{opacity:.5}
+.vm-word.correct{background:var(--green-soft);border-color:var(--green);opacity:1}
+.vm-word.wrong{background:var(--coral-soft);border-color:var(--coral);opacity:1}
+.vm-meaning{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 16px;cursor:pointer;font-size:15px;color:var(--ink);
+  box-shadow:var(--shadow);transition:all .14s ease;line-height:1.5;
+}
+.vm-meaning:hover{border-color:var(--amber);transform:translateX(2px)}
+.vm-meaning.paired{opacity:.5}
+.vm-meaning.correct{background:var(--green-soft);border-color:var(--green);opacity:1}
+.vm-meaning.wrong{background:var(--coral-soft);border-color:var(--coral);opacity:1}
+
+/* ---------- 生词本 ---------- */
+.wordbook-tip{color:var(--ink-faint);font-size:13px;margin-bottom:14px}
+.word-list{display:flex;flex-direction:column;gap:10px}
+.word-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 18px;box-shadow:var(--shadow);cursor:pointer;
+  display:flex;align-items:center;gap:14px;transition:transform .14s ease,box-shadow .14s ease;
+}
+.word-item:hover{transform:translateX(3px);box-shadow:var(--shadow-lg)}
+.word-item .wi-main{flex:1;min-width:0}
+.word-item .wi-word{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--indigo)}
+.word-item .wi-phon{font-size:13px;color:var(--ink-faint);margin-top:1px}
+.word-item .wi-meaning{font-size:14px;color:var(--ink-soft);margin-top:3px}
+.wi-del{
+  flex-shrink:0;width:30px;height:30px;border-radius:8px;border:none;cursor:pointer;
+  background:var(--paper-2);color:var(--ink-faint);font-size:15px;line-height:1;
+  display:flex;align-items:center;justify-content:center;transition:all .14s;
+}
+.wi-del:hover{background:var(--coral-soft);color:var(--coral)}
+
+/* ---------- 错题本 ---------- */
+.wb-list{display:flex;flex-direction:column;gap:14px}
+.wb-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;box-shadow:var(--shadow);
+}
+.wb-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.wb-tag{font-size:12px;font-weight:700;color:var(--amber);background:var(--amber-soft);padding:3px 10px;border-radius:6px}
+.wb-title{font-size:13px;color:var(--ink-faint);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wb-q{font-weight:600;font-size:15px;line-height:1.6;margin-bottom:10px}
+.wb-opts{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.wb-opt{
+  display:flex;align-items:flex-start;gap:8px;padding:8px 12px;border-radius:8px;
+  border:1px solid var(--line);font-size:14px;line-height:1.5;
+}
+.wb-opt .oletter{font-weight:700;color:var(--ink-faint);font-family:var(--serif);min-width:18px}
+.wb-opt.correct{background:var(--green-soft);border-color:var(--green)}
+.wb-opt.correct .oletter{color:var(--green)}
+.wb-opt.wrong{background:var(--coral-soft);border-color:var(--coral)}
+.wb-opt.wrong .oletter{color:var(--coral)}
+.wb-ans{font-size:14px;color:var(--ink-soft)}
+.wb-ans b{color:var(--ink)}
+.wb-expl{
+  margin-top:4px;padding:12px 14px;border-radius:10px;font-size:13.5px;line-height:1.7;
+  background:var(--indigo-soft);border-left:3px solid var(--indigo);color:var(--ink-soft);
+}
+.wb-word-link{
+  font-family:inherit;font-size:13px;font-weight:600;color:var(--indigo);
+  background:var(--indigo-soft);border:none;cursor:pointer;padding:5px 12px;
+  border-radius:8px;margin-top:10px;transition:background .14s;
+}
+.wb-word-link:hover{background:#dde2f2}
