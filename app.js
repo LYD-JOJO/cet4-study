@@ -278,10 +278,14 @@
     var body = '<div class="passage"><h3>选词填空（15 选 10）</h3>' +
       '<div class="cloze-passage">' + renderPassage() + '</div>' +
       '<div data-bank>' + renderBank() + '</div>' +
-      '<div class="quiz-meta" style="margin-top:14px;color:var(--ink-faint);font-size:13px">提示：先点空位，再点下方单词填入；点已填的空位可清除</div></div>';
+      '<div class="quiz-meta" style="margin-top:14px;color:var(--ink-faint);font-size:13px">提示：先点空位，再点下方单词填入；点已填的空位可清除，填完自动跳下一空位</div></div>';
     app.innerHTML = renderQuizShell(item, body, '交卷');
     bindCommon(item);
 
+    var bankEl = document.querySelector('[data-bank]');
+    var passageEl = document.querySelector('.cloze-passage');
+
+    // 只更新视图，不重复绑定事件（关键：避免监听器累积导致卡顿崩溃）
     function refresh() {
       document.querySelectorAll('.cloze-blank').forEach(function (b) {
         var n = b.getAttribute('data-blank');
@@ -290,27 +294,43 @@
         b.classList.toggle('filled', val !== '?');
         b.classList.toggle('current', cloze.current === n);
       });
-      var bank = document.querySelector('[data-bank]');
-      bank.innerHTML = renderBank();
-      bank.querySelectorAll('.wb-word').forEach(function (w) {
-        w.addEventListener('click', function () {
-          var word = w.getAttribute('data-w');
-          if (!cloze.current) { toast('请先点击要填的空位'); return; }
-          if (cloze.answers[cloze.current]) delete cloze.used[cloze.answers[cloze.current]];
-          cloze.answers[cloze.current] = word;
-          cloze.used[word] = true;
-          refresh();
-        });
-      });
-      document.querySelectorAll('.cloze-blank').forEach(function (b) {
-        b.addEventListener('click', function () {
-          var n = b.getAttribute('data-blank');
-          if (cloze.answers[n]) { delete cloze.used[cloze.answers[n]]; delete cloze.answers[n]; }
-          cloze.current = n;
-          refresh();
-        });
-      });
+      bankEl.innerHTML = renderBank();
     }
+
+    // 下一个未填空位编号
+    function nextBlank() {
+      for (var i = 1; i <= item.answers.length; i++) {
+        if (!cloze.answers[String(i)]) return String(i);
+      }
+      return null;
+    }
+
+    // 事件委托：点空位（只在初始绑定一次）
+    passageEl.addEventListener('click', function (e) {
+      var b = e.target.closest('.cloze-blank');
+      if (!b) return;
+      var n = b.getAttribute('data-blank');
+      if (cloze.answers[n]) { delete cloze.used[cloze.answers[n]]; delete cloze.answers[n]; }
+      cloze.current = n;
+      refresh();
+    });
+
+    // 事件委托：点候选词（只在初始绑定一次）
+    bankEl.addEventListener('click', function (e) {
+      var w = e.target.closest('.wb-word');
+      if (!w) return;
+      if (w.classList.contains('used')) return; // 已用词不能重复选
+      var word = w.getAttribute('data-w');
+      if (!cloze.current) { toast('请先点击要填的空位'); return; }
+      if (cloze.answers[cloze.current]) delete cloze.used[cloze.answers[cloze.current]];
+      cloze.answers[cloze.current] = word;
+      cloze.used[word] = true;
+      var next = nextBlank();
+      cloze.current = next; // 填完自动跳到下一个空位
+      refresh();
+      if (!next) toast('全部空位已填，可以交卷啦');
+    });
+
     refresh();
 
     document.querySelector('[data-submit]').addEventListener('click', function () {
@@ -320,8 +340,10 @@
         var user = cloze.answers[n];
         var b = document.querySelector('.cloze-blank[data-blank="' + n + '"]');
         var ok = (user === ans);
-        if (ok) score++; else b.classList.add('wrong');
-        b.classList.add('correct');
+        if (b) {
+          if (ok) { score++; b.classList.add('correct'); }
+          else b.classList.add('wrong');
+        }
       });
       var total = item.answers.length;
       document.querySelector('[data-score]').innerHTML = score + ' <small>/ ' + total + '</small>';
