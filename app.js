@@ -190,7 +190,7 @@
         });
         var ok = (user === q.answer);
         var expl = qb.querySelector('[data-expl]');
-        expl.innerHTML = (ok ? '<span class="correct-ans">✓ 回答正确</span>' : '<span class="wrong-ans">✗ 回答错误</span>，正确答案：<b>' + String.fromCharCode(65 + q.answer) + '</b>') + '<br>' + esc(q.explanation || '');
+        expl.innerHTML = (ok ? '<span class="correct-ans">✓ 回答正确</span>' : '<span class="wrong-ans">✗ 回答错误</span>，正确答案：<b>' + String.fromCharCode(65 + q.answer) + ')</b>') + '<br>' + esc(q.explanation || '');
         expl.classList.add('show');
         qb.classList.add('answered');
       }
@@ -366,7 +366,7 @@
       return '<div class="q-block" data-q="' + qi + '">' +
         '<div class="q-stem"><span class="qnum">' + (qi + 1) + '.</span>' + wordify(q.q) + '</div>' +
         '<div class="options">' + q.options.map(function (o, oi) {
-          return '<div class="opt" data-oi="' + oi + '"><span class="oletter">' + String.fromCharCode(65 + oi) + '.</span><span>' + wordify(o) + '</span></div>';
+          return '<div class="opt" data-oi="' + oi + '"><span class="oletter">' + String.fromCharCode(65 + oi) + ')</span><span>' + wordify(o) + '</span></div>';
         }).join('') + '</div>' +
         '<div class="expl" data-expl="' + qi + '"></div></div>';
     }).join('');
@@ -686,7 +686,7 @@
         '<div class="q-stem"><span class="qnum">' + (qi + 1) + '.</span>' +
         '<span class="q-hidden" data-qtext="' + qi + '">' + wordify(q.q) + '</span></div>' +
         '<div class="options">' + q.options.map(function (o, oi) {
-          return '<div class="opt" data-oi="' + oi + '"><span class="oletter">' + String.fromCharCode(65 + oi) + '.</span><span>' + wordify(o) + '</span></div>';
+          return '<div class="opt" data-oi="' + oi + '"><span class="oletter">' + String.fromCharCode(65 + oi) + ')</span><span>' + wordify(o) + '</span></div>';
         }).join('') + '</div>' +
         '<div class="expl" data-expl="' + qi + '"></div></div>';
     }).join('');
@@ -1208,7 +1208,7 @@
         var cls = '';
         if (oi === w.correctAnswerRaw) cls = ' correct';
         else if (oi === w.userAnswerRaw) cls = ' wrong';
-        return '<div class="wb-opt' + cls + '"><span class="oletter">' + String.fromCharCode(65 + oi) + '.</span><span>' + esc(o) + '</span></div>';
+        return '<div class="wb-opt' + cls + '"><span class="oletter">' + String.fromCharCode(65 + oi) + ')</span><span>' + esc(o) + '</span></div>';
       }).join('') + '</div>';
     } else {
       optsHtml = '<div class="wb-opts"><span class="wb-ans">你的答案：<b>' + esc(w.userAnswerRaw == null ? '未答' : w.userAnswerRaw) + '</b> · 正确答案：<b>' + esc(w.correctAnswerRaw) + '</b></span></div>';
