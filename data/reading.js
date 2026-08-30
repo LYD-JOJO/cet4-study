@@ -430,5 +430,232 @@ const READING_DATA = [
       { word: 'utopian', phonetic: '/juːˈtəʊpiən/', meaning: '乌托邦式的；空想的' },
       { word: 'foresee', phonetic: '/fɔːˈsiː/', meaning: '预见；预知' }
     ]
+  },
+  {
+    id: 'read-careful-5',
+    type: 'careful',
+    title: 'The $11 Billion Textbook Industry',
+    source: '真题 · 2019年12月第二套',
+    passage: 'Textbooks represent an $11 billion industry, up from $8 billion in 2014. Textbook publisher Pearson is the largest publisher — of any kind — in the world.\nIt costs about $1 million to create a new textbook. A freshman textbook will have dozens of contributors, from subject-matter experts through graphic and layout artists to expert reviewers and classroom testers. Textbook publishers connect professors, instructors and students in ways that alternatives, such as open e-textbooks and open educational resources, simply do not. This connection happens not only by means of collaborative development, review and testing, but also at conferences where faculty regularly decide on their textbooks and curricula for the coming year.\nIt is true that textbook publishers have recently reported losses, largely due to students renting or buying used print textbooks. But this can be chalked up to the excessively high cost of their books — which has increased over 1,000 percent since 1977. A restructuring of the textbook industry may well be in order. But this does not mean the end of the textbook itself.\nWhile they may not be as dynamic as an iPad, textbooks are not passive or lifeless. For example, over the centuries, they have simulated dialogues in a number of ways. From 1800 to the present day, textbooks have done this by posing questions for students to answer inductively. That means students are asked to use their individual experience to come up with answers to general questions. Today\'s psychology texts, for example, ask: "How much of your personality do you think you inherited?" while ones in physics say: "How can you predict where the ball you tossed will land?"\nExperts observe that "textbooks come in layers, something like an onion." For an active learner, engaging with a textbook can be an interactive experience. Readers proceed at their own pace. They "customize" their books by engaging with different layers and linkages. Highlighting, Post-It notes, dog-ears and other techniques allow for further customization that students value in print books over digital forms of books.',
+    questions: [
+      {
+        q: 'What does the passage say about open educational resources?',
+        options: ['They contribute to teaching as much as to learning.', 'They don\'t profit as much as traditional textbooks do.', 'They can\'t connect professors and students as textbooks do.', 'They compete fiercely for customers with textbook producers.'],
+        answer: 2,
+        explanation: '细节题。定位第二段“Textbook publishers connect professors, instructors and students in ways that alternatives, such as open e-textbooks and open educational resources, simply do not”，即开放教育资源无法像传统教材那样把教授、教师和学生联系起来，故选 C 项。A、B、D 均未提及。'
+      },
+      {
+        q: 'What is the main cause of the publishers\' losses?',
+        options: ['Failure to meet student need.', 'Industry restructuring.', 'Emergence of e-books.', 'Falling sales.'],
+        answer: 3,
+        explanation: '细节题。定位第三段“textbook publishers have recently reported losses, largely due to students renting or buying used print textbooks”，即出版社亏损主要因为学生租书或买二手书，导致销量下降，故选 D 项“Falling sales”。A 说未满足学生需求、B 说行业重组（是结果而非原因）、C 说电子书出现，均不准确。'
+      },
+      {
+        q: 'What does the textbook industry need to do?',
+        options: ['Reform its structures.', 'Cut its retail prices.', 'Find replacements for printed textbooks.', 'Change its business strategy periodically.'],
+        answer: 0,
+        explanation: '细节题。定位第三段“A restructuring of the textbook industry may well be in order”，即教材行业或许需要进行结构调整，故选 A 项“Reform its structures”。B 说降价、C 说找替代品、D 说周期性改变策略，均与原文不符。'
+      },
+      {
+        q: 'What are students expected to do in the learning process?',
+        options: ['Think carefully before answering each question.', 'Ask questions based on their own understanding.', 'Answer questions using their personal experience.', 'Give answers showing their respective personality.'],
+        answer: 2,
+        explanation: '细节题。定位第四段“students are asked to use their individual experience to come up with answers to general questions”，即要求学生运用个人经验回答一般性问题，故选 C 项“Answer questions using their personal experience”。A、B、D 均不准确。'
+      },
+      {
+        q: 'What do experts say about students using textbooks?',
+        options: ['They can digitalize the prints easily.', 'They can learn in an interactive way.', 'They can purchase customized versions.', 'They can adapt the material themselves.'],
+        answer: 1,
+        explanation: '细节题。定位末段“For an active learner, engaging with a textbook can be an interactive experience”，即主动学习者在与教材互动时可以收获交互式体验，故选 B 项“They can learn in an interactive way”。A 说轻松数字化、C 说购买定制版、D 说自己改编材料，均不准确。'
+      }
+    ],
+    vocab: [
+      { word: 'textbook', phonetic: '/ˈtekstbʊk/', meaning: '教科书；教材' },
+      { word: 'contributor', phonetic: '/kənˈtrɪbjətə(r)/', meaning: '撰稿人；贡献者' },
+      { word: 'graphic', phonetic: '/ˈɡræfɪk/', meaning: '图表的；绘图的' },
+      { word: 'layout', phonetic: '/ˈleɪaʊt/', meaning: '版面；布局' },
+      { word: 'collaborative', phonetic: '/kəˈlæbərətɪv/', meaning: '合作的；协作的' },
+      { word: 'faculty', phonetic: '/ˈfæklti/', meaning: '教职人员' },
+      { word: 'curriculum', phonetic: '/kəˈrɪkjələm/', meaning: '课程' },
+      { word: 'chalk up', phonetic: '/ˌtʃɔːk ˈʌp/', meaning: '归因于；把……记在账上' },
+      { word: 'excessively', phonetic: '/ɪkˈsesɪvli/', meaning: '过度地；过分地' },
+      { word: 'restructure', phonetic: '/ˌriːˈstrʌktʃə(r)/', meaning: '重组；调整结构' },
+      { word: 'simulate', phonetic: '/ˈsɪmjuleɪt/', meaning: '模拟；模仿' },
+      { word: 'inductively', phonetic: '/ɪnˈdʌktɪvli/', meaning: '归纳地' },
+      { word: 'customize', phonetic: '/ˈkʌstəmaɪz/', meaning: '定制；按需调整' }
+    ]
+  },
+  {
+    id: 'read-careful-6',
+    type: 'careful',
+    title: 'The Half-Plant Half-Animal Sea Slug',
+    source: '真题 · 2019年12月第二套',
+    passage: 'When we think of animals and plants, we have a pretty good way of dividing them into two distinct groups: one converts sunlight into energy and the other has to eat food to make its energy. Well, those dividing lines come crashing down with the discovery of a sea slug that\'s truly half animal and half plant. It\'s pretty incredible how it has managed to hijack the genes of the algae on which it feeds.\nThe slugs can manufacture chlorophyll, the green pigment in plants that captures energy from sunlight, and hold these genes within their body. The term kleptoplasty is used to describe the practice of using hijacked genes to create nutrients from sunlight. And so far, this green sea slug is the only known animal that can be truly considered solar-powered, although some animals do exhibit some plant-like behaviors. Many scientists have studied the green sea slugs to confirm that they are actually able to create energy from sunlight.\nIn fact, the slugs use the genetic material so well that they pass it on to their future generations. Their babies retain the ability to produce their own chlorophyll, though they can\'t generate energy from sunlight until they\'ve eaten enough algae to steal the necessary genes, which they can\'t yet produce on their own.\n"There\'s no way on earth that genes from an alga should work inside an animal cell," says Sidney Pierce from the University of South Florida. "And yet here, they do. They allow the animal to rely on sunshine for its nutrition. So if something happens to their food source, they have a way of not starving to death until they find more algae to eat."\nThe sea slugs are so good at gathering energy from the sun that they can live up to nine months without having to eat any food. They get all their nutritional needs met by the genes that they\'ve hijacked from the algae.',
+    questions: [
+      {
+        q: 'What is the distinctive feature of a sea slug?',
+        options: ['It looks like both a plant and an animal.', 'It converts some sea animals into plants.', 'It lives half on animals and half on plants.', 'It gets energy from both food and sunlight.'],
+        answer: 3,
+        explanation: '细节题。定位第一段“a sea slug that\'s truly half animal and half plant... managed to hijack the genes of the algae on which it feeds”，即海蛞蝓既能靠吃食物也能靠阳光获取能量（既有动物性又具备植物性），故选 D 项“It gets energy from both food and sunlight”。A 说它看起来像植物又像动物，C 说一半靠动物一半靠植物，均不准确；B 说把海生动物变成植物，无中生有。'
+      },
+      {
+        q: 'What enables the sea slug to live like a plant?',
+        options: ['The genes it captures from the sea plant algae.', 'The mechanism by which it conserves energy.', 'The nutrients it hijacks from other species.', 'The green pigment it inherits from its ancestors.'],
+        answer: 0,
+        explanation: '细节题。定位第二段“The slugs can manufacture chlorophyll... and hold these genes within their body”，即海蛞蝓从藻类那里窃取了基因、得以制造叶绿素像植物一样生活，故选 A 项“The genes it captures from the sea plant algae”。B 说节能机制、C 说从其他物种窃取的营养（是基因而非营养）、D 说从祖先继承的绿色色素，均不准确。'
+      },
+      {
+        q: 'What does the author say about baby sea slugs?',
+        options: ['They can live without sunlight for a long time.', 'They can absorb sunlight right after their birth.', 'They can survive without algae for quite some time.', 'They can produce chlorophyll on their own.'],
+        answer: 3,
+        explanation: '细节题。定位第三段“Their babies retain the ability to produce their own chlorophyll”，即幼崽保留了自己制造叶绿素的能力，故选 D 项“They can produce chlorophyll on their own”。A 说能长时间不晒太阳、B 说出生后立即吸收阳光（原文说吃了足够藻类后才能利用阳光）、C 说能长时间不吃藻类，均不准确。'
+      },
+      {
+        q: 'What does Sidney Pierce say about genes from an alga?',
+        options: ['They are stolen from animals like the sea slug.', 'They can\'t function unless exposed to sunlight.', 'They don\'t usually function inside animal cells.', 'They can readily be converted to sea slug genes.'],
+        answer: 2,
+        explanation: '细节题。定位第四段“There\'s no way on earth that genes from an alga should work inside an animal cell”，即藻类的基因按理说不应该在动物细胞里起作用，故选 C 项“They don\'t usually function inside animal cells”。A 说被海蛞蝓偷走（是海蛞蝓窃取藻类基因，方向反了）、B 说需晒太阳才起作用、D 说能轻易转化为海蛞蝓基因，均不准确。'
+      },
+      {
+        q: 'What do we learn about sea slugs from the passage?',
+        options: ['They behave the way most plant species do.', 'They can survive for months without eating.', 'They will turn into plants when they mature.', 'They will starve to death without sunlight.'],
+        answer: 1,
+        explanation: '细节题。定位末段“they can live up to nine months without having to eat any food”，即海蛞蝓可以长达九个月不吃东西，故选 B 项“They can survive for months without eating”。A 说行为与多数植物一样、C 说成熟后会变成植物、D 说没阳光会饿死，均不准确。'
+      }
+    ],
+    vocab: [
+      { word: 'sea slug', phonetic: '/ˈsiː slʌɡ/', meaning: '海蛞蝓' },
+      { word: 'distinct', phonetic: '/dɪˈstɪŋkt/', meaning: '不同的；明显的' },
+      { word: 'convert', phonetic: '/kənˈvɜːt/', meaning: '转化；转变' },
+      { word: 'hijack', phonetic: '/ˈhaɪdʒæk/', meaning: '窃取；劫持' },
+      { word: 'algae', phonetic: '/ˈældʒiː/', meaning: '藻类' },
+      { word: 'chlorophyll', phonetic: '/ˈklɒrəfɪl/', meaning: '叶绿素' },
+      { word: 'pigment', phonetic: '/ˈpɪɡmənt/', meaning: '色素' },
+      { word: 'kleptoplasty', phonetic: '/ˈkleptəʊplæsti/', meaning: '盗食质体（偷取基因制造营养）' },
+      { word: 'solar-powered', phonetic: '/ˌsəʊlə ˈpaʊəd/', meaning: '太阳能的；靠太阳能运行的' },
+      { word: 'retain', phonetic: '/rɪˈteɪn/', meaning: '保留；保持' },
+      { word: 'nutrition', phonetic: '/njuˈtrɪʃn/', meaning: '营养' },
+      { word: 'starve', phonetic: '/stɑːv/', meaning: '挨饿；饿死' }
+    ]
+  },
+  {
+    id: 'read-cloze-3',
+    type: 'cloze',
+    title: 'Flying With a Sick Passenger',
+    source: '真题 · 2019年12月第二套',
+    passage: 'Finally, some good news about airplane travel. If you are on a plane with a sick passenger, you are unlikely to get sick. That is the __1__ of a new study that looked at how respiratory viruses __2__ on airplanes. Researchers found that only people who were seated in the same row as a passenger with the flu, for example — or one row in front of or behind that individual — had a high risk of catching the illness. All other passengers had only a very __3__ chance of getting sick, according to the findings. Media reports have not necessarily presented __4__ information about the risk of getting infected on an airplane in the past. Therefore, these new findings should help airplane passengers to feel less __5__ to catching respiratory infections while traveling by air.\nPrior to the new study, little was known about the risks of getting __6__ infected by common respiratory viruses, such as the flu or common cold, on an airplane, the researchers said. So, to __7__ the risks of infection, the study team flew on 10 different __8__ in the U.S. during the flu season. The researchers found that passengers sitting within two seats on __9__ side of a person infected with the flu, as well as those sitting one row in front of or behind this individual, had about an 80 percent chance of getting sick. But other passengers were __10__ safe from infection. They had a less than 3 percent chance of catching the flu.',
+    wordBank: ['accurate', 'conclusion', 'directly', 'either', 'evaluate', 'explorations', 'flights', 'largely', 'nearby', 'respond', 'slim', 'spread', 'summit', 'vividly', 'vulnerable'],
+    answers: ['conclusion', 'spread', 'slim', 'accurate', 'vulnerable', 'directly', 'evaluate', 'flights', 'either', 'largely'],
+    explanations: {
+      '1': '考查名词。句意：这是研究得出的“结论”。That is the conclusion of a new study（这是一项新研究的结论），故选 conclusion。干扰项 summit（峰会）、explorations（探索）语义不通。',
+      '2': '考查动词。句意：该研究考察呼吸道病毒如何在飞机上“传播”。viruses spread on airplanes（病毒在飞机上传播），故选 spread。respond（回应）语义不符。',
+      '3': '考查形容词。句意：其他乘客被感染的几率非常“小”。a very slim chance（很小的几率）为常见搭配，故选 slim。',
+      '4': '考查形容词。句意：过去的媒体报道未必提供了“准确”的信息。accurate information（准确的信息）搭配合理，故选 accurate。',
+      '5': '考查形容词。句意：这些新发现应帮助乘客在乘机时感觉不那么“容易受感染”。be vulnerable to（易受……伤害）为固定搭配，故选 vulnerable。',
+      '6': '考查副词。句意：此前对在飞机上“直接”被常见呼吸道病毒感染的风险知之甚少。getting directly infected（直接被感染）语义通顺，故选 directly。vividly（生动地）语义不符。',
+      '7': '考查动词。句意：为了“评估”感染风险。evaluate the risks of infection（评估感染风险）搭配合理，故选 evaluate。',
+      '8': '考查名词。句意：研究团队在流感季节乘坐了美国 10 个不同的“航班”。flew on 10 different flights（乘坐 10 个不同的航班）语义通顺，故选 flights。',
+      '9': '考查限定词。句意：坐在感染者两侧两个座位以内的乘客。on either side（在任一侧）为固定搭配，故选 either。',
+      '10': '考查副词。句意：但其他乘客“大体上”免受感染。largely safe from infection（大体上安全）语义通顺，故选 largely。'
+    },
+    vocab: [
+      { word: 'respiratory', phonetic: '/rəˈspɪrətri/', meaning: '呼吸的' },
+      { word: 'virus', phonetic: '/ˈvaɪrəs/', meaning: '病毒' },
+      { word: 'conclusion', phonetic: '/kənˈkluːʒn/', meaning: '结论' },
+      { word: 'slim', phonetic: '/slɪm/', meaning: '微小的；苗条的' },
+      { word: 'accurate', phonetic: '/ˈækjərət/', meaning: '准确的' },
+      { word: 'vulnerable', phonetic: '/ˈvʌlnərəbl/', meaning: '易受伤害的；脆弱的' },
+      { word: 'respiratory infection', phonetic: '/rəˈspɪrətri ɪnˈfekʃn/', meaning: '呼吸道感染' },
+      { word: 'evaluate', phonetic: '/ɪˈvæljueɪt/', meaning: '评估；评价' },
+      { word: 'flu season', phonetic: '/ˈfluː siːzn/', meaning: '流感季节' },
+      { word: 'largely', phonetic: '/ˈlɑːdʒli/', meaning: '大体上；主要地' }
+    ]
+  },
+  {
+    id: 'read-match-3',
+    type: 'match',
+    title: 'Is Breakfast Really the Most Important Meal of the Day?',
+    source: '真题 · 2019年12月第二套',
+    paragraphs: [
+      'Along with old classics like "carrots give you night vision" and "Santa doesn\'t bring toys to misbehaving children", one of the most well-worn phrases of tired parents everywhere is that breakfast is the most important meal of the day. Many of us grow up believing that skipping breakfast is a serious mistake, even if only two thirds of adults in the UK eat breakfast regularly, according to the British Dietetic Association, and around three-quarters of Americans.',
+      '"The body uses a lot of energy stores for growth and repair through the night," explains diet specialist Sarah Elder. "Eating a balanced breakfast helps to up our energy, as well as make up for protein and calcium used throughout the night." But there\'s widespread disagreement over whether breakfast should keep its top spot in the hierarchy of meals. There have been concerns around the sugar content of cereal and the food industry\'s involvement in pro-breakfast research — and even one claim from an academic that breakfast is "dangerous".',
+      'What\'s the reality? Is breakfast a necessary start to the day or a marketing tactic by cereal companies? The most researched aspect of breakfast (and breakfast-skipping) has been its links to obesity. Scientists have different theories as to why there\'s a relationship between the two. In one US study that analysed the health data of 50,000 people over seven years, researchers found that those who made breakfast the largest meal of the day were more likely to have a lower body mass index (BMI) than those who ate a large lunch or dinner. The researchers argued that breakfast helps reduce daily calorie intake and improve the quality of our diet — since breakfast foods are often higher in fibre and nutrients.',
+      'But as with any study of this kind, it was unclear if that was the cause — or if breakfast-skippers were just more likely to be overweight to begin with. To find out, researchers designed a study in which 52 obese women took part in a 12-week weight loss programme. All had the same number of calories over the day, but half had breakfast, while the other half did not. What they found was that it wasn\'t breakfast itself that caused the participants to lose weight: it was changing their normal routine.',
+      'If breakfast alone isn\'t a guarantee of weight loss, why is there a link between obesity and breakfast-skipping? Alexandra Johnstone, professor of appetite research at the University of Aberdeen, argues that it may simply be because breakfast-skippers have been found to be less knowledgeable about nutrition and health. "There are a lot of studies on the relationship between breakfast eating and possible health outcomes, but this may be because those who eat breakfast choose to habitually have health-enhancing behaviours such as regular exercise and not smoking," she says.',
+      'A 2016 review of 10 studies looking into the relationship between breakfast and weight management concluded there is "limited evidence" supporting or refuting the argument that breakfast influences weight or food intake, and more evidence is required before breakfast recommendations can be used to help prevent obesity.',
+      'Researches from the University of Surrey and University of Aberdeen are halfway through research looking into the mechanisms behind how the time we eat influences body weight. Early findings suggest that a bigger breakfast is beneficial to weight control. Breakfast has been found to affect more than just weight. Skipping breakfast has been associated with a 27% increased risk of heart disease, a 21% higher risk of type 2 diabetes in men, and a 20% higher risk of type 2 diabetes in women. One reason may be breakfast\'s nutritional value — partly because cereal is fortified with vitamins. In one study on the breakfast habits of 1,600 young people in the UK, researchers found that the fibre and micronutrient intake was better in those who had breakfast regularly. There have been similar findings in Australia, Brazil, Canada and the US.',
+      'Breakfast is also associated with improved brain function, including concentration and language use. A review of 54 studies found that eating breakfast can improve memory, though the effects on other brain functions were inconclusive. However, one of the review\'s researchers, Mary Beth Spitznagel, says there is "reasonable" evidence breakfast does improve concentration — there just needs to be more research. "Looking at studies that tested concentration, the number of studies showing a benefit was exactly the same as the number that found no benefit," she says. "And no studies found that eating breakfast was bad for concentration."',
+      'What\'s most important, some argue, is what we eat for breakfast. High-protein breakfasts have been found particularly effective in reducing the longing for food and consumption later in the day, according to research by the Australian Commonwealth Scientific and Industrial Research Organisation. While cereal remains a firm favourite among breakfast consumers in the UK and US, a recent investigation into the sugar content of "adult" breakfast cereals found that some cereals contain more than three-quarters of the recommended daily amount of free sugars in each portion, and sugar was the second or third highest ingredient in cereals.',
+      'But some research suggests if we\'re going to eat sugary foods, it\'s best to do it early. One study recruited 200 obese adults to take part in a 16-week-long diet, where half added dessert to their breakfast, and half didn\'t. Those who added dessert lost an average of 40 pounds more — however, the study was unable to show the long-term effects. A review of 54 studies found that there is no consensus yet on what type of breakfast is healthier, and concluded that the type of breakfast doesn\'t matter as much as simply eating something.',
+      'While there\'s no conclusive evidence on exactly what we should be eating and when, the consensus is that we should listen to our own bodies and eat when we\'re hungry. "Breakfast is most important for people who are hungry when they wake up," Johnstone says. "Each body starts the day differently — and those individual differences need to be researched more closely," Spitznagel says. "A balanced breakfast is really helpful, but getting regular meals throughout the day is more important to leave blood sugar stable through the day, which helps control weight and hunger levels," says Elder. "Breakfast isn\'t the only meal we should be getting right."'
+    ],
+    questions: [
+      {
+        q: 'According to one professor, obesity is related to a lack of basic awareness of nutrition and health.',
+        answer: 'E',
+        explanation: '定位 E 段“it may simply be because breakfast-skippers have been found to be less knowledgeable about nutrition and health”，即约翰斯通教授认为肥胖与不吃早餐者缺乏营养健康知识有关，与题干对应，故选 E。'
+      },
+      {
+        q: 'Some scientists claim that people should consume the right kind of food at breakfast.',
+        answer: 'I',
+        explanation: '定位 I 段“What\'s most important, some argue, is what we eat for breakfast”，即有些人认为早餐吃什么最重要，与题干对应，故选 I。'
+      },
+      {
+        q: 'Opinions differ as to whether breakfast is the most important meal of the day.',
+        answer: 'B',
+        explanation: '定位 B 段“there\'s widespread disagreement over whether breakfast should keep its top spot in the hierarchy of meals”，即人们对早餐是否应保持“最重要一餐”的地位存在广泛分歧，与题干对应，故选 B。'
+      },
+      {
+        q: 'It has been found that not eating breakfast is related to the incidence of certain diseases in some countries.',
+        answer: 'G',
+        explanation: '定位 G 段“Skipping breakfast has been associated with a 27% increased risk of heart disease... There have been similar findings in Australia, Brazil, Canada and the US”，即不吃早餐与心脏病、糖尿病等疾病风险增加相关，且多国有类似发现，与题干对应，故选 G。'
+      },
+      {
+        q: 'Researchers found it was a change in eating habits rather than breakfast itself that induced weight loss.',
+        answer: 'D',
+        explanation: '定位 D 段“it wasn\'t breakfast itself that caused the participants to lose weight: it was changing their normal routine”，即导致减重的是改变日常习惯而非早餐本身，与题干对应，故选 D。'
+      },
+      {
+        q: 'To keep oneself healthy, eating breakfast is more important than choosing what to eat.',
+        answer: 'J',
+        explanation: '定位 J 段“the type of breakfast doesn\'t matter as much as simply eating something”，即吃什么早餐不如吃早餐本身重要，与题干对应，故选 J。'
+      },
+      {
+        q: 'It is widely considered wrong not to eat breakfast.',
+        answer: 'A',
+        explanation: '定位 A 段“Many of us grow up believing that skipping breakfast is a serious mistake”，即很多人从小认为不吃早餐是严重错误，与题干对应，故选 A。'
+      },
+      {
+        q: 'More research is needed to prove that breakfast is related to weight loss or food intake.',
+        answer: 'F',
+        explanation: '定位 F 段“there is \'limited evidence\' supporting or refuting the argument that breakfast influences weight or food intake, and more evidence is required”，即现有证据有限、还需更多研究，与题干对应，故选 F。'
+      },
+      {
+        q: 'People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.',
+        answer: 'C',
+        explanation: '定位 C 段“those who made breakfast the largest meal of the day were more likely to have a lower body mass index... breakfast helps reduce daily calorie intake and improve the quality of our diet”，即把早餐作为主餐的人热量摄入更低、饮食质量更高，与题干对应，故选 C。'
+      },
+      {
+        q: 'Many studies reveal that eating breakfast helps people memorise and concentrate.',
+        answer: 'H',
+        explanation: '定位 H 段“A review of 54 studies found that eating breakfast can improve memory... breakfast does improve concentration”，即多项研究表明吃早餐有助记忆和集中注意力，与题干对应，故选 H。'
+      }
+    ],
+    vocab: [
+      { word: 'well-worn', phonetic: '/ˌwel ˈwɔːn/', meaning: '陈腐的；用旧了的' },
+      { word: 'skip', phonetic: '/skɪp/', meaning: '跳过；不吃' },
+      { word: 'hierarchy', phonetic: '/ˈhaɪərɑːki/', meaning: '等级；层次' },
+      { word: 'obesity', phonetic: '/əʊˈbiːsəti/', meaning: '肥胖' },
+      { word: 'body mass index', phonetic: '/ˌbɒdi mæs ˈɪndeks/', meaning: '身体质量指数（BMI）' },
+      { word: 'calorie', phonetic: '/ˈkæləri/', meaning: '卡路里' },
+      { word: 'fibre', phonetic: '/ˈfaɪbə(r)/', meaning: '纤维' },
+      { word: 'obese', phonetic: '/əʊˈbiːs/', meaning: '肥胖的' },
+      { word: 'refute', phonetic: '/rɪˈfjuːt/', meaning: '反驳；驳斥' },
+      { word: 'diabetes', phonetic: '/ˌdaɪəˈbiːtiːz/', meaning: '糖尿病' },
+      { word: 'fortify', phonetic: '/ˈfɔːtɪfaɪ/', meaning: '强化；增强' },
+      { word: 'micronutrient', phonetic: '/ˌmaɪkrəʊˈnjuːtriənt/', meaning: '微量营养素' },
+      { word: 'inconclusive', phonetic: '/ˌɪnkənˈkluːsɪv/', meaning: '非决定性的；无定论的' },
+      { word: 'consensus', phonetic: '/kənˈsensəs/', meaning: '共识；一致意见' }
+    ]
   }
 ];
