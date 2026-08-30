@@ -183,6 +183,9 @@ body{
 }
 .q-block .q-stem{font-weight:600;font-size:15.5px;margin-bottom:12px}
 .q-block .q-stem .qnum{color:var(--indigo);font-weight:700;margin-right:6px}
+.q-block .q-stem .q-hidden{display:none}
+.q-block .q-stem .q-hidden.show{display:inline}
+.listen-hint{font-size:13px;color:var(--indigo);background:rgba(99,102,241,.08);border:1px dashed rgba(99,102,241,.35);border-radius:10px;padding:8px 12px;margin-bottom:14px;line-height:1.6}
 .options{display:flex;flex-direction:column;gap:8px}
 .opt{
   display:flex;align-items:flex-start;gap:10px;padding:10px 14px;
