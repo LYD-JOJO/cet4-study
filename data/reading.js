@@ -2,657 +2,433 @@ const READING_DATA = [
   {
     id: 'read-careful-1',
     type: 'careful',
-    title: 'The Hidden Costs of Being Always Online',
-    source: '真题改编',
-    passage: 'We live in an age of constant connection. Smartphones, once a luxury, have become an extension of the human hand. A recent survey of university students found that the average young adult checks a phone more than 80 times a day and spends nearly five hours staring at its screen. While few of us would willingly give up these devices, researchers are increasingly asking a simple but uncomfortable question: what are we giving up in return? The most obvious cost is attention. Psychologists describe a phenomenon known as continuous partial attention, in which the brain is never fully focused on any single task. Every buzz, beep, or notification pulls our minds away, and studies show that it can take up to 23 minutes to fully recover concentration after an interruption. Over the course of a day, these small breaks add up to hours of lost productivity. Sleep is another casualty. The blue light emitted by screens suppresses the production of melatonin, the hormone that tells the body when to sleep. Many young people report checking their phones in bed, a habit linked to difficulty falling asleep and poorer sleep quality. Even the presence of a phone on the bedside table, turned off, has been shown to reduce the restorative value of rest. Perhaps most worrying, however, is the effect on relationships. Researchers who observe families in restaurants have coined the term phubbing, meaning snubbing someone in favor of your phone. In experiments, the mere sight of a phone placed on a table between two strangers reduced the depth and trust of their conversation. None of this means we should abandon technology. But experts argue that we should use it deliberately rather than by default. Simple steps, such as turning off non-essential notifications, keeping phones out of the bedroom, and setting aside phone-free hours, can restore a sense of control. The goal is not to reject the digital world but to decide, consciously, when to enter it.',
+    title: 'The Housing Crisis and "Living Big"',
+    source: '真题 · 2023年6月第一套',
+    passage: 'The United States is facing a housing crisis: Affordable housing is inadequate, while luxury homes abound, and homelessness remains a persistent problem. Despite this, popular culture and the housing industry market happiness as living with both more space and more amenities. Big houses are advertised as a reward for hard work and diligence, turning housing from a basic necessity into a luxury.\nThis is reflected in our homes. The average single-family home built in the United States before 1970 was less than 1,500 square feet in size. By 2016, the average size of a new, single-family home was 2,422 square feet. What\'s more, homes built in the 2000s were more likely than earlier models to have more of all types of spaces: bedrooms, bathrooms, living rooms, dining rooms, recreation rooms and garages.\nThere are consequences of living big. As middle-class houses have grown larger, two things have happened. First, large houses take time to maintain, so cleaners and other low-wage service workers are required to keep these houses in order. Second, once-public spaces, where people from diverse backgrounds used to come together, have increasingly become privatized, leading to a reduction in the number of public facilities available to all, and a reduced quality of life for many. Take swimming pools. While in 1950, only 2,500 U.S. families owned pools, by 1999 this number was 4 million. At the same time, public municipal pools were often closed, leaving low-income people nowhere to swim.\nThe trend for bigger housing thus poses ethical questions. Should Americans accept a system in which the middle and upper classes enjoy a luxurious lifestyle, using the low-wage labor of others? Are we willing to accept a system in which an increase in amenities purchased by the affluent means a reduction in amenities for the poor?\nI believe neither is acceptable. We must change the way we think: living well does not need to mean having more private spaces; instead, it could mean having more public spaces. A better goal than building bigger houses for some is to create more publicly accessible spaces and amenities for all.',
     questions: [
       {
-        q: 'What does the passage mainly discuss?',
-        options: [
-          'A. The advantages of smartphones in daily life.',
-          'B. The negative effects of constant phone use.',
-          'C. The history of mobile phone development.',
-          'D. The best apps for improving productivity.'
-        ],
-        answer: 1,
-        explanation: '主旨题。全文围绕“总是在线”带来的三大代价展开——注意力分散（第二段）、睡眠受损（第三段）、人际关系受影响（第四段），最后给出“有意识地使用”的建议，核心是过度使用手机的负面影响，故选 B。A 项只讲好处，与文章主旨相反；C 项讲手机发展历史，文中未涉及；D 项讲最佳应用推荐，文中没有相关内容。'
+        q: 'What are big houses promoted to be in the United States?',
+        options: ['A luxury for the homeless.', 'A reward for industriousness.', 'An abundant source of comforts.', 'An absolute necessity for happiness.'],        answer: 1,
+        explanation: '细节题。定位第一段“Big houses are advertised as a reward for hard work and diligence”，即大房子被宣传为勤劳努力的回报，故选 B 项“A reward for industriousness”。A 说无家可归者的奢侈品、C 说舒适之源、D 说幸福的绝对必需品，均与原文不符。'
       },
       {
-        q: 'According to the passage, how long can it take to fully recover concentration after an interruption?',
-        options: [
-          'A. About five minutes.',
-          'B. About fifteen minutes.',
-          'C. Up to 23 minutes.',
-          'D. More than an hour.'
-        ],
-        answer: 2,
-        explanation: '细节题。定位第二段“it can take up to 23 minutes to fully recover concentration after an interruption”，即被打断后最多需要 23 分钟才能完全恢复专注，故选 C。A、B 的数字文中未出现；D 项“超过一小时”与原文不符。'
+        q: 'What is one of the consequences of living big?',
+        options: ['Many Americans\' quality of life has become lower.', 'People from diverse backgrounds no longer socialize.', 'People no longer have access to public swimming pools.', 'Many Americans\' private life has been negatively affected.'],        answer: 0,
+        explanation: '细节题。定位第三段“once-public spaces... have increasingly become privatized, leading to a reduction in the number of public facilities available to all, and a reduced quality of life for many”，公共空间私有化导致公共设施减少、许多人生活质量下降，故选 A。B 说不同背景的人不再交往，过于绝对；C 说人们无法使用公共泳池，原文只举了低收人群体的例子；D 说私人生活受负面影响，与原文方向相反。'
       },
       {
-        q: 'What does the word “phubbing” refer to?',
-        targetWord: 'phubbing',
-        options: [
-          'A. Ignoring the person you are with to look at your phone.',
-          'B. Taking photos of food before eating.',
-          'C. Playing games together on separate phones.',
-          'D. Sending messages during a meal.'
-        ],
-        answer: 0,
-        explanation: '词义题。定位第四段“have coined the term phubbing, meaning snubbing someone in favor of your phone”，phubbing 的意思是“为了看手机而冷落身边的人”，故选 A。B、C、D 均与原文对 phubbing 的解释无关。'
+        q: 'What questions arise from living big?',
+        options: ['Questions related to moral principles.', 'Questions having to do with labor cost.', 'Questions about what lifestyle to promote.', 'Questions concerning housing development.'],        answer: 0,
+        explanation: '细节题。定位第四段“The trend for bigger housing thus poses ethical questions”，即大房趋势引发了伦理（道德）问题，故选 A 项“Questions related to moral principles”。B、C、D 均与原文的“ethical”不符。'
       },
       {
-        q: 'Why is the blue light from screens harmful to sleep?',
-        options: [
-          'A. It makes the eyes tired and painful.',
-          'B. It suppresses the production of melatonin.',
-          'C. It raises body temperature at night.',
-          'D. It increases the frequency of dreams.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第三段“The blue light emitted by screens suppresses the production of melatonin, the hormone that tells the body when to sleep”，蓝光会抑制褪黑激素的分泌，从而影响睡眠，故选 B。A 讲眼睛疲劳、C 讲体温升高、D 讲做梦频繁，文中均未提及。'
+        q: 'What kind of social system does the author think is unacceptable?',
+        options: ['One in which the wealthy exploit the low-wage laborers building their houses.', 'One in which the rich purchase amenities at an increasingly unjustifiable price.', 'One in which the upper classes deprive the lower classes of affordable housing.', 'One in which the affluent enjoy a more comfortable life at the expense of the poor.'],        answer: 3,
+        explanation: '细节题。定位第四段作者的反问“Are we willing to accept a system in which an increase in amenities purchased by the affluent means a reduction in amenities for the poor?”，即富人享受更多便利是以穷人的便利减少为代价，作者认为这种制度不可接受，故选 D。A 说压榨建造房屋的低薪劳工，B 说以越来越不合理的高价购买便利，C 说剥夺下层阶级的廉价住房，都不如 D 准确对应原文。'
       },
       {
-        q: 'What is the author’s suggested attitude toward technology?',
-        options: [
-          'A. We should stop using smartphones altogether.',
-          'B. We should use technology deliberately and with control.',
-          'C. Technology is harmful and should be regulated by law.',
-          'D. Only young people need to change their habits.'
-        ],
-        answer: 1,
-        explanation: '态度题。定位末段“use it deliberately rather than by default”和“The goal is not to reject the digital world but to decide, consciously, when to enter it”，作者主张有意识地、有控制地使用技术，而非彻底抛弃，故选 B。A 项“完全停止使用”与原文相反；C 项“立法管制”属于过度引申；D 项“只有年轻人需要改变”以偏概全。'
+        q: 'What does the author advocate for people to live well?',
+        options: ['Finding ways to turn private spaces into public ones.', 'Building more houses affordable to those less affluent.', 'More public spaces created for everyone to enjoy.', 'All amenities made accessible to the rich and the poor alike.'],        answer: 2,
+        explanation: '观点态度题。定位末段“living well does not need to mean having more private spaces; instead, it could mean having more public spaces... to create more publicly accessible spaces and amenities for all”，作者主张为所有人创造更多公共空间和设施，故选 C。A 说把私人空间转为公共空间，B 说建更多廉价房，D 说所有便利对贫富一视同仁，均非作者明确主张。'
       }
     ],
     vocab: [
-      { word: 'extension', phonetic: '/ɪkˈstenʃn/', meaning: '延伸；扩展；延长；分机' },
-      { word: 'phenomenon', phonetic: '/fəˈnɒmɪnən/', meaning: '现象；非凡的人或事物' },
-      { word: 'notification', phonetic: '/ˌnəʊtɪfɪˈkeɪʃn/', meaning: '通知；告知' },
-      { word: 'interruption', phonetic: '/ˌɪntəˈrʌpʃn/', meaning: '中断；打断' },
-      { word: 'suppress', phonetic: '/səˈpres/', meaning: '抑制；压制；镇压' },
-      { word: 'melatonin', phonetic: '/ˌmeləˈtəʊnɪn/', meaning: '褪黑激素' },
-      { word: 'hormone', phonetic: '/ˈhɔːməʊn/', meaning: '激素；荷尔蒙' },
-      { word: 'restorative', phonetic: '/rɪˈstɒrətɪv/', meaning: '恢复精力的；滋补的' },
-      { word: 'snub', phonetic: '/snʌb/', meaning: '冷落；怠慢' },
-      { word: 'deliberately', phonetic: '/dɪˈlɪbərətli/', meaning: '故意地；审慎地' },
-      { word: 'essential', phonetic: '/ɪˈsenʃl/', meaning: '必不可少的；本质的' },
-      { word: 'conscious', phonetic: '/ˈkɒnʃəs/', meaning: '意识到的；有意识的；神志清醒的' }
+      { word: 'inadequate', phonetic: '/ɪnˈædɪkwət/', meaning: '不足的；不充分的' },
+      { word: 'abound', phonetic: '/əˈbaʊnd/', meaning: '大量存在；充裕' },
+      { word: 'persistent', phonetic: '/pəˈsɪstənt/', meaning: '持续的；顽固的' },
+      { word: 'amenity', phonetic: '/əˈmiːnəti/', meaning: '便利设施；生活设施' },
+      { word: 'diligence', phonetic: '/ˈdɪlɪdʒəns/', meaning: '勤奋；勤勉' },
+      { word: 'square feet', phonetic: '/ˌskweə ˈfiːt/', meaning: '平方英尺' },
+      { word: 'diverse', phonetic: '/daɪˈvɜːs/', meaning: '多样的；不同的' },
+      { word: 'privatize', phonetic: '/ˈpraɪvətaɪz/', meaning: '使私有化' },
+      { word: 'municipal', phonetic: '/mjuːˈnɪsɪpl/', meaning: '市政的；市立的' },
+      { word: 'ethical', phonetic: '/ˈeθɪkl/', meaning: '伦理的；道德的' },
+      { word: 'affluent', phonetic: '/ˈæfluənt/', meaning: '富裕的' },
+      { word: 'accessible', phonetic: '/əkˈsesəbl/', meaning: '可到达的；可使用的' }
     ]
   },
   {
     id: 'read-careful-2',
     type: 'careful',
-    title: 'The Growing Appeal of a Gap Year',
-    source: '真题改编',
-    passage: 'For generations, the path from high school to university was straightforward: finish exams, apply, and start college the following autumn. Today, however, a growing number of students are choosing a different route. Instead of rushing straight into lectures and textbooks, they are taking a gap year, a structured period usually between school and higher education spent traveling, working, or volunteering. The reasons for this trend are easy to understand. Many students leave school exhausted after years of intense exam preparation. A year away offers a chance to recover, to earn some money, and to think carefully about what they actually want to study. College is expensive, and beginning it without a clear sense of purpose can be costly in more than financial terms. Employers and universities have noticed the benefits. Admissions officers often report that gap-year students arrive with greater maturity, clearer goals, and stronger time-management skills. A student who has spent months working in a hospital or teaching English overseas is likely to participate more actively in seminars than one who has never left home. For employers, a well-planned gap year can demonstrate independence and initiative, qualities that grades alone cannot reveal. The year is not without risks, of course. Critics point out that a gap year requires money, which not every family can afford, and that some students find it hard to return to the discipline of study. There is also the danger that an unstructured year drifts into a wasted one. The key, experts agree, is planning: the most valuable gap years are those with clear goals, a budget, and some form of work or learning at their center. For students who can manage it, a gap year is increasingly seen not as an escape from education but as a preparation for it. It offers what a classroom cannot: time, perspective, and a first taste of adult responsibility.',
+    title: 'The Double-Edged Sword of Ambition',
+    source: '真题 · 2023年6月第一套',
+    passage: 'Most of us in the entrepreneurial community are blessed — or cursed — with higher-than-average ambition. Ambitious people strongly desire accomplishments and are willing to take more risks and spend more effort to get them.\nOverall, this is a positive quality, especially for people trying to build their own businesses. Apparently, if you\'re more naturally driven to set goals, you are more likely to succeed.\nActually, this isn\'t always the case. In fact, in some cases, extreme ambition may end up doing more harm than good.\nOne major side effect of excessive ambition is the tendency to focus too determinedly on one particular vision or end goal. This is problematic because it hinders your ability to adapt to new circumstances, which is vital if you want to be a successful entrepreneur. If a new competitor emerges to threaten your business, you may need to change direction, even if that means straying from your original vision. If you have too much ambition, you\'ll find this hard, if not impossible.\nFew people are successful when they try to build their first brand. Unfortunately, for the most ambitious entrepreneurs, a failure is seen as disastrous, and impossible to recover from. It\'s a clear departure from the intended plan toward the intended goal. For people with limited ambition, however, failure is viewed as something closer to reality. Remember, failure is inevitable, and every failure you survive is a learning experience.\nAmbitious people tend to be more materialistically successful than their non-ambitious counterparts. However, they\'re only slightly happier than their less-ambitious counterparts, and tend to live significantly shorter lives. This implies that even though ambitious people are more likely to achieve conventional "success," such success means nothing for their health and happiness — and if you don\'t have health and happiness, what else could possibly matter?\nClearly, some amount of ambition is good for your motivation. Without any ambition, you wouldn\'t start your own business, set or achieve goals and get far in life. But an excess of ambition can also be dangerous, putting you at risk of burnout, stubbornness and even a shorter life.',
     questions: [
       {
-        q: 'What is a “gap year” according to the passage?',
-        targetWord: 'gap year',
-        options: [
-          'A. A year of rest after graduating from college.',
-          'B. A structured period between school and university.',
-          'C. A year spent working full-time in a company.',
-          'D. A break taken in the middle of university.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第一段“a gap year, a structured period usually between school and higher education spent traveling, working, or volunteering”，gap year 指中学与大学之间的、用于旅行、工作或志愿服务的结构化阶段，故选 B。A 错在“大学毕业之后”；C 只提到全职工作，不够全面；D 错在“大学中途”。'
+        q: 'What does the author think of most entrepreneurs?',
+        options: ['They are more willing to risk their own lives.', 'They are more ambitious than ordinary people.', 'They achieve greater nonconventional success.', 'They have more positive qualities than most of us.'],        answer: 1,
+        explanation: '细节题。定位第一段“Most of us in the entrepreneurial community are blessed — or cursed — with higher-than-average ambition”，即创业者群体大多拥有高于常人的雄心，故选 B 项“They are more ambitious than ordinary people”。A 说更愿冒生命危险、C 说取得更大的非传统成功、D 说比我们大多数人拥有更多优点，均不准确。'
       },
       {
-        q: 'Why do many students choose to take a gap year?',
-        options: [
-          'A. Because college entrance is becoming more difficult.',
-          'B. Because they are exhausted and unsure what to study.',
-          'C. Because their parents force them to work first.',
-          'D. Because universities require work experience.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第二段“Many students leave school exhausted after years of intense exam preparation... to think carefully about what they actually want to study”，学生选择 gap year 是因为长期备考后身心俱疲，且想弄清楚自己真正想学什么，故选 B。A、C、D 文中均未提及。'
+        q: 'What does the author imply by saying "this isn\'t always the case" (Line 1, Para. 3)?',
+        options: ['Ambitious people may not have a greater chance of success.', 'Ambitious people may not have more positive qualities.', 'Entrepreneurs\' ambition does as much good as harm.', 'Entrepreneurs are more naturally driven to success.'],        answer: 0,
+        explanation: '指代题。第二段末说“if you\'re more naturally driven to set goals, you are more likely to succeed”（越有内驱力越可能成功），第三段开头“this isn\'t always the case”即否定这一假设——有雄心的人未必更容易成功，故选 A。B、C、D 均与原文不符。'
       },
       {
-        q: 'According to admissions officers, gap-year students tend to be ______.',
-        options: [
-          'A. richer and better dressed',
-          'B. more mature and better organized',
-          'C. less willing to participate in class',
-          'D. more likely to change their major'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第三段“Admissions officers often report that gap-year students arrive with greater maturity, clearer goals, and stronger time-management skills”，即更成熟、目标更清晰、时间管理更强，故选 B（more mature and better organized）。A、C、D 均与原文相反或无中生有。'
+        q: 'What does the author say is of extreme importance for one to become a successful entrepreneur?',
+        options: ['Holding on to one\'s original vision.', 'Being able to adapt to new situations.', 'Focusing determinedly on one particular goal.', 'Avoiding radical change in one\'s career direction.'],        answer: 1,
+        explanation: '细节题。定位第四段“it hinders your ability to adapt to new circumstances, which is vital if you want to be a successful entrepreneur”，即适应新环境的能力对成功创业者至关重要，故选 B 项“Being able to adapt to new situations”。A 说坚持最初愿景、C 说专注于单一目标，恰好是作者批评的过度雄心的表现；D 说避免事业方向的根本改变，与原文相反。'
       },
       {
-        q: 'What do critics say about the gap year?',
-        options: [
-          'A. It is too short to be useful.',
-          'B. It can be costly and hard to recover from.',
-          'C. It makes students forget their studies forever.',
-          'D. It is only suitable for students in cities.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第四段“a gap year requires money, which not every family can afford, and that some students find it hard to return to the discipline of study”，批评者认为 gap year 需要花钱（并非家家负担得起），且部分学生难以重拾学习纪律，故选 B。A、C、D 说法过于绝对或文中未提。'
+        q: 'How do the most ambitious entrepreneurs regard failure in their endeavor?',
+        options: ['It will awaken them to reality.', 'It is a lesson they have to learn.', 'It means the end of their career.', 'It will result in a slow recovery.'],        answer: 2,
+        explanation: '细节题。定位第五段“for the most ambitious entrepreneurs, a failure is seen as disastrous, and impossible to recover from”，即最有雄心的创业者把失败视为灾难性、无法恢复的事件，故选 C 项“It means the end of their career”。A 说唤醒现实、B 说必须学习的教训，是“limited ambition”人群的看法；D 未提及。'
       },
       {
-        q: 'What is the author’s overall view of the gap year?',
-        options: [
-          'A. It is a waste of time for most students.',
-          'B. It is only useful for wealthy families.',
-          'C. It is a form of preparation rather than escape.',
-          'D. It should be made compulsory by universities.'
-        ],
-        answer: 2,
-        explanation: '态度题。定位末段“a gap year is increasingly seen not as an escape from education but as a preparation for it”，作者认为 gap year 是对教育的准备而非逃避，故选 C。A、B 与作者观点相反；D 项“强制推行”文中未提。'
+        q: 'What does the author advise us to do concerning ambition?',
+        options: ['Distinguish between conventional success and our life goal.', 'Follow the example of the most ambitious entrepreneurs.', 'Avoid taking unnecessary risks when starting a business.', 'Prioritize health and happiness over material success.'],        answer: 3,
+        explanation: '观点态度题。定位第六段“such success means nothing for their health and happiness — and if you don\'t have health and happiness, what else could possibly matter?”，作者强调健康与幸福比物质成功更重要，故选 D 项“Prioritize health and happiness over material success”。A、B、C 均不是作者的核心建议。'
       }
     ],
     vocab: [
-      { word: 'straightforward', phonetic: '/ˌstreɪtˈfɔːwəd/', meaning: '简单的；直接的；坦率的' },
-      { word: 'route', phonetic: '/ruːt/', meaning: '路线；途径；方法' },
-      { word: 'structured', phonetic: '/ˈstrʌktʃəd/', meaning: '有组织的；结构化的' },
-      { word: 'exhausted', phonetic: '/ɪɡˈzɔːstɪd/', meaning: '疲惫不堪的；耗尽的' },
-      { word: 'intense', phonetic: '/ɪnˈtens/', meaning: '强烈的；紧张的；剧烈的' },
-      { word: 'maturity', phonetic: '/məˈtʃʊərəti/', meaning: '成熟；到期' },
-      { word: 'seminar', phonetic: '/ˈsemɪnɑː(r)/', meaning: '研讨会；研讨班' },
-      { word: 'initiative', phonetic: '/ɪˈnɪʃətɪv/', meaning: '主动性；倡议；主动权' },
-      { word: 'afford', phonetic: '/əˈfɔːd/', meaning: '负担得起；提供' },
-      { word: 'discipline', phonetic: '/ˈdɪsəplɪn/', meaning: '纪律；训练；学科' },
-      { word: 'drift', phonetic: '/drɪft/', meaning: '漂流；逐渐偏离' },
-      { word: 'perspective', phonetic: '/pəˈspektɪv/', meaning: '视角；观点；透视法' }
-    ]
-  },
-  {
-    id: 'read-careful-3',
-    type: 'careful',
-    title: 'The Forgotten Cost of Food Waste',
-    source: '真题改编',
-    passage: 'Every year, roughly one-third of all food produced for human consumption is thrown away, about 1.3 billion tons worldwide. In wealthy countries, most of this waste happens at the end of the chain, in shops and in our kitchens, while in poorer regions food is lost earlier, in fields and during transport. Whatever the stage, the result is the same: valuable resources are spent on food that no one ever eats. The environmental price is enormous. Producing food requires land, water, energy, and fertilizer. When food is wasted, all of these inputs are wasted too. Researchers estimate that if food waste were a country, it would be the third-largest emitter of greenhouse gases in the world, behind only China and the United States. Rotting food in landfills also releases methane, a gas far more powerful than carbon dioxide in trapping heat. The economic cost is just as striking. The average household in a developed nation throws away food worth several hundred dollars a year. For supermarkets, the pressure to keep shelves perfectly full leads to mountains of unsold bread and vegetables, much of which is still safe to eat. Some governments have responded with laws that require shops to donate surplus food to charities rather than destroy it. Yet experts argue that the biggest changes must happen at home. Many of us buy more than we need, misread best before dates, and confuse them with use by dates, which actually signal safety. Simple habits, such as planning meals, writing shopping lists, storing food properly, and learning to cook with leftovers, can cut household waste dramatically. Food waste is unusual among environmental problems because ordinary people can do something about it every single day. Unlike building a wind farm or redesigning a city, reducing what we throw away requires no new technology, only a change in habit.',
-    questions: [
-      {
-        q: 'What is the main idea of the passage?',
-        options: [
-          'A. How to produce food more efficiently on farms.',
-          'B. The causes and costs of food waste and how to reduce it.',
-          'C. The history of farming in wealthy countries.',
-          'D. Why supermarkets always keep their shelves full.'
-        ],
-        answer: 1,
-        explanation: '主旨题。全文先讲食物浪费的规模（第一段），再讲环境代价（第二段）与经济代价（第三段），最后落到个人如何减少浪费（第四、五段），故选 B。A 讲农场如何高效生产、C 讲农业历史、D 只讲超市，均以偏概全。'
-      },
-      {
-        q: 'According to the passage, most food waste in rich countries happens ______.',
-        options: [
-          'A. in the fields during harvest',
-          'B. during transport and storage',
-          'C. in shops and at home',
-          'D. in restaurants only'
-        ],
-        answer: 2,
-        explanation: '细节题。定位第一段“In wealthy countries, most of this waste happens at the end of the chain, in shops and in our kitchens”，富裕国家的浪费主要发生在商店和家庭厨房，故选 C。A、B 是贫困地区食物损失的主要环节；D 项“只在餐馆”过于绝对。'
-      },
-      {
-        q: 'Why does the author compare food waste to a country?',
-        options: [
-          'A. Because it could feed an entire nation.',
-          'B. Because its greenhouse-gas emissions would rank third worldwide.',
-          'C. Because every country produces the same amount of waste.',
-          'D. Because only rich countries waste food.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第二段“if food waste were a country, it would be the third-largest emitter of greenhouse gases in the world”，作者把食物浪费比作国家，是因为其温室气体排放量将居世界第三，故选 B。A、C、D 均与原文不符。'
-      },
-      {
-        q: 'What is the difference between “best before” and “use by” dates?',
-        targetWord: 'best before use by',
-        options: [
-          'A. “Best before” means the food is unsafe after that date.',
-          'B. “Use by” dates indicate safety, not just quality.',
-          'C. They mean exactly the same thing.',
-          'D. “Use by” dates are always wrong.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第四段“misread best before dates, and confuse them with use by dates, which actually signal safety”，best before 表示最佳食用（关乎质量），而 use by 才是安全的标志，人们常把两者混淆，故选 B。A 与原文相反；C 说两者相同，错误；D 说 use by 总是错的，无依据。'
-      },
-      {
-        q: 'Why does the author think food waste is unusual among environmental problems?',
-        options: [
-          'A. It is the easiest problem to measure.',
-          'B. Ordinary people can reduce it daily with simple habits.',
-          'C. It only affects developed countries.',
-          'D. It requires expensive new technology to solve.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位末段“ordinary people can do something about it every single day... requires no new technology, only a change in habit”，作者认为食物浪费的特殊之处在于普通人每天都能通过简单习惯加以改善、无需新技术，故选 B。A、C、D 均与原文不符。'
-      }
-    ],
-    vocab: [
-      { word: 'consumption', phonetic: '/kənˈsʌmpʃn/', meaning: '消耗；消费；食用' },
-      { word: 'enormous', phonetic: '/ɪˈnɔːməs/', meaning: '巨大的；庞大的' },
-      { word: 'fertilizer', phonetic: '/ˈfɜːtəlaɪzə(r)/', meaning: '肥料；化肥' },
-      { word: 'greenhouse', phonetic: '/ˈɡriːnhaʊs/', meaning: '温室；花房' },
-      { word: 'methane', phonetic: '/ˈmiːθeɪn/', meaning: '甲烷；沼气' },
-      { word: 'landfill', phonetic: '/ˈlændfɪl/', meaning: '垃圾填埋场；填埋' },
-      { word: 'surplus', phonetic: '/ˈsɜːpləs/', meaning: '过剩的；多余的；剩余' },
-      { word: 'charity', phonetic: '/ˈtʃærəti/', meaning: '慈善机构；慈善；施舍' },
-      { word: 'misread', phonetic: '/ˌmɪsˈriːd/', meaning: '误解；误读' },
-      { word: 'leftover', phonetic: '/ˈleftəʊvə(r)/', meaning: '剩菜；残余物' },
-      { word: 'dramatically', phonetic: '/drəˈmætɪkli/', meaning: '显著地；戏剧性地' },
-      { word: 'emission', phonetic: '/ɪˈmɪʃn/', meaning: '排放；排放物' }
+      { word: 'entrepreneurial', phonetic: '/ˌɒntrəprəˈnɜːriəl/', meaning: '创业的；企业家的' },
+      { word: 'ambition', phonetic: '/æmˈbɪʃn/', meaning: '雄心；抱负' },
+      { word: 'accomplishment', phonetic: '/əˈkʌmplɪʃmənt/', meaning: '成就；完成' },
+      { word: 'excessive', phonetic: '/ɪkˈsesɪv/', meaning: '过度的；过分的' },
+      { word: 'determinedly', phonetic: '/dɪˈtɜːmɪndli/', meaning: '坚决地；坚定地' },
+      { word: 'hinder', phonetic: '/ˈhɪndə(r)/', meaning: '阻碍；妨碍' },
+      { word: 'adapt', phonetic: '/əˈdæpt/', meaning: '适应' },
+      { word: 'stray', phonetic: '/streɪ/', meaning: '偏离；走神' },
+      { word: 'disastrous', phonetic: '/dɪˈzɑːstrəs/', meaning: '灾难性的' },
+      { word: 'inevitable', phonetic: '/ɪnˈevɪtəbl/', meaning: '不可避免的' },
+      { word: 'materialistically', phonetic: '/məˌtɪəriəˈlɪstɪkli/', meaning: '物质上' },
+      { word: 'burnout', phonetic: '/ˈbɜːnaʊt/', meaning: '倦怠；精疲力竭' }
     ]
   },
   {
     id: 'read-cloze-1',
     type: 'cloze',
-    title: 'Making Exercise a Habit',
-    source: '真题改编',
-    passage: 'Regular physical activity is one of the most effective ways to improve both physical and mental health, yet a large number of people still find it hard to make exercise a habit. Experts say the problem is often not that people fail to put in the __1__, but that they lack a realistic plan. Many beginners set goals that are far too __2__ and give up within a few weeks. The key is to start small. Even a short daily walk can produce noticeable __3__ in mood and energy levels. Research shows that exercise __4__ chemicals in the brain, such as endorphins, that help reduce stress and anxiety. Over time, this can lead to better sleep and greater __5__ in daily life. Another common mistake is __6__ exercise as a punishment for eating too much. When physical activity feels like a chore, people tend to avoid it. Instead, experts __7__ that you choose activities you genuinely enjoy, whether it is dancing, swimming, or cycling, because you are far more likely to __8__ with them. Social support also matters. Joining a class or finding a workout partner can make exercise feel less like an __9__ and more like a social event. Friends and family can also __10__ you to keep going on days when your motivation is low. In the end, the most important step is simply to begin, and to remember that consistency beats perfection every time.',
-    wordBank: ['ambition', 'ambitious', 'benefits', 'challenge', 'confidence', 'effort', 'encourage', 'maintain', 'obligation', 'recommend', 'releases', 'steady', 'stick', 'treating', 'weakness'],
-    answers: ['effort', 'ambitious', 'benefits', 'releases', 'confidence', 'treating', 'recommend', 'stick', 'obligation', 'encourage'],
+    title: 'The Hidden Water Cost of Your Shirt',
+    source: '真题 · 2023年6月第一套',
+    passage: 'You probably haven\'t taken the time to think of all the work that went into creating the shirt on your back. I mean, how hard it could be to create fabric and __1__ it into a shirt shape. Don\'t machines do all that? Well, creating fabric from cotton, which is the most __2__ clothing material, is actually a process that involves a lot of water, 2,700 liters per shirt to be __3__. Take a look at the video below from National Geographic for some more mind-blowing __4__ about cotton clothing production.\nClean water is __5__ becoming one of the most sought-after resources in the world. Given how large the __6__ and cotton industries are, they take up a lot of our fresh water demands across the world, according to The Huffington Post. The video from National Geographic was created to spread __7__ of how environmentally harmful cotton is. But the situation can be made better. Through better water management and farming practices, water usage in cotton production can be cut down by __8__ 40 percent.\nCalled "Better Cotton", this environmentally conscious product will save millions of liters of water by __9__ the demands of cotton production. Cotton doesn\'t have to go, since it is after all one of the most useful cash crops across the globe. However, as water supplies __10__, farmers and consumers need to be more conscious of the effect that these products have on the environment as a whole.',
+    wordBank: ['abstracts', 'abundant', 'awareness', 'conscience', 'exact', 'increasingly', 'intense', 'mend', 'nearly', 'reckoning', 'reducing', 'sew', 'shrink', 'statistics', 'textile'],
+    answers: ['sew', 'abundant', 'exact', 'statistics', 'increasingly', 'textile', 'awareness', 'nearly', 'reducing', 'shrink'],
     explanations: {
-      '1': '考查固定搭配。句意：问题往往不是人们没有付出努力，而是缺少切实可行的计划。put in the effort（付出努力）为固定搭配，故选 effort。ambition（雄心）不与 put in the 连用，语义也不符。',
-      '2': '考查形容词。句意：许多初学者定的目标过高，几周内就放弃。too ambitious（过于雄心勃勃、目标过高）符合语义，故选 ambitious。steady（平稳的）不能与“几周内放弃”形成因果，语义不符。',
-      '3': '考查名词。句意：即使每天短距离散步也能在情绪和精力上带来明显的益处。noticeable benefits（明显的益处）语义通顺，故选 benefits。challenge 与 weakness 与“情绪和精力改善”的积极语义不符。',
-      '4': '考查动词。句意：运动会使大脑释放内啡肽等化学物质。exercise 作主语为单数，谓语用 releases（释放），故选 releases。maintain（保持）语义不符。',
-      '5': '考查名词。句意：久而久之，这会带来更好的睡眠和在日常生活中更大的自信。greater confidence（更大的自信）是积极结果，与上下文一致，故选 confidence。',
-      '6': '考查固定搭配 treat...as...。句意：另一个常见错误是把运动当作吃多了的惩罚。treating exercise as a punishment（把运动当作惩罚）符合搭配，故选 treating。',
-      '7': '考查动词。句意：专家建议你选择真正喜欢的活动。recommend that sb (should) do sth 为固定用法，故选 recommend。encourage 不能接 that 从句，语义上也不合适。',
-      '8': '考查固定搭配 stick with。句意：因为你更有可能坚持下去。stick with（坚持）为固定短语，故选 stick。maintain 不与 with 搭配。',
-      '9': '考查名词。句意：让运动感觉不像一项义务，而更像社交活动。an obligation（一项义务、负担）符合语境，且冠词 an 提示需以元音开头的词，故选 obligation。',
-      '10': '考查动词。句意：朋友和家人也能鼓励你在动力不足时坚持下去。encourage sb to do sth（鼓励某人做某事）为固定用法，故选 encourage。'
+      '1': '考查动词。句意：把布料“缝”成衬衫的形状。sew（缝）与 fabric、shirt shape 搭配最自然，故选 sew。干扰项 mend 指“修补（破损物）”，与“制成衬衫”语境不符；abstracts、reckoning 语义不通。',
+      '2': '考查形容词。句意：棉花是最“丰富的”服装材料。abundant（丰富的、大量的）修饰 clothing material 语义通顺，故选 abundant。intense（强烈的）不能修饰材料数量；exact 语义不通。',
+      '3': '考查固定表达。句意：确切地说，每件衬衫要消耗 2,700 升水。to be exact（确切地说）是固定插入语，故选 exact。',
+      '4': '考查名词。句意：再看一下《国家地理》下面这个关于棉服生产的令人震惊的“数据/统计”。mind-blowing statistics（惊人的数据）搭配合理，故选 statistics。',
+      '5': '考查副词。句意：净水正“日益”成为世界上最抢手的资源之一。increasingly（越来越、日益）修饰 becoming，故选 increasingly。',
+      '6': '考查名词。句意：纺织业和棉花产业规模庞大。the textile and cotton industries 是固定搭配（纺织业），故选 textile。',
+      '7': '考查名词。句意：制作这个视频是为了传播人们对棉花环境危害性的“认识”。spread awareness of（传播……的认识）为固定搭配，故选 awareness。注意区分 conscience（良心）。',
+      '8': '考查副词。句意：棉花生产中的用水量可“几乎”减少 40%。nearly（将近、几乎）修饰 40 percent，故选 nearly。',
+      '9': '考查动词 -ing。句意：通过“减少”棉花生产的需求，节约数百万升水。by reducing（通过减少）语义通顺，故选 reducing。注意后接 the demands，语义为“降低需求”。',
+      '10': '考查动词。句意：随着供水“减少/萎缩”。as water supplies shrink（随着供水减少）搭配合理，故选 shrink。'
     },
     vocab: [
-      { word: 'ambitious', phonetic: '/æmˈbɪʃəs/', meaning: '有雄心的；宏大的' },
-      { word: 'endorphin', phonetic: '/enˈdɔːfɪn/', meaning: '内啡肽' },
-      { word: 'chore', phonetic: '/tʃɔː(r)/', meaning: '家务活；令人厌烦的事' },
-      { word: 'consistency', phonetic: '/kənˈsɪstənsi/', meaning: '一致性；连贯性' },
-      { word: 'obligation', phonetic: '/ˌɒblɪˈɡeɪʃn/', meaning: '义务；责任' },
-      { word: 'motivation', phonetic: '/ˌməʊtɪˈveɪʃn/', meaning: '动机；积极性' },
-      { word: 'anxiety', phonetic: '/æŋˈzaɪəti/', meaning: '焦虑；担忧' },
-      { word: 'genuinely', phonetic: '/ˈdʒenjuɪnli/', meaning: '真诚地；真正地' },
-      { word: 'noticeable', phonetic: '/ˈnəʊtɪsəbl/', meaning: '明显的；显著的' },
-      { word: 'realistic', phonetic: '/ˌriːəˈlɪstɪk/', meaning: '现实的；逼真的' }
-    ]
-  },
-  {
-    id: 'read-cloze-2',
-    type: 'cloze',
-    title: 'Why Reading Still Matters',
-    source: '真题改编',
-    passage: 'In a world of short videos and endless notifications, many people find it hard to sit down and read a book. Yet reading offers rewards that no screen can easily match. Studies suggest that fiction helps us understand other people, because a story asks us to imagine the thoughts and feelings of its characters. In this way, books build our __1__, the ability to share and understand the emotions of others. Reading also gives the brain a valuable workout. Unlike watching television, which is largely passive, reading __2__ us to picture scenes, follow arguments, and remember details. Regular readers tend to have a larger __3__ and better verbal skills, an advantage that lasts into old age. For students, the benefits are even more direct. Reading widely __4__ the range of ideas and expressions they can draw on when writing. It also helps them __5__ their attention span, since a chapter demands focus that scrolling never does. Of course, not all reading is equal. Experts __6__ that we choose books that genuinely interest us rather than those we feel we should read. When reading feels like an __7__, it quickly becomes a habit people abandon. Instead, we should treat it as a pleasure, a quiet escape that happens to __8__ the mind and calm the nerves at the same time. The good news is that it is never too late to begin. Even fifteen minutes a day, if done __9__, can transform the way we think and speak. The only requirement is a little __10__ and a willingness to turn off the phone.',
-    wordBank: ['concentrate', 'empathy', 'enrich', 'expands', 'imagination', 'improve', 'knowledge', 'obligation', 'patience', 'recommend', 'reduce', 'regularly', 'requires', 'suppose', 'vocabulary'],
-    answers: ['empathy', 'requires', 'vocabulary', 'expands', 'improve', 'recommend', 'obligation', 'enrich', 'regularly', 'patience'],
-    explanations: {
-      '1': '考查名词。破折号后 the ability to share and understand the emotions of others（分享并理解他人情感的能力）正是 empathy（同理心）的定义，故选 empathy。imagination 指想象力，与“理解他人情感”不符。',
-      '2': '考查动词。句意：阅读要求我们想象场景、跟随论证、记住细节。requires us to do sth（要求我们做某事）语义通顺，故选 requires。concentrate 与 suppose 后不能接“sb to do”，语义也不符。',
-      '3': '考查名词。句意：经常阅读的人词汇量更大、语言能力更强。a larger vocabulary（更大的词汇量）与 better verbal skills 并列，故选 vocabulary。knowledge 为不可数名词，不用于 a larger knowledge。',
-      '4': '考查动词。句意：广泛阅读能扩大他们写作时可用的思想和表达的范围。expand the range of（扩大……的范围）为常见搭配，故选 expands。improve 强调“改善质量”而非“扩大范围”。',
-      '5': '考查动词。句意：阅读还能帮助他们提高注意力持续时间。improve one’s attention span（提高注意力持续时间）语义通顺，故选 improve。reduce 与文意相反。',
-      '6': '考查动词。句意：专家建议我们选择真正感兴趣的书。recommend that sb (should) do sth 为固定用法，故选 recommend。suppose（假设）语义不符。',
-      '7': '考查名词。句意：当阅读感觉像一项义务时，很快就会成为被抛弃的习惯。an obligation（一项义务、负担）符合语境，且冠词 an 提示需以元音开头的词，故选 obligation。',
-      '8': '考查动词。句意：阅读恰好能充实头脑、安定神经。enrich the mind（充实头脑）与 calm the nerves（安定神经）并列，故选 enrich。',
-      '9': '考查副词。句意：只要坚持规律地进行，每天十五分钟的阅读也能改变我们思考和表达的方式。if done regularly（如果规律地做）语义通顺，故选 regularly。',
-      '10': '考查名词。句意：唯一的要求是一点耐心和关掉手机的意愿。a little patience（一点耐心）与 willingness 并列，语义通顺，故选 patience。'
-    },
-    vocab: [
-      { word: 'empathy', phonetic: '/ˈempəθi/', meaning: '同理心；共情' },
-      { word: 'verbal', phonetic: '/ˈvɜːbl/', meaning: '言语的；口头的' },
-      { word: 'fiction', phonetic: '/ˈfɪkʃn/', meaning: '小说；虚构' },
-      { word: 'passive', phonetic: '/ˈpæsɪv/', meaning: '被动的；消极的' },
-      { word: 'enrich', phonetic: '/ɪnˈrɪtʃ/', meaning: '充实；使丰富' },
-      { word: 'abandon', phonetic: '/əˈbændən/', meaning: '放弃；抛弃' },
-      { word: 'willingness', phonetic: '/ˈwɪlɪŋnəs/', meaning: '意愿；乐意' },
-      { word: 'chapter', phonetic: '/ˈtʃæptə(r)/', meaning: '章节；时期' },
-      { word: 'scroll', phonetic: '/skrəʊl/', meaning: '滚动；卷轴' },
-      { word: 'attention span', phonetic: '/əˈtenʃn spæn/', meaning: '注意力持续时间' }
+      { word: 'fabric', phonetic: '/ˈfæbrɪk/', meaning: '布料；织物' },
+      { word: 'sew', phonetic: '/səʊ/', meaning: '缝；缝制' },
+      { word: 'abundant', phonetic: '/əˈbʌndənt/', meaning: '丰富的；充足的' },
+      { word: 'mind-blowing', phonetic: '/ˌmaɪnd ˈbləʊɪŋ/', meaning: '令人震惊的' },
+      { word: 'statistics', phonetic: '/stəˈtɪstɪks/', meaning: '统计数据' },
+      { word: 'sought-after', phonetic: '/ˈsɔːt ɑːftə(r)/', meaning: '抢手的；广受欢迎的' },
+      { word: 'textile', phonetic: '/ˈtekstaɪl/', meaning: '纺织品；纺织业' },
+      { word: 'spread awareness', phonetic: '/ˌspred əˈweənəs/', meaning: '传播认识；提高意识' },
+      { word: 'cash crop', phonetic: '/ˈkæʃ krɒp/', meaning: '经济作物' },
+      { word: 'shrink', phonetic: '/ʃrɪŋk/', meaning: '减少；收缩' }
     ]
   },
   {
     id: 'read-match-1',
     type: 'match',
-    title: 'The Quiet Power of a Good Night’s Sleep',
-    source: '真题改编',
+    title: 'The Spoken Web: Talking to Your Devices',
+    source: '真题 · 2023年6月第一套',
     paragraphs: [
-      'Sleep is something most of us take for granted. We push it aside to finish work, to watch one more episode, or to scroll through social media. Yet scientists increasingly warn that sleep is not a luxury or a sign of laziness; it is a biological necessity as important as food and water. Cutting back on sleep, even by an hour a night, has consequences that reach into almost every corner of our health and our minds. In many cultures, working late is still admired as proof of dedication, yet doctors warn that this admiration is dangerously misplaced.',
-      'One of the most important jobs of sleep is to strengthen memory. During the night, the brain replays the events of the day and transfers important information from short-term storage into long-term memory. Students who sleep well after studying remember far more than those who stay up late, which is why pulling an all-nighter before an exam is usually a poor strategy.',
-      'Sleep is also a time of physical repair. While we rest, the body releases growth hormone, repairs damaged cells, and strengthens the immune system. People who regularly sleep less than seven hours are more likely to catch colds and other infections, and they recover more slowly from illness and injury. Athletes know that a full night of rest after hard training is just as important as the training itself.',
-      'The link between sleep and body weight is another surprise for many people. When we are tired, the body produces more of a hormone called ghrelin, which increases appetite, and less of the hormone that tells us we are full. As a result, sleep-deprived people tend to crave sugary and high-calorie foods and eat more than they need. Researchers believe this response is a leftover from our distant past, when staying awake to hunt for more food could mean the difference between life and death.',
-      'Our emotions depend on sleep as well. The part of the brain that keeps fear and anger in check becomes far less effective when we are exhausted. This is why a poor night’s sleep can leave us short-tempered, anxious, and unable to see problems clearly. Over time, chronic sleep loss is closely linked to depression and anxiety disorders.',
-      'Surprisingly, sleep also fuels creativity and problem solving. During dreaming, the brain makes unusual connections between ideas that it would not normally link while we are awake. Many people report waking up with the solution to a problem that had defeated them the night before, a phenomenon scientists attribute to the reorganizing power of sleep. Writers, musicians, and inventors have long described waking with fresh ideas, and modern brain scans now help explain why.',
-      'The problem is especially serious for teenagers and young adults. Their biological clocks naturally shift later, making them want to stay up and sleep in. But early school start times force them to wake before their bodies are ready, leaving many students chronically sleep-deprived. Some school districts have responded by pushing start times later, with measurable improvements in grades and attendance. Studies suggest that many teenagers are getting fewer than seven hours a night, far below what their developing brains require.',
-      'So what can we do to sleep better? Experts recommend keeping a regular schedule, going to bed and waking at the same time every day, even on weekends. A cool, dark, and quiet bedroom helps, as does avoiding screens for at least an hour before bed, since their blue light delays the release of the sleep hormone melatonin.',
-      'The message from the research is clear: sleep is not time wasted but time invested. It is the foundation on which memory, health, mood, and creativity all rest. In a culture that celebrates busyness and late nights, learning to protect our sleep may be one of the most productive habits we can adopt.'
+      'We\'re growing more used to chatting to our computers, phones and smart speakers through voice assistants like Amazon\'s Alexa, Apple\'s Siri and Microsoft\'s Cortana. Blind and partially sighted people have been using text-to-speech converters for decades.',
+      'Out of these assistants, Siri is the most well-known. The assistant uses voice inquiries and a natural-language user interface to answer questions. The software adapts to users\' individual language usages, searches, and preferences, with continuing use.',
+      'Some think voice could soon take over from typing and clicking as the main way to interact online. But what are the challenges of moving to "the spoken web"?',
+      'What use is written online content if you can\'t read? That is the situation facing illiterate African farmers. They are often denied crucial information the web offers many others. With a literacy rate in some parts of Africa at only 22.6%, farmers are often "underpaid for their produce because they might be unaware of the prevailing prices," says Francis Dittoh, a researcher behind Mr Meteo, a speech-based weather information service.',
+      '"The most frequently heard complaint is about rainfall predictions," says Mr Dittoh, who lives in Tamale, northern Ghana. "They tell us the methods their forefathers used to predict the weather don\'t seem to work as well these days." This is down to climate change, he believes. Yet knowing when it\'s going to rain is vital for farmers wanting to sow seeds, irrigate crops or take their animals out to the fields to feed on grass.',
+      'Mr Dittoh says the idea of converting online weather reports into speech came from the farmers themselves, after a workshop in the village of Guabuligah. "They came up with this," he says. Mr Meteo takes the online weather forecast, converts it to a short recording in the appropriate language and makes it available on a basic phone. Farmers ring up to receive the information. The local language Dagbani is spoken by 1.2 million people but is not served by any online translation applications. The service was designed to be cheap and easy to run, says Mr Dittoh. He plans to begin field tests this month, working with Tamale\'s Savanna Agricultural Research Institute.',
+      'The spoken web could also help the one-in-five adults in Europe and the U.S. with poor reading skills. But building the spoken web — web-to-voice and voice-to-web — isn\'t straightforward. For software to understand "pizza is served at Italian restaurants" is easy. To cover multiple domains and to be able to have a conversation with users on every single topic is still a long way off.',
+      'So although many computer assistants can answer simple questions about the weather and play music for us, anything resembling a wide-ranging human conversation is decades away. Artificial intelligence just isn\'t smart enough yet. Even turning your voice into text — automatic speech recognition — is one of the hardest problems to solve, as there are as many ways to pronounce things as there are people on the planet.',
+      'Siri has often been praised for its ability to interpret our casual language and deliver very specific and accurate results, sometimes even providing additional information. But it is still somewhat restricted, particularly when the language moves away from stiffer commands into more human interactions. In one example, the phrase "Send a text to Jason, Clint, Sam, and Lee saying we\'re having dinner at Silver Cloud restaurant" was interpreted as sending a message to Jason only, containing the text "Clint Sam and Lee saying we\'re having dinner at Silver Cloud restaurant". It has also been noted that Siri lacks a proper editing function.',
+      'Using voice interaction feels far more intimate than surfing the net the old-fashioned way. This is intentional, as the informal tone of the assistant helps create an emotional attachment. But if something speaks, it must also listen. Our phones are always near us and they are collecting data about us all the time. This has already raised privacy concerns. The American Civil Liberties Union has stated that digital assistants create a threat to privacy from hackers. Some people have other concerns. They worry assistants will one day be used to deliver advertising directly to us.',
+      'But digital voices need more personality to make them popular. Robots are not yet witty; Siri is boring. The benefits of using voice instead of tapping fingers obviously depend on the context. Doctors completing online forms about their patients by speech, for example, can dictate 150 words a minute, three times faster than typing on a keyboard. This enables them to spend less time on administration and more time with patients.',
+      'Last year, speech recognition company Nuance helped a doctors\' surgery in Dukinfield, near Manchester, set up a speech system for the practice\'s six doctors. Now they can dictate notes on a patient\'s health condition and treatment and a smart assistant automatically enters the information into the right fields of a web form. Previously, the doctors made voice recordings that were then transcribed by secretaries — a process that was costly and likely to cause delays. The new system means letters to patients now have more detail.',
+      'Using voice also makes sense when you\'re doing other things with your hands. Think about when you\'re cooking, and you just want to know what the next step in the recipe is. Your hands are covered with oil; you\'re not going to get on the iPad, so it\'s a lot more natural to talk. And speech obviously makes sense when you\'re driving. In the U.S., 29% of drivers admit they surf behind the wheel, according to insurance firm State Farm. This is up from 13% in 2009. No wonder using mobile phones while driving causes more crashes a year than drink driving, says the U.S. National Safety Council.'
     ],
     questions: [
       {
-        q: 'Some students perform worse in exams because they choose to stay up all night instead of sleeping.',
-        answer: 'B',
-        explanation: '定位 B 段“Students who sleep well after studying remember far more than those who stay up late, which is why pulling an all-nighter before an exam is usually a poor strategy.”该段指出考前通宵复习是不明智的策略，与题干“熬夜不睡导致考试表现差”对应，故选 B。'
-      },
-      {
-        q: 'A person who sleeps too little is more likely to catch a cold or another infection.',
-        answer: 'C',
-        explanation: '定位 C 段“People who regularly sleep less than seven hours are more likely to catch colds and other infections.”该段讲睡眠与免疫系统的关系，睡眠不足者更易感冒或感染，与题干对应，故选 C。'
-      },
-      {
-        q: 'Lack of sleep makes people crave sweet and high-calorie food.',
-        answer: 'D',
-        explanation: '定位 D 段“sleep-deprived people tend to crave sugary and high-calorie foods and eat more than they need.”该段讲睡眠与体重、食欲的关系，缺觉者渴望甜食和高热量食物，故选 D。'
-      },
-      {
-        q: 'Feeling angry or anxious for no clear reason can be caused by a bad night’s sleep.',
-        answer: 'E',
-        explanation: '定位 E 段“a poor night’s sleep can leave us short-tempered, anxious, and unable to see problems clearly.”该段讲睡眠与情绪，睡不好会让人易怒、焦虑，与题干对应，故选 E。'
-      },
-      {
-        q: 'The solution to a difficult problem may come to us after a night of sleep.',
+        q: 'According to Francis Dittoh, their speech-based weather information service was meant to be inexpensive and easy to use.',
         answer: 'F',
-        explanation: '定位 F 段“Many people report waking up with the solution to a problem that had defeated them the night before.”该段讲睡眠激发创造力与解决问题，睡一觉后难题可能迎刃而解，故选 F。'
+        explanation: '定位 F 段“The service was designed to be cheap and easy to run, says Mr Dittoh”，即该服务的设计初衷是廉价且易于运行，与题干“inexpensive and easy to use”对应，故选 F。'
       },
       {
-        q: 'Young people naturally fall asleep later and struggle with early school start times.',
-        answer: 'G',
-        explanation: '定位 G 段“Their biological clocks naturally shift later, making them want to stay up and sleep in. But early school start times force them to wake before their bodies are ready.”该段讲青少年生物钟偏晚、与早起上学冲突，故选 G。'
+        q: 'Using voice instead of typing enables doctors to spend more time taking care of patients.',
+        answer: 'K',
+        explanation: '定位 K 段“This enables them to spend less time on administration and more time with patients”，即医生用语音录入能减少行政时间、把更多时间留给患者，与题干对应，故选 K。'
       },
       {
-        q: 'Blue light from screens delays the release of the hormone that helps us fall asleep.',
+        q: 'It is extremely difficult to convert voice into text because of different pronunciations.',
         answer: 'H',
-        explanation: '定位 H 段“avoiding screens for at least an hour before bed, since their blue light delays the release of the sleep hormone melatonin.”该段讲屏幕蓝光会延迟褪黑激素的释放，故选 H。'
+        explanation: '定位 H 段“turning your voice into text — automatic speech recognition — is one of the hardest problems to solve, as there are as many ways to pronounce things as there are people”，即把语音转文字极难，因为发音因人而异，与题干对应，故选 H。'
       },
       {
-        q: 'Sleep should be regarded as a biological necessity rather than a luxury.',
-        answer: 'A',
-        explanation: '定位 A 段“sleep is not a luxury or a sign of laziness; it is a biological necessity as important as food and water.”该段指出睡眠是生理必需而非奢侈，故选 A。'
+        q: 'African farmers unable to read often don\'t have access to important information conveyed online.',
+        answer: 'D',
+        explanation: '定位 D 段“What use is written online content if you can\'t read? ... They are often denied crucial information the web offers many others”，即不识字的非洲农民无法获取网上重要信息，与题干对应，故选 D。'
       },
       {
-        q: 'School districts that delay their start time have seen better grades and attendance.',
+        q: 'Some phone users worry advertisers will take advantage of voice assistants to send ads directly to them.',
+        answer: 'J',
+        explanation: '定位 J 段“They worry assistants will one day be used to deliver advertising directly to us”，即有人担心语音助手将来被用来直接向用户推送广告，与题干对应，故选 J。'
+      },
+      {
+        q: 'The spoken web is helpful when one\'s hands are occupied.',
+        answer: 'M',
+        explanation: '定位 M 段“Using voice also makes sense when you\'re doing other things with your hands”，即双手被占用时用语音很合理，与题干“hands are occupied”对应，故选 M。'
+      },
+      {
+        q: 'Some people believe online interaction would soon depend mainly on voice.',
+        answer: 'C',
+        explanation: '定位 C 段“Some think voice could soon take over from typing and clicking as the main way to interact online”，即有人认为语音很快会取代打字和点击成为主要的网络交互方式，与题干对应，故选 C。'
+      },
+      {
+        q: 'Setting up a spoken web is by no means an easy task.',
         answer: 'G',
-        explanation: '定位 G 段“Some school districts have responded by pushing start times later, with measurable improvements in grades and attendance.”该段提到推迟上课时间的学区在成绩和出勤上取得可测量的改善，故选 G。'
+        explanation: '定位 G 段“building the spoken web — web-to-voice and voice-to-web — isn\'t straightforward”，即构建语音网络绝非易事，与题干“by no means an easy task”对应，故选 G。'
       },
       {
-        q: 'The author concludes that sleep is the base on which memory, health and mood depend.',
-        answer: 'I',
-        explanation: '定位 I 段“It is the foundation on which memory, health, mood, and creativity all rest.”该段总结睡眠是记忆、健康、情绪与创造力的基础，故选 I。'
+        q: 'Weather information is extremely important to farmers.',
+        answer: 'E',
+        explanation: '定位 E 段“Yet knowing when it\'s going to rain is vital for farmers wanting to sow seeds, irrigate crops or take their animals out to the fields”，即对要播种、灌溉、放牧的农民来说，天气信息至关重要，与题干对应，故选 E。'
+      },
+      {
+        q: 'Some people are concerned about privacy because their phones are constantly collecting their personal information.',
+        answer: 'J',
+        explanation: '定位 J 段“Our phones are always near us and they are collecting data about us all the time. This has already raised privacy concerns”，即手机不断收集用户数据引发了隐私担忧，与题干对应，故选 J。'
       }
     ],
     vocab: [
-      { word: 'biological', phonetic: '/ˌbaɪəˈlɒdʒɪkl/', meaning: '生物的；生物学的' },
-      { word: 'consolidate', phonetic: '/kənˈsɒlɪdeɪt/', meaning: '巩固；合并' },
-      { word: 'immune', phonetic: '/ɪˈmjuːn/', meaning: '免疫的；不受影响的' },
-      { word: 'ghrelin', phonetic: '/ˈɡrelɪn/', meaning: '胃饥饿素；生长素' },
-      { word: 'appetite', phonetic: '/ˈæpɪtaɪt/', meaning: '食欲；胃口' },
-      { word: 'deprive', phonetic: '/dɪˈpraɪv/', meaning: '剥夺；使丧失' },
-      { word: 'chronic', phonetic: '/ˈkrɒnɪk/', meaning: '慢性的；长期的' },
-      { word: 'depression', phonetic: '/dɪˈpreʃn/', meaning: '抑郁；沮丧；萧条' },
-      { word: 'creativity', phonetic: '/ˌkriːeɪˈtɪvəti/', meaning: '创造力；创造性' },
-      { word: 'attribute', phonetic: '/əˈtrɪbjuːt/', meaning: '把……归因于；属性' },
-      { word: 'melatonin', phonetic: '/ˌmeləˈtəʊnɪn/', meaning: '褪黑激素' },
-      { word: 'measurable', phonetic: '/ˈmeʒərəbl/', meaning: '显著的；可测量的' },
-      { word: 'foundation', phonetic: '/faʊnˈdeɪʃn/', meaning: '基础；地基；基金会' }
+      { word: 'voice assistant', phonetic: '/ˌvɔɪs əˈsɪstənt/', meaning: '语音助手' },
+      { word: 'illiterate', phonetic: '/ɪˈlɪtərət/', meaning: '不识字的；文盲的' },
+      { word: 'literacy rate', phonetic: '/ˈlɪtərəsi reɪt/', meaning: '识字率' },
+      { word: 'prevailing', phonetic: '/prɪˈveɪlɪŋ/', meaning: '现行的；普遍的' },
+      { word: 'forecast', phonetic: '/ˈfɔːkɑːst/', meaning: '预报；预测' },
+      { word: 'irrigate', phonetic: '/ˈɪrɪɡeɪt/', meaning: '灌溉' },
+      { word: 'straightforward', phonetic: '/ˌstreɪtˈfɔːwəd/', meaning: '简单的；直接的' },
+      { word: 'intimate', phonetic: '/ˈɪntɪmət/', meaning: '亲密的；私密的' },
+      { word: 'privacy', phonetic: '/ˈprɪvəsi/', meaning: '隐私' },
+      { word: 'dictate', phonetic: '/dɪkˈteɪt/', meaning: '口述；听写' },
+      { word: 'transcribe', phonetic: '/trænˈskraɪb/', meaning: '转录；誊写' },
+      { word: 'recipe', phonetic: '/ˈresəpi/', meaning: '食谱；配方' }
+    ]
+  },
+  {
+    id: 'read-careful-3',
+    type: 'careful',
+    title: 'The Soda Tax in Philadelphia',
+    source: '真题 · 2019年12月第三套',
+    passage: 'The fifth largest city in the US passed a significant soda tax proposal that will levy 1.5 cents per liquid ounce on distributors.\nPhiladelphia\'s new measure was approved by a 13 to 4 city council vote. It sets a new bar for similar initiatives across the country. It is proof that taxes on sugary drinks can win substantial support outside super-liberal areas. Until now, the only city to successfully pass and implement a soda tax was Berkeley, California, in 2014.\nThe tax will apply to regular and diet sodas, as well as other drinks with added sugar, such as Gatorade and iced teas. It\'s expected to raise $410 million over the next five years, most of which will go toward funding a universal pre-kindergarten program for the city.\nWhile the city council vote was met with applause inside the council room, opponents to the measure, including soda lobbyists, made sharp criticisms and a promise to challenge the tax in court.\n"The tax passed today unfairly singles out beverages — including low- and no-calorie choices," said Lauren Kane, spokeswoman for the American Beverage Association. "But most importantly, it is against the law. So we will side with the majority of the people of Philadelphia who oppose this tax and take legal action to stop it."\nAn industry-backed anti-tax campaign has spent at least $4 million on advertisements. The ads criticized the measure, characterizing it as a "grocery tax".\nPublic health groups applauded the approved tax as a step toward fixing certain lasting health issues that plague Americans. "The move to recapture a small part of the profits from an industry that pushed a product that contributes to diabetes, obesity and heart disease in poorer communities in order to reinvest in those communities will sure be inspirational to many other places," said Jim Krieger, executive director of Healthy Food America. "Indeed, we are already hearing from some of them. It\'s not \'just Berkeley\' anymore."\nSimilar measures in California\'s Albany, Oakland, San Francisco and Colorado\'s Boulder are becoming hot-button issues. Health advocacy groups have hinted that even more might be coming.',
+    questions: [
+      {
+        q: 'What does the passage say about the newly-approved soda tax in Philadelphia?',
+        options: ['It will change the lifestyle of many consumers.', 'It may encourage other US cities to follow suit.', 'It will cut soda consumption among low-income communities.', 'It may influence the marketing strategies of the soda business.'],        answer: 1,
+        explanation: '细节题。定位第二段“It sets a new bar for similar initiatives across the country... It is proof that taxes on sugary drinks can win substantial support outside super-liberal areas”，即费城的汽水税为全国类似举措树立了新标杆、可能带动其他城市效仿，故选 B 项“It may encourage other US cities to follow suit”。A、C、D 文中均未提及。'
+      },
+      {
+        q: 'What will the opponents probably do to respond to the soda tax proposal?',
+        options: ['Bargain with the city council.', 'Refuse to pay additional tax.', 'Take legal action against it.', 'Try to win public support.'],        answer: 2,
+        explanation: '细节题。定位第四段“opponents... made sharp criticisms and a promise to challenge the tax in court”，以及第五段“we will side with... and take legal action to stop it”，即反对者将通过法律途径提起诉讼，故选 C 项“Take legal action against it”。A、B、D 均不准确。'
+      },
+      {
+        q: 'What did the industry-backed anti-tax campaign do about the soda tax proposal?',
+        options: ['It tried to arouse hostile feelings among consumers.', 'It tried to win grocers\' support against the measure.', 'It kept sending letters of protest to the media.', 'It criticized the measure through advertising.'],        answer: 3,
+        explanation: '细节题。定位第六段“An industry-backed anti-tax campaign has spent at least $4 million on advertisements. The ads criticized the measure, characterizing it as a \'grocery tax\'”，即行业支持的反税运动斥巨资投放广告批评该税，故选 D 项“It criticized the measure through advertising”。A、B、C 均未提及。'
+      },
+      {
+        q: 'What did public health groups think the soda tax would do?',
+        options: ['Alert people to the risk of sugar-induced diseases.', 'Help people to fix certain long-time health issues.', 'Add to the fund for their research on diseases.', 'Benefit low-income people across the country.'],        answer: 1,
+        explanation: '细节题。定位第七段“Public health groups applauded the approved tax as a step toward fixing certain lasting health issues that plague Americans”，即公共卫生组织认为该税有助于解决困扰美国人已久的健康问题，故选 B 项“Help people to fix certain long-time health issues”。A 说提醒人们注意糖诱发疾病的风险，C 说增加研究资金，D 说让全国低收入人群受益，均不准确。'
+      },
+      {
+        q: 'What do we learn about similar measures concerning the soda tax in some other cities?',
+        options: ['They are becoming rather sensitive issues.', 'They are spreading panic in the soda industry.', 'They are reducing the incidence of sugar-induced diseases.', 'They are taking away a lot of profit from the soda industry.'],        answer: 0,
+        explanation: '细节题。定位末段“Similar measures in California\'s Albany, Oakland, San Francisco and Colorado\'s Boulder are becoming hot-button issues”，即其他城市类似的举措正成为热点敏感话题，故选 A 项“They are becoming rather sensitive issues”。B、C、D 文中均未提及。'
+      }
+    ],
+    vocab: [
+      { word: 'levy', phonetic: '/ˈlevi/', meaning: '征收（税）' },
+      { word: 'ounce', phonetic: '/aʊns/', meaning: '盎司' },
+      { word: 'distributor', phonetic: '/dɪˈstrɪbjətə(r)/', meaning: '经销商；分销商' },
+      { word: 'initiative', phonetic: '/ɪˈnɪʃətɪv/', meaning: '倡议；举措' },
+      { word: 'substantial', phonetic: '/səbˈstænʃl/', meaning: '大量的；实质的' },
+      { word: 'implement', phonetic: '/ˈɪmplɪment/', meaning: '实施；执行' },
+      { word: 'lobbyist', phonetic: '/ˈlɒbiɪst/', meaning: '说客；游说者' },
+      { word: 'single out', phonetic: '/ˌsɪŋɡl ˈaʊt/', meaning: '单独挑出；特别指出' },
+      { word: 'applaud', phonetic: '/əˈplɔːd/', meaning: '称赞；鼓掌' },
+      { word: 'plague', phonetic: '/pleɪɡ/', meaning: '折磨；困扰' },
+      { word: 'inspirational', phonetic: '/ˌɪnspəˈreɪʃənl/', meaning: '鼓舞人心的' },
+      { word: 'hot-button', phonetic: '/ˌhɒt ˈbʌtn/', meaning: '热点敏感的' },
+      { word: 'advocacy', phonetic: '/ˈædvəkəsi/', meaning: '倡导；支持' }
+    ]
+  },
+  {
+    id: 'read-careful-4',
+    type: 'careful',
+    title: 'The Hidden Carbon Cost of Microwaves',
+    source: '真题 · 2019年12月第三套',
+    passage: 'Popping food into the microwave for a couple of minutes may seem utterly harmless, and Europe\'s stock of these quick-cooking ovens emit as much carbon as nearly 7 million cars, a new study has found, and the problem is growing. With costs falling and kitchen appliances becoming "status" symbols, owners are throwing many microwaves away after an average of eight years. This is pushing sales of new microwaves which are expected to reach 135 million annually in the EU by the end of the decade.\nA study by the University of Manchester worked out the emissions of carbon dioxide — the main greenhouse gas responsible for climate change — at every stage of microwaves, from manufacture to waste disposal. "It is electricity consumption by microwaves that has the biggest impact on the environment," say the authors, who also calculate that the emissions from using 19 microwaves over a year are the same as those from a car. According to the same study, efforts to reduce consumption should focus on improving consumer awareness and behaviour to use appliances more efficiently. For example, electricity consumption by microwaves can be reduced by adjusting the time of cooking to the type of food.\nHowever, David Reay, professor of carbon management, argues that, although microwaves use a great deal of energy, their emissions are minor compared to those from cars. In the UK alone, these emit way more than all the emissions from microwaves in the EU. Backing this up, recent data show that passenger cars in the UK emitted 69 million tonnes of CO2 in 2015. This is 10 times the amount this new microwave oven study estimates for annual emissions for all the microwave ovens in the whole of the EU. Further, the energy used by microwaves is lower than any other form of cooking. Among common kitchen appliances used for cooking, microwaves are the most energy efficient, followed by a stove and finally a standard oven. Thus, rising microwave sales could be seen as a positive thing.',
+    questions: [
+      {
+        q: 'What is the finding of the new study?',
+        options: ['Quick-cooking microwave ovens have become more popular.', 'The frequent use of microwaves may do harm to our health.', 'CO2 emissions constitute a major threat to the environment.', 'The use of microwaves emits more CO2 than people think.'],        answer: 3,
+        explanation: '细节题。定位第一段“Europe\'s stock of these quick-cooking ovens emit as much carbon as nearly 7 million cars... and the problem is growing”，即欧洲微波炉的碳排放相当于近 700 万辆汽车，远超人们想象，故选 D 项“The use of microwaves emits more CO2 than people think”。A 说微波炉更流行、B 说危害健康、C 泛泛说二氧化碳威胁环境，都不是该研究的具体发现。'
+      },
+      {
+        q: 'Why are the sales of microwaves expected to rise?',
+        options: ['They are becoming more affordable.', 'They have a shorter life cycle than other appliances.', 'They are getting much easier to operate.', 'They take less time to cook than other appliances.'],        answer: 0,
+        explanation: '细节题。定位第一段“With costs falling and kitchen appliances becoming \'status\' symbols, owners are throwing many microwaves away after an average of eight years. This is pushing sales of new microwaves”，即成本下降使微波炉更便宜，同时旧机淘汰推动新机销售，故选 A 项“They are becoming more affordable”。B 说寿命周期更短（这只是现象之一）、C 说更易操作、D 说更省时间，均不是销售上升的主要原因。'
+      },
+      {
+        q: 'What recommendation does the study by the University of Manchester make?',
+        options: ['Cooking food of different varieties.', 'Improving microwave users\' habits.', 'Eating less to cut energy consumption.', 'Using microwave ovens less frequently.'],        answer: 1,
+        explanation: '细节题。定位第二段“efforts to reduce consumption should focus on improving consumer awareness and behaviour to use appliances more efficiently”，即应改进用户的节能意识与使用行为，故选 B 项“Improving microwave users\' habits”。A 说烹饪不同食物、C 说少吃、D 说减少使用频率，均与原文建议不符。'
+      },
+      {
+        q: 'What does Professor David Reay try to argue?',
+        options: ['There are far more emissions from cars than from microwaves.', 'People should be persuaded into using passenger cars less often.', 'The UK produces less CO2 than many other countries in the EU.', 'More data are needed to show whether microwaves are harmful.'],        answer: 0,
+        explanation: '细节题。定位第三段“he argues that, although microwaves use a great deal of energy, their emissions are minor compared to those from cars”，即汽车排放远多于微波炉，故选 A 项“There are far more emissions from cars than from microwaves”。B 说应劝说人们少开私家车、C 说英国排放比欧盟其他国家少、D 说需要更多数据，均不准确。'
+      },
+      {
+        q: 'What does Professor David Reay think of the use of microwaves?',
+        options: ['It will become less popular in the coming decades.', 'It makes everyday cooking much more convenient.', 'It plays a positive role in environmental protection.', 'It consumes more power than conventional cooking.'],        answer: 2,
+        explanation: '观点态度题。定位第三段“the energy used by microwaves is lower than any other form of cooking... microwaves are the most energy efficient... Thus, rising microwave sales could be seen as a positive thing”，即雷教授认为微波炉比其它烹饪方式更节能、其销量上升是积极的事，故选 C 项“It plays a positive role in environmental protection”。A 说会越来越不流行、D 说比传统烹饪更耗电，与原文相反；B 未提及。'
+      }
+    ],
+    vocab: [
+      { word: 'microwave', phonetic: '/ˈmaɪkrəweɪv/', meaning: '微波炉；微波' },
+      { word: 'utterly', phonetic: '/ˈʌtəli/', meaning: '完全地；十足地' },
+      { word: 'appliance', phonetic: '/əˈplaɪəns/', meaning: '家用电器；器具' },
+      { word: 'emission', phonetic: '/ɪˈmɪʃn/', meaning: '排放；排放物' },
+      { word: 'greenhouse gas', phonetic: '/ˌɡriːnhaʊs ˈɡæs/', meaning: '温室气体' },
+      { word: 'manufacture', phonetic: '/ˌmænjuˈfæktʃə(r)/', meaning: '制造；生产' },
+      { word: 'disposal', phonetic: '/dɪˈspəʊzl/', meaning: '处理；处置' },
+      { word: 'efficient', phonetic: '/ɪˈfɪʃnt/', meaning: '高效的' },
+      { word: 'minor', phonetic: '/ˈmaɪnə(r)/', meaning: '较小的；次要的' },
+      { word: 'tonne', phonetic: '/tʌn/', meaning: '公吨' }
+    ]
+  },
+  {
+    id: 'read-cloze-2',
+    type: 'cloze',
+    title: 'Why Air Travel Can Make You Feel Unwell',
+    source: '真题 · 2019年12月第三套',
+    passage: 'Millions of people travel by plane every single day. If you\'re planning on being one of them soon, you might not be looking forward to the __1__ feeling air travel often leaves you with. Besides the airport crowds and stress, travelling at a high altitude has real effects on the body. Although the pressure of the cabin is __2__ to prevent altitude sickness, you could still __3__ sleepiness or a headache. The lower oxygen pressure found in an aircraft cabin is __4__ to that at 6,000-8,000 feet of altitude. A drop in oxygen pressure can cause headaches in certain __5__. To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.\nAirplane food might not really be as tasteless as you __6__ thought. The air you breathe in a plane dries out your mouth and nose, which can affect your sense of taste. Perception of sweet and salty foods dropped by almost 30 percent in a simulation of air travel. However, you can make your taste buds active again by drinking water. A dry mouth may __7__ taste sensitivity, but taste is restored by drinking fluids.\nAlthough in-flight infections __8__ in dry environments like airplanes, your risk of getting sick from an airplane is actually low because of the air __9__ used. Unless you\'re sitting next to someone who is coughing or sneezing, you shouldn\'t worry too much about getting sick. However, bacteria have been shown to live on cabin surfaces, so wash your hands __10__.',
+    wordBank: ['adjusted', 'channels', 'equivalent', 'experience', 'filters', 'frequently', 'individuals', 'originally', 'particular', 'primarily', 'reduce', 'renovated', 'smooth', 'thrive', 'unpleasant'],
+    answers: ['unpleasant', 'adjusted', 'experience', 'equivalent', 'individuals', 'originally', 'reduce', 'thrive', 'filters', 'frequently'],
+    explanations: {
+      '1': '考查形容词。句意：你可能并不期待坐飞机后常有的那种“不舒服”的感觉。unpleasant（令人不快的）修饰 feeling，语义通顺，故选 unpleasant。smooth（平滑的）语义不符。',
+      '2': '考查动词过去分词。句意：虽然舱内压力经过“调节”以防止高空病。the pressure of the cabin is adjusted to...（舱压被调节到……）为被动语态，故选 adjusted。renovated（翻新）语义不符。',
+      '3': '考查动词。句意：你仍可能“经历/出现”困倦或头痛。experience sleepiness or a headache（经历困倦或头痛）搭配合理，故选 experience。',
+      '4': '考查形容词。句意：机舱内较低的氧气压力“相当于”6000-8000 英尺高处的压力。be equivalent to（等同于）为固定搭配，故选 equivalent。',
+      '5': '考查名词。句意：氧压下降会在某些“人/个体”身上引起头痛。in certain individuals（在某些人身上）语义通顺，故选 individuals。',
+      '6': '考查副词。句意：飞机餐可能并不像你“原本”以为的那么无味。as you originally thought（如你最初所想）搭配合理，故选 originally。primarily（主要地）语义不符。',
+      '7': '考查动词。句意：口干可能“降低”味觉敏感度。reduce taste sensitivity（降低味觉敏感度）语义通顺，故选 reduce。',
+      '8': '考查动词。句意：虽然飞行中的感染在飞机这样的干燥环境中会“滋生/繁殖”。infections thrive（感染滋生）搭配合理，故选 thrive。',
+      '9': '考查名词。句意：因为使用了空气“过滤器”。the air filters used（使用的空气过滤器）语义通顺，故选 filters。channels（通道）语义不符。',
+      '10': '考查副词。句意：因此要“经常”洗手。wash your hands frequently（经常洗手）搭配合理，故选 frequently。'
+    },
+    vocab: [
+      { word: 'altitude', phonetic: '/ˈæltɪtjuːd/', meaning: '海拔；高度' },
+      { word: 'cabin', phonetic: '/ˈkæbɪn/', meaning: '机舱；客舱' },
+      { word: 'altitude sickness', phonetic: '/ˌæltɪtjuːd ˈsɪknəs/', meaning: '高原反应；高空病' },
+      { word: 'oxygen', phonetic: '/ˈɒksɪdʒən/', meaning: '氧气' },
+      { word: 'equivalent', phonetic: '/ɪˈkwɪvələnt/', meaning: '等同的；相当的' },
+      { word: 'tasteless', phonetic: '/ˈteɪstləs/', meaning: '无味的；乏味的' },
+      { word: 'perception', phonetic: '/pəˈsepʃn/', meaning: '感知；感觉' },
+      { word: 'simulation', phonetic: '/ˌsɪmjuˈleɪʃn/', meaning: '模拟；仿真' },
+      { word: 'taste bud', phonetic: '/ˈteɪst bʌd/', meaning: '味蕾' },
+      { word: 'infection', phonetic: '/ɪnˈfekʃn/', meaning: '感染；传染' },
+      { word: 'thrive', phonetic: '/θraɪv/', meaning: '繁殖；茁壮成长' },
+      { word: 'bacteria', phonetic: '/bækˈtɪəriə/', meaning: '细菌' },
+      { word: 'sneeze', phonetic: '/sniːz/', meaning: '打喷嚏' }
     ]
   },
   {
     id: 'read-match-2',
     type: 'match',
-    title: 'The Sharing Economy: Why Owning Is No Longer Everything',
-    source: '真题改编',
+    title: 'A South Korean City Designed for the Future',
+    source: '真题 · 2019年12月第三套',
     paragraphs: [
-      'For most of the last century, owning things was a sign of success. A house, a car, and a garage full of tools all seemed to promise freedom and status. In recent years, however, a very different idea has been spreading around the world: that we do not always need to own something in order to enjoy it. This shift in thinking lies at the heart of what is now called the sharing economy. The change has been so rapid that a person raised to expect a home and a car of their own may now feel perfectly comfortable with neither.',
-      'The sharing economy is built on a simple principle. Instead of buying an item that we use only occasionally, we can borrow, rent, or share it with others, usually through a website or a mobile app. A drill, a bicycle, a spare room, even a car can be turned into a service that is available when we need it and gone when we do not.',
-      'The roots of this movement go back to small experiments in the 1990s, such as car-sharing clubs in a few European cities. But it was the spread of smartphones and the internet that turned sharing into a global industry. With a few taps on a screen, anyone can now find a ride, a bed, or a tool within minutes, and pay for it instantly. Early members once had to meet in person and hand over keys, but ratings and digital payments have now removed almost all of the friction.',
-      'Transport was one of the first areas to be transformed. Ride-hailing services allow ordinary car owners to offer rides to strangers, while bike-sharing schemes have appeared in hundreds of cities. Supporters say these services reduce traffic and make it easier for people to live without owning a car, especially in crowded city centers. In a growing number of cities, shared bicycles now outnumber privately owned ones.',
-      'Travel and accommodation changed almost as quickly. Platforms that let homeowners rent out spare rooms or whole apartments have grown into some of the largest companies in the world. For many hosts, this extra income helps pay the mortgage or fund a holiday; for guests, it often offers a cheaper and more personal alternative to a hotel.',
-      'The benefits, however, are not only financial. By making better use of goods that already exist, sharing can reduce waste and the pressure to keep producing new things. A power drill, for example, may be used for only a few minutes in its entire life; if a street of neighbors shares one, far fewer drills need to be manufactured, packaged, and shipped. The same logic applies to cars, which sit parked for most of the day, and to guest rooms that stand empty all year.',
-      'The sharing economy has also created new ways to earn a living. Many people now make money by driving, hosting, or renting out equipment, often fitting this work around study or another job. This flexibility appeals especially to students, retirees, and parents who need to choose their own working hours. A student can drive for a couple of hours between lectures, and a retiree can rent out a spare bicycle from the garage.',
-      'Yet the new model has raised difficult questions. Critics point out that many sharing-economy workers are treated as independent contractors, which means they miss out on benefits such as paid leave and health insurance. There are also worries about safety, insurance, and the effect of short-term rentals on housing prices in popular neighborhoods.',
-      'Whatever the outcome of these debates, the sharing economy has already changed our habits. It has taught a generation to value access over ownership, and to ask, before every purchase, whether buying is really necessary. The question is no longer what we own, but what we need, and for how long.'
+      'Getting around a city is one thing — and then there\'s the matter of getting from one city to another. One vision of the perfect city of the future: a place that offers easy access to air travel. In 2011, a University of North Carolina business professor named John Kasarda published a book called Aerotropolis: The Way We\'ll Live Next. Kasarda says future cities should be built intentionally around or near airports. The idea, as he has put it, is to offer businesses "rapid, long-distance connectivity on a massive scale."',
+      '"The 18th century really was a waterborne century, the 19th century a rail century, the 20th century a highway, car, truck century — and the 21st century will increasingly be an aviation century, as the globe becomes increasingly connected by air," Kasarda says. Songdo, a city built from scratch in South Korea, is one of Kasarda\'s prime examples. It has existed for just a few years. "From the get-go, it was designed on the basis of connectivity and competitiveness," says Kasada. "The government built the bridge directly from the airport to the Songdo International Business District. And the surface infrastructure was built in tandem with the new airport."',
+      'Songdo is a stone\'s throw from South Korea\'s Incheon Airport, its main international hub. But it takes a lot more than a nearby airport to be a city of the future. Just building a place as an "international business district" doesn\'t mean it will become one. Park Yeon Soo conceived this city of the future back in 1986. He considers Songdo his baby. "I am a visionary," he says. Thirty years after he imagined the city, Park\'s baby is close to 70 percent built, with 36,000 people living in the business district and 90,000 residents in greater Songdo. It\'s about an hour outside Seoul, built on reclaimed tidal flats along the Yellow Sea. There\'s a Coast Guard building and a tall trade tower, as well as a park, golf course and university.',
+      'Chances are you\'ve actually seen this place. Songdo appears in the most famous music video ever to come out of South Korea. "Gangnam Style" refers to the fashionable Gangnam district in Seoul. But some of the video was filmed in Songdo. "I don\'t know if you remember, there was a scene in a subway station. That was not Gangnam. That was actually Songdo," says Jung Won Son, a professor of urban development at London\'s Bartlett School of Planning. "Part of the reason to shoot there is that it\'s new and nice."',
+      'The city was supposed to be a hub for global companies, with employees from all over the world. But that\'s not how it has turned out. Songdo\'s reputation is as a futuristic ghost town. But the reality is more complicated. A bridge with big, light-blue loops leads into the business district. In the center of the main road, there\'s a long line of flags of the world. On the corner, there\'s a Starbucks and a 7-Eleven — all of the international brands that you see all over the world nowadays.',
+      'The city is not empty. There are mothers pushing strollers, old women with walkers — even in the middle of the day, when it\'s 90 degrees out. Byun Young-Jin chairs the Songdo real estate association and started selling property here when the first phase of the city opened in 2005. He says demand has boomed in the past couple of years. Most of his clients are Korean. In fact, the developer says, 99 percent of the homes here are sold to Koreans. Young families move here because the schools are great. And that\'s the problem: Songdo has become a popular Korean city — more popular as a residential area than a business one. It\'s not yet the futuristic international business hub that planners imagined. "It\'s a great place to live. And it\'s becoming a great place to work," says Scott Summers, the vice president of Gale International, the developer of the city. The floor-to-ceiling windows of his company\'s offices overlook Songdo Central Park, with a canal full of kayaks and paddle boats.',
+      '"What\'s happened is, because we focused on creating that quality of life first, which enabled the residents to live here, what has probably missed the mark is for companies to locate here," he says. "There needs to be strong economic incentives." The city is still unfinished, and it feels a bit like a theme park. It doesn\'t feel all that futuristic. There\'s a high-tech underground trash disposal system. Buildings are environmentally friendly. Everybody\'s television set is connected to a system that streams personalized language or exercise classes.',
+      'But Star Trek this is not. And to some of the residents, Songdo feels hollow. "I\'m, like, in prison for weekdays. That\'s what we call it in the workplace," says a woman in her 20s. She doesn\'t want to use her name for fear of being fired from her job. She goes back to Seoul every weekend. "I say I\'m prison-breaking on Friday nights." But she has to make the prison break in her own car. There\'s no high-speed train connecting Songdo to Seoul, just over 20 miles away.',
+      'The man who first imagined Songdo feels frustrated, too. Park says he built South Korea a luxury vehicle, "like Mercedes or BMW. It\'s a good car now. But we\'re waiting for a good driver to accelerate." But there are lots of other good cars out there, too. The world is dotted with futuristic, high-tech cities trying to attract the biggest international companies.',
+      'Songdo\'s backers contend that it\'s still early, and business space is filling up — about 70 percent of finished offices are now occupied. Brent Ryan, who teaches urban design at MIT, says Songdo proves a universal principle. "There have been a lot of utopian cities in history. And the reason we don\'t know about a lot of them is that a lot of them have vanished entirely." In other words, when it comes to cities — or anything else — it is hard to predict the future.'
     ],
     questions: [
       {
-        q: 'The spread of smartphones and the internet turned sharing into a global industry.',
-        answer: 'C',
-        explanation: '定位 C 段“it was the spread of smartphones and the internet that turned sharing into a global industry.”该段讲智能手机和互联网的普及使共享成为全球产业，与题干完全对应，故选 C。'
-      },
-      {
-        q: 'Sharing can reduce waste because goods that already exist are used more fully.',
+        q: 'Songdo\'s popularity lies more in its quality of life than its business attraction.',
         answer: 'F',
-        explanation: '定位 F 段“By making better use of goods that already exist, sharing can reduce waste and the pressure to keep producing new things.”该段讲共享通过更充分地利用已有物品来减少浪费，与题干对应，故选 F。'
+        explanation: '定位 F 段“Songdo has become a popular Korean city — more popular as a residential area than a business one”，即松岛作为居住区比作为商务区更受欢迎，与题干“更在于生活质量而非商务吸引力”对应，故选 F。'
       },
       {
-        q: 'Many workers in the sharing economy are not given paid leave or health insurance.',
-        answer: 'H',
-        explanation: '定位 H 段“many sharing-economy workers are treated as independent contractors, which means they miss out on benefits such as paid leave and health insurance.”该段讲共享经济从业者没有带薪假和医保，与题干对应，故选 H。'
-      },
-      {
-        q: 'Bike-sharing and ride-hailing services make it possible to live in a city without owning a car.',
-        answer: 'D',
-        explanation: '定位 D 段“Ride-hailing services allow ordinary car owners to offer rides to strangers, while bike-sharing schemes... make it easier for people to live without owning a car.”该段讲网约车和共享单车使人们不必拥有私家车，故选 D。'
-      },
-      {
-        q: 'Renting out spare rooms provides hosts with extra income to help pay the mortgage.',
-        answer: 'E',
-        explanation: '定位 E 段“For many hosts, this extra income helps pay the mortgage or fund a holiday.”该段讲出租闲置房间为房主带来额外收入、可偿还房贷，与题干对应，故选 E。'
-      },
-      {
-        q: 'The core idea of the sharing economy is borrowing or renting things we use only occasionally.',
-        answer: 'B',
-        explanation: '定位 B 段“Instead of buying an item that we use only occasionally, we can borrow, rent, or share it with others.”该段阐述共享经济的核心理念：借用、租用偶尔使用的物品，故选 B。'
-      },
-      {
-        q: 'The flexibility of sharing-economy work appeals to students, retirees, and parents.',
-        answer: 'G',
-        explanation: '定位 G 段“This flexibility appeals especially to students, retirees, and parents who need to choose their own working hours.”该段讲共享经济工作的灵活性吸引学生、退休者和家长，与题干对应，故选 G。'
-      },
-      {
-        q: 'The author says the sharing economy has taught people to value access over ownership.',
+        q: 'The man who conceived Songdo feels disappointed because it has fallen short of his expectations.',
         answer: 'I',
-        explanation: '定位 I 段“It has taught a generation to value access over ownership.”该段总结共享经济教会一代人重使用权而非所有权，与题干对应，故选 I。'
+        explanation: '定位 I 段“The man who first imagined Songdo feels frustrated, too... We\'re waiting for a good driver to accelerate”，即设想松岛的人因城市未达预期而失望，与题干对应，故选 I。'
       },
       {
-        q: 'Owning things was once regarded as a sign of success and status.',
-        answer: 'A',
-        explanation: '定位 A 段“owning things was a sign of success. A house, a car, and a garage full of tools all seemed to promise freedom and status.”该段开篇讲拥有曾被视为成功和地位的象征，与题干对应，故选 A。'
-      },
-      {
-        q: 'A power drill is given as an example of an item used for only a few minutes in its whole life.',
-        answer: 'F',
-        explanation: '定位 F 段“A power drill, for example, may be used for only a few minutes in its entire life.”该段以电钻为例，说明某些物品一生中真正被使用的时间极短，与题干对应，故选 F。'
-      }
-    ],
-    vocab: [
-      { word: 'status', phonetic: '/ˈsteɪtəs/', meaning: '地位；身份；状况' },
-      { word: 'principle', phonetic: '/ˈprɪnsəpl/', meaning: '原则；原理' },
-      { word: 'platform', phonetic: '/ˈplætfɔːm/', meaning: '平台；站台' },
-      { word: 'accommodation', phonetic: '/əˌkɒməˈdeɪʃn/', meaning: '住宿；住处' },
-      { word: 'mortgage', phonetic: '/ˈmɔːɡɪdʒ/', meaning: '抵押贷款；按揭' },
-      { word: 'alternative', phonetic: '/ɔːlˈtɜːnətɪv/', meaning: '供替代的；替代方案' },
-      { word: 'manufacture', phonetic: '/ˌmænjuˈfæktʃə(r)/', meaning: '制造；生产' },
-      { word: 'flexibility', phonetic: '/ˌfleksəˈbɪləti/', meaning: '灵活性；弹性' },
-      { word: 'retiree', phonetic: '/rɪˌtaɪəˈriː/', meaning: '退休人员' },
-      { word: 'contractor', phonetic: '/kənˈtræktə(r)/', meaning: '承包人；承包商' },
-      { word: 'insurance', phonetic: '/ɪnˈʃʊərəns/', meaning: '保险；保险费' },
-      { word: 'access', phonetic: '/ˈækses/', meaning: '使用权；通道；获取' }
-    ]
-  },
-{
-    id: 'read-careful-4',
-    type: 'careful',
-    title: 'The Rise of Online Food Delivery',
-    source: '真题改编',
-    passage: 'Ten years ago, ordering a meal to your door usually meant a phone call to a local pizza place. Today, a few taps on a smartphone can bring hot food from dozens of restaurants within half an hour, and online food delivery has become a routine part of urban life. In China alone, the number of food delivery users has passed five hundred million, and the industry now employs millions of riders. Yet behind this convenience lie questions that consumers rarely stop to consider. For the restaurants, delivery platforms are a double-edged sword. On the one hand, joining a platform exposes a small eatery to a huge number of potential customers it could never reach on its own. On the other hand, the platforms charge commissions that can reach twenty percent or more, leaving restaurants with much thinner profit margins. Some owners say they make more money per order from walk-in customers than from delivery orders, even though the delivery price is higher. The riders who bring the food are under even greater pressure. Most are paid per delivery rather than by the hour, so they race against the clock to finish as many orders as possible. To meet tight deadlines, some ride dangerously in heavy traffic, and accidents involving delivery riders have risen sharply in recent years. Surveys show that many riders work more than ten hours a day, and most receive no social insurance. The convenience we enjoy, in other words, is partly built on the fatigue and risk of others. Environmental costs add a further layer of concern. Each delivery involves packaging, often plastic boxes, bags, and disposable chopsticks, and the mountain of waste this creates has become a serious problem for many cities. Some platforms now offer a "no tableware" option and encourage riders to use shared containers, but such efforts remain limited. None of this means we should stop ordering food online. Delivery is a genuine convenience, especially for busy workers and students, and the industry provides valuable jobs. But as consumers, we can make more thoughtful choices: tipping riders fairly, choosing restaurants that use eco-friendly packaging, and avoiding the habit of ordering more than we need. Small actions, repeated by millions of people, can push the whole industry toward a more responsible future.',
-    questions: [
-      {
-        q: 'What is the passage mainly about?',
-        options: [
-          'A. The history of the fast food industry.',
-          'B. The hidden costs behind online food delivery.',
-          'C. How to become a delivery rider.',
-          'D. The best restaurants on delivery platforms.'
-        ],
-        answer: 1,
-        explanation: '主旨题。全文围绕外卖繁荣背后的三大隐忧展开：餐厅利润被压缩（第二段）、骑手压力与安全（第三段）、包装浪费（第四段），最后给出消费者建议，核心是"便利背后的代价"，故选 B。A 讲快餐业历史，与全文无关；C 讲如何成为骑手，文中未涉及；D 讲平台上的最佳餐厅，偏离主旨。'
-      },
-      {
-        q: 'What problem do restaurants face on delivery platforms?',
-        options: [
-          'A. They cannot reach new customers.',
-          'B. The platforms charge high commissions.',
-          'C. Delivery orders are priced too low.',
-          'D. Walk-in customers have disappeared.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第二段"the platforms charge commissions that can reach twenty percent or more, leaving restaurants with much thinner profit margins"，平台抽成高达两成以上，压薄了餐厅利润，故选 B。A 与原文相反（平台帮小餐厅触达大量新顾客）；C 与"delivery price is higher"矛盾；D 说堂食顾客消失，文中只提堂食利润更高，未说消失。'
-      },
-      {
-        q: 'What does the word "fatigue" in Paragraph 3 most probably mean?',
-        targetWord: 'fatigue',
-        options: [
-          'A. Extreme tiredness.',
-          'B. Great wealth.',
-          'C. Deep anger.',
-          'D. Sudden danger.'
-        ],
-        answer: 0,
-        explanation: '词义题。定位第三段末句"the convenience we enjoy is partly built on the fatigue and risk of others"，前文说骑手每天工作十小时以上、没有社保，故 fatigue 指"极度疲劳"，故选 A。B（财富）、C（愤怒）、D（危险）均不符合语境，risk 已单独列出。'
-      },
-      {
-        q: 'What does the author say about delivery packaging?',
-        options: [
-          'A. It has been completely replaced by shared containers.',
-          'B. It creates a serious waste problem in many cities.',
-          'C. It costs consumers too much money.',
-          'D. It is required by law to be eco-friendly.'
-        ],
-        answer: 1,
-        explanation: '细节题。定位第四段"the mountain of waste this creates has become a serious problem for many cities"，外卖包装垃圾已成许多城市严重问题，故选 B。A 说已被共享容器完全取代，与原文"such efforts remain limited"矛盾；C 讲成本，文中未提；D 说法律要求环保包装，无中生有。'
-      },
-      {
-        q: 'What is the author\'s attitude toward online food delivery?',
-        options: [
-          'A. Totally against it.',
-          'B. Indifferent to it.',
-          'C. Positive but cautious.',
-          'D. Doubtful about its future.'
-        ],
-        answer: 2,
-        explanation: '观点态度题。末段作者说"None of this means we should stop ordering food online"，肯定外卖的便利和就业价值，同时又呼吁消费者做出更明智的选择，态度是"肯定但谨慎"，故选 C。A 完全反对与原文矛盾；B 漠不关心与作者积极建言的态度不符；D 质疑前景，文中没有表现。'
-      }
-    ],
-    vocab: [
-      { word: 'delivery', phonetic: '/dɪˈlɪvəri/', meaning: '递送；配送' },
-      { word: 'routine', phonetic: '/ruːˈtiːn/', meaning: '日常的；常规的' },
-      { word: 'consumer', phonetic: '/kənˈsjuːmə(r)/', meaning: '消费者' },
-      { word: 'commission', phonetic: '/kəˈmɪʃn/', meaning: '佣金；提成' },
-      { word: 'margin', phonetic: '/ˈmɑːdʒɪn/', meaning: '利润；差额' },
-      { word: 'deadline', phonetic: '/ˈdedlaɪn/', meaning: '截止时间；期限' },
-      { word: 'fatigue', phonetic: '/fəˈtiːɡ/', meaning: '疲劳；劳累' },
-      { word: 'insurance', phonetic: '/ɪnˈʃʊərəns/', meaning: '保险' },
-      { word: 'packaging', phonetic: '/ˈpækɪdʒɪŋ/', meaning: '包装；包装材料' },
-      { word: 'disposable', phonetic: '/dɪˈspəʊzəbl/', meaning: '一次性的；用完即弃的' },
-      { word: 'eco-friendly', phonetic: '/ˌiːkəʊ ˈfrendli/', meaning: '环保的' },
-      { word: 'thoughtful', phonetic: '/ˈθɔːtfl/', meaning: '深思熟虑的；体贴的' }
-    ]
-  },
-  {
-    id: 'read-cloze-3',
-    type: 'cloze',
-    title: 'The Value of Keeping a Diary',
-    source: '真题改编',
-    passage: 'In an age of short messages and quick updates, keeping a diary may seem old-fashioned. Yet teachers and psychologists say that writing down our thoughts by hand has benefits that no app can fully __1__. The most obvious value is that a diary gives us a private space to __2__ our feelings. When we put worries into words, they often become clearer and less frightening. Studies show that people who write about stressful events tend to feel calmer and sleep better, because the act of writing helps the brain __3__ the experience rather than repeat it. A diary also serves as a personal history. Five years from now, you will not remember what you had for lunch today, but your diary will. __4__ through old pages, you can see how much you have grown, which problems have disappeared, and which dreams still remain. This sense of __5__ can be surprisingly powerful during difficult times. Furthermore, writing regularly trains the mind to think more __6__. To describe an event clearly, you must choose the right words, arrange your thoughts in order, and decide what truly matters. These are exactly the skills needed for essays, reports, and job interviews. Many famous writers have __7__ that they kept diaries in their youth, using them as a workshop for their later work. How, then, should a beginner start? Experts __8__ against trying to write a long entry every day, which most people soon give up. Instead, they suggest writing for just five minutes, about one good thing that happened, or one thing you are grateful for. The habit matters more than the length. Some people worry that a diary is a __9__ of time. But consider this: five minutes a day is about thirty hours a year, less than the time many of us spend on social media in a single month. If those hours can make us calmer, more self-aware, and more articulate, they are surely time well __10__.',
-    wordBank: ['replace', 'express', 'process', 'browsing', 'progress', 'clearly', 'admitted', 'recommend', 'waste', 'spent', 'clear', 'contrast', 'confess', 'reject', 'comfort'],
-    answers: ['replace', 'express', 'process', 'browsing', 'progress', 'clearly', 'admitted', 'recommend', 'waste', 'spent'],
-    explanations: {
-      '1': '考查动词。句意：手写日记的好处是任何应用都无法完全取代的。replace（取代、替代）符合"app 无法替代手写"的语义，故选 replace。干扰项 reject（拒绝）语义不通，clear（清除）也不对。',
-      '2': '考查动词。句意：日记给我们一个私密空间来表达感受。express our feelings（表达感受）为固定搭配，故选 express。confess（坦白）语气过重，comfort（安慰）是及物动词接人而非 feelings。',
-      '3': '考查动词。句意：写作行为帮助大脑处理这段经历而不是反复回想。process the experience（处理这段经历）符合语境，故选 process。注意与上文 stressful events 的呼应。',
-      '4': '考查动词 -ing。句意：翻看旧页，你能看到自己成长了多少。browsing through old pages（翻阅旧页）语义通顺，故选 browsing。admitted（承认）为过去式，语法上不能作句首状语。',
-      '5': '考查名词。句意：这种进步感在困难时期会出奇地有力。a sense of progress（进步感）符合上文"看到成长"的语义，故选 progress。contrast（对比）与"成长"主题不匹配。',
-      '6': '考查副词。句意：定期写作能训练思维更加清晰。think more clearly（更清晰地思考）为固定搭配，副词 clearly 修饰动词 think，故选 clearly。注意不要误选 clear（形容词）。',
-      '7': '考查动词。句意：许多著名作家承认他们年轻时写过日记。admitted（承认）与"using them as a workshop"的语境吻合，故选 admitted。confess 语义上"忏悔"意味过强，且词形不匹配上下文时态。',
-      '8': '考查动词。句意：专家不建议每天写一篇长日记。recommend against（不建议）为固定搭配，故选 recommend。注意 recommend 后接 against doing，与"建议做"的 recommend doing 用法不同。',
-      '9': '考查名词。句意：有些人担心写日记是浪费时间。a waste of time（浪费时间）为固定搭配，故选 waste。contrast、comfort 均不通。',
-      '10': '考查动词过去分词。句意：这些时间无疑是值得花的。time well spent（花得值的时间）为固定表达，故选 spent。注意干扰项 clear、contrast 与"时间"的搭配均不通。',
-    },
-    vocab: [
-      { word: 'old-fashioned', phonetic: '/ˌəʊld ˈfæʃnd/', meaning: '过时的；老式的' },
-      { word: 'psychologist', phonetic: '/saɪˈkɒlədʒɪst/', meaning: '心理学家' },
-      { word: 'stressful', phonetic: '/ˈstresfl/', meaning: '压力大的' },
-      { word: 'process', phonetic: '/ˈprəʊses/', meaning: '处理；加工' },
-      { word: 'grateful', phonetic: '/ˈɡreɪtfl/', meaning: '感激的' },
-      { word: 'self-aware', phonetic: '/ˌself əˈweə(r)/', meaning: '有自我意识的' },
-      { word: 'articulate', phonetic: '/ɑːˈtɪkjələt/', meaning: '善于表达的' },
-      { word: 'workshop', phonetic: '/ˈwɜːkʃɒp/', meaning: '工坊；工作场所' },
-      { word: 'entry', phonetic: '/ˈentri/', meaning: '条目；记录' },
-      { word: 'progress', phonetic: '/ˈprəʊɡres/', meaning: '进步；进展' }
-    ]
-  },
-  {
-    id: 'read-match-3',
-    type: 'match',
-    title: 'The Surprising Power of Walking',
-    source: '真题改编',
-    paragraphs: [
-      'When was the last time you went for a walk with no purpose other than walking itself? For many of us, walking has been reduced to a way of getting from one place to another, or to a number tracked on a smart watch. Yet doctors and researchers are increasingly convinced that this simplest of activities may be one of the most powerful tools we have for improving both body and mind. Unlike expensive gym memberships or complicated training plans, walking asks for almost nothing: a pair of comfortable shoes and a little time.',
-      'The physical benefits of walking are well documented. A daily walk of just thirty minutes can lower blood pressure, strengthen the heart, and improve blood sugar control. Studies following large groups of people over many years have found that those who walk regularly live longer and suffer fewer heart attacks and strokes. The body does not need extreme exercise to stay healthy; it simply needs to move, and walking is the most natural form of movement there is.',
-      'What surprises many people is that walking is also one of the best exercises for the brain. Research at several universities has shown that regular walking increases the size of the hippocampus, the brain region responsible for memory and learning. In one study, older adults who walked for forty minutes three times a week improved their performance on memory tests after just one year. Walking even appears to slow the changes in the brain that come with aging.',
-      'Walking has a well-known effect on mood as well. A walk in a park or along a river can noticeably reduce feelings of stress, anxiety, and sadness. Scientists believe part of the reason is the release of endorphins, the body\'s natural mood lifters, but the effect goes deeper. The rhythm of walking, the changing scenery, and the absence of screens give the mind a chance to settle, much like a light form of meditation. Many people report that their best ideas arrive not at their desks but during a walk.',
-      'Perhaps the most valuable form of walking is the one we rarely plan: walking with others. A conversation held side by side feels different from one held face to face. The shared pace and the lack of direct eye contact make people more open and relaxed, which is why walking meetings and "walk and talk" therapy sessions have become popular. Couples, friends, and even parents with teenage children often find that difficult topics become easier to discuss while walking together.',
-      'There is also a special pleasure in walking through nature. Walking in a forest, by the sea, or in the mountains does more than exercise the body; it restores attention. Psychologists have shown that natural scenes, unlike city streets, require little effort from our attention and allow it to recover. People who take regular walks in green spaces report better concentration, a brighter mood, and even a stronger sense of meaning in life. The Japanese practice of "forest bathing", which simply means spending time walking slowly in the woods, has become popular worldwide for exactly this reason.',
-      'Cities are beginning to take walking seriously. Some cities have closed streets to cars at certain hours, turning them into open-air living rooms where people walk, ride bicycles, and chat. Others have built green corridors connecting parks, so that a walk across town does not have to pass through noisy traffic. Urban planners argue that walkable cities are not only healthier but also happier: when people walk, they meet neighbors, support local shops, and develop a stronger sense of belonging.',
-      'If you are not in the habit of walking, start gently. Experts suggest beginning with ten minutes a day, at whatever pace feels comfortable, and gradually increasing. Choose a fixed time, such as after lunch or dinner, so that walking becomes part of your routine rather than something you remember only occasionally. Most importantly, leave your phone in your pocket or at home; the point is to be present, not to be reachable.',
-      'In a world that constantly asks us to go faster and do more, walking is a quiet act of resistance. It slows us down, connects us to our surroundings, and reminds us that some of the best things in life cost nothing at all. The next time you feel stuck, tired, or overwhelmed, try the simplest remedy there is: put on your shoes and take a walk.'
-    ],
-    questions: [
-      {
-        q: 'Walking in natural surroundings helps our attention recover because natural scenes demand little mental effort.',
-        answer: 'F',
-        explanation: '定位 F 段"natural scenes, unlike city streets, require little effort from our attention and allow it to recover"，自然景观几乎不消耗注意力，能使其恢复，与题干对应，故选 F。'
-      },
-      {
-        q: 'Some older adults improved their memory by walking regularly for a year.',
-        answer: 'C',
-        explanation: '定位 C 段"older adults who walked for forty minutes three times a week improved their performance on memory tests after just one year"，坚持步行一年的老年人记忆力测试成绩提高，与题干对应，故选 C。'
-      },
-      {
-        q: 'People are more open and relaxed when they talk while walking side by side.',
-        answer: 'E',
-        explanation: '定位 E 段"The shared pace and the lack of direct eye contact make people more open and relaxed"，并肩行走时目光不直接相对，让人更开放放松，与题干对应，故选 E。'
-      },
-      {
-        q: 'A daily walk of thirty minutes can reduce the risk of heart attacks and strokes.',
-        answer: 'B',
-        explanation: '定位 B 段"A daily walk of just thirty minutes can lower blood pressure... those who walk regularly live longer and suffer fewer heart attacks and strokes"，每天步行三十分钟可降低血压、减少心脏病和中风风险，与题干对应，故选 B。'
-      },
-      {
-        q: 'Some cities have turned streets into car-free areas where people can walk and chat.',
-        answer: 'G',
-        explanation: '定位 G 段"Some cities have closed streets to cars at certain hours, turning them into open-air living rooms where people walk, ride bicycles, and chat"，部分城市定时封路供行人步行聊天，与题干对应，故选 G。'
-      },
-      {
-        q: 'Walking releases natural chemicals that lift our mood and calm our mind.',
+        q: 'A scene in a popular South Korean music video was shot in Songdo.',
         answer: 'D',
-        explanation: '定位 D 段"part of the reason is the release of endorphins, the body\'s natural mood lifters... give the mind a chance to settle"，步行释放内啡肽并让思绪沉淀，与题干对应，故选 D。'
+        explanation: '定位 D 段“Some of the video was filmed in Songdo... there was a scene in a subway station. That was actually Songdo”，即热门韩国音乐视频《江南style》部分场景在松岛拍摄，与题干对应，故选 D。'
       },
       {
-        q: 'Beginners should start with short walks and leave their phones behind.',
-        answer: 'H',
-        explanation: '定位 H 段"start gently... beginning with ten minutes a day... leave your phone in your pocket or at home"，建议从每天十分钟开始并放下手机，与题干对应，故选 H。'
+        q: 'Songdo still lacks the financial stimulus for businesses to set up shop there.',
+        answer: 'G',
+        explanation: '定位 G 段“what has probably missed the mark is for companies to locate here... There needs to be strong economic incentives”，即松岛缺乏吸引企业入驻的经济激励，与题干对应，故选 G。'
       },
       {
-        q: 'Walking is the most natural way to keep the body moving and healthy.',
+        q: 'Airplanes will increasingly become the chief means of transportation, according to a professor.',
         answer: 'B',
-        explanation: '定位 B 段末句"The body does not need extreme exercise to stay healthy; it simply needs to move, and walking is the most natural form of movement there is"，身体只需活动，步行是最自然的运动方式，与题干对应，故选 B。'
+        explanation: '定位 B 段“the 21st century will increasingly be an aviation century, as the globe becomes increasingly connected by air”，即卡斯达教授认为 21 世纪将日益成为航空世纪，与题干对应，故选 B。'
+      },
+      {
+        q: 'Songdo has ended up different from the city it was supposed to be.',
+        answer: 'E',
+        explanation: '定位 E 段“The city was supposed to be a hub for global companies... But that\'s not how it has turned out”，即松岛最终并未成为设想中的全球企业中心，与题干对应，故选 E。'
+      },
+      {
+        q: 'Some of the people who work in Songdo complain about boredom in the workplace.',
+        answer: 'H',
+        explanation: '定位 H 段一位女士说“I\'m, like, in prison for weekdays. That\'s what we call it in the workplace”，即在松岛工作让人感觉像坐牢、单调乏味，与题干对应，故选 H。'
+      },
+      {
+        q: 'A business professor says that a future city should have easy access to international transportation.',
+        answer: 'A',
+        explanation: '定位 A 段“One vision of the perfect city of the future: a place that offers easy access to air travel... future cities should be built intentionally around or near airports”，即商学院教授卡斯达认为未来城市应便利通达国际交通，与题干对应，故选 A。'
+      },
+      {
+        q: 'According to an urban design professor, it is difficult for city designers to foresee what will happen in the future.',
+        answer: 'J',
+        explanation: '定位 J 段“Brent Ryan, who teaches urban design at MIT... it is hard to predict the future”，即城市规划教授布伦特·瑞安认为预测未来很难，与题干对应，故选 J。'
+      },
+      {
+        q: 'Park Yeon Soo, who envisioned Songdo, feels a parental connection with the city.',
+        answer: 'C',
+        explanation: '定位 C 段“Park Yeon Soo conceived this city of the future back in 1986. He considers Songdo his baby”，即构想松岛的朴连洙视它为“自己的孩子”，怀有父辈般的感情，与题干“feels a parental connection”对应，故选 C。'
       }
     ],
     vocab: [
-      { word: 'convince', phonetic: '/kənˈvɪns/', meaning: '使信服；说服' },
-      { word: 'blood pressure', phonetic: '/ˌblʌd ˈpreʃə(r)/', meaning: '血压' },
-      { word: 'stroke', phonetic: '/strəʊk/', meaning: '中风' },
-      { word: 'hippocampus', phonetic: '/ˌhɪpəˈkæmpəs/', meaning: '海马体（记忆相关脑区）' },
-      { word: 'endorphin', phonetic: '/enˈdɔːfɪn/', meaning: '内啡肽' },
-      { word: 'meditation', phonetic: '/ˌmedɪˈteɪʃn/', meaning: '冥想；沉思' },
-      { word: 'therapy', phonetic: '/ˈθerəpi/', meaning: '治疗；疗法' },
-      { word: 'restore', phonetic: '/rɪˈstɔː(r)/', meaning: '恢复；修复' },
-      { word: 'corridor', phonetic: '/ˈkɒrɪdɔː(r)/', meaning: '走廊；通道' },
-      { word: 'belonging', phonetic: '/bɪˈlɒŋɪŋ/', meaning: '归属感' },
-      { word: 'resistance', phonetic: '/rɪˈzɪstəns/', meaning: '抵抗；反抗' },
-      { word: 'overwhelmed', phonetic: '/ˌəʊvəˈwelmd/', meaning: '不知所措的；压垮的' },
-      { word: 'remedy', phonetic: '/ˈremədi/', meaning: '补救办法；疗法' }
+      { word: 'connectivity', phonetic: '/ˌkənekˈtɪvəti/', meaning: '连通性；连接' },
+      { word: 'waterborne', phonetic: '/ˈwɔːtəbɔːn/', meaning: '水运的；水传播的' },
+      { word: 'aviation', phonetic: '/ˌeɪviˈeɪʃn/', meaning: '航空；飞行' },
+      { word: 'from scratch', phonetic: '/frəm skrætʃ/', meaning: '从零开始' },
+      { word: 'infrastructure', phonetic: '/ˈɪnfrəstrʌktʃə(r)/', meaning: '基础设施' },
+      { word: 'in tandem with', phonetic: '/ɪn ˈtændəm wɪð/', meaning: '与……同步；协同' },
+      { word: 'conceive', phonetic: '/kənˈsiːv/', meaning: '构想；设想' },
+      { word: 'visionary', phonetic: '/ˈvɪʒənri/', meaning: '有远见的人' },
+      { word: 'reclaimed', phonetic: '/rɪˈkleɪmd/', meaning: '填海造地的；回收的' },
+      { word: 'tidal flat', phonetic: '/ˈtaɪdl flæt/', meaning: '滩涂；潮间带' },
+      { word: 'hollow', phonetic: '/ˈhɒləʊ/', meaning: '空洞的；空虚的' },
+      { word: 'utopian', phonetic: '/juːˈtəʊpiən/', meaning: '乌托邦式的；空想的' },
+      { word: 'foresee', phonetic: '/fɔːˈsiː/', meaning: '预见；预知' }
     ]
   }
 ];
