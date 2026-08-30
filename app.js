@@ -683,7 +683,8 @@
 
     var qhtml = item.questions.map(function (q, qi) {
       return '<div class="q-block" data-q="' + qi + '">' +
-        '<div class="q-stem"><span class="qnum">' + (qi + 1) + '.</span>' + wordify(q.q) + '</div>' +
+        '<div class="q-stem"><span class="qnum">' + (qi + 1) + '.</span>' +
+        '<span class="q-hidden" data-qtext="' + qi + '">' + wordify(q.q) + '</span></div>' +
         '<div class="options">' + q.options.map(function (o, oi) {
           return '<div class="opt" data-oi="' + oi + '"><span class="oletter">' + String.fromCharCode(65 + oi) + '.</span><span>' + wordify(o) + '</span></div>';
         }).join('') + '</div>' +
@@ -715,6 +716,7 @@
           '<button class="speed-btn" data-rate="1.5">1.5×</button>' +
         '</div>' +
       '</div>' +
+      '<div class="listen-hint">🎧 真题听力：卷面无题目，请听音频作答；交卷后显示题目与原文对照</div>' +
       '<div class="questions">' + qhtml + '</div>' +
       transcriptHtml +
       '<div class="submit-bar"><button class="btn btn-primary" data-submit>交卷</button>' +
@@ -784,6 +786,8 @@
       document.querySelector('[data-score]').innerHTML = r.score + ' <small>/ ' + total + '</small>';
       var tr = document.querySelector('[data-transcript]');
       if (tr) tr.classList.add('show');
+      // 交卷后显示题干（真题听力卷面无题目，考完对照）
+      document.querySelectorAll('[data-qtext]').forEach(function (el) { el.classList.add('show'); });
       markDone(item.id, r.score, total, selected);
       collectChoiceWrongs(item, r.wrongs);
       updateStatsMini();
